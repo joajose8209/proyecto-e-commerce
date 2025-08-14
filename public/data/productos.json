@@ -26,5 +26,47 @@
     "album": "Led Zeppelin IV",
     "precio": 45000,
     "imagen": "led_zeppelin_iv.jpg"
-  }
+  },
+   {
+      "id": 5,
+      "artista": "AC/DC",
+      "album": "Back in Black",
+      "precio": 39000,
+      "imagen": "back_in_black.jpg"
+    },
+    {
+      "id": 6,
+      "artista": "Nirvana",
+      "album": "Nevermind",
+      "precio": 36000,
+      "imagen": "nevermind.jpg"
+    },
+    {
+      "id": 7,
+      "artista": "Michael Jackson",
+      "album": "Thriller",
+      "precio": 41000,
+      "imagen": "thriller.jpg"
+    },
+    {
+      "id": 8,
+      "artista": "Guns N' Roses",
+      "album": "Appetite for Destruction",
+      "precio": 43000,
+      "imagen": "appetite_for_destruction.jpg"
+    },
+    {
+      "id": 9,
+      "artista": "Metallica",
+      "album": "Master of Puppets",
+      "precio": 47000,
+      "imagen": "master_of_puppets.jpg"
+    },
+    {
+      "id": 10,
+      "artista": "The Rolling Stones",
+      "album": "Exile on Main St.",
+      "precio": 40000,
+      "imagen": "exile_on_main_st.jpg"
+    }
 ]
