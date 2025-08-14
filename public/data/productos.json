@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "artista": "The Beatles",
+    "album": "Abbey Road",
+    "precio": 35000,
+    "imagen": "abbey_road.jpg"
+  },
+  {
+    "id": 2,
+    "artista": "Pink Floyd",
+    "album": "The Dark Side of the Moon",
+    "precio": 42000,
+    "imagen": "dark_side_of_the_moon.jpg"
+  },
+  {
+    "id": 3,
+    "artista": "Queen",
+    "album": "A Night at the Opera",
+    "precio": 38000,
+    "imagen": "a_night_at_the_opera.jpg"
+  },
+  {
+    "id": 4,
+    "artista": "Led Zeppelin",
+    "album": "Led Zeppelin IV",
+    "precio": 45000,
+    "imagen": "led_zeppelin_iv.jpg"
+  }
+]
