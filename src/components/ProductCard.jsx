@@ -1,3 +1,4 @@
+//Componente que muestra info de un solo producto, tarjeta visual que muestra los datos del vinilo, plantilla.
 const ProductCard = ({ producto }) => {
   return (
     <div style={{ border: '1px solid #ccc', padding: '10px', margin: '10px', borderRadius: '5px', width: '200px' }}>

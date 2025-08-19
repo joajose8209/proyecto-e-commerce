@@ -5,6 +5,7 @@ import ProductCard from '../components/ProductCard';
 
 function App() {
   const [productos, setProductos] = useState([]);
+  const [carrito, setCarrito] = useState([]);
 
   useEffect(() => {
     const cargarProductos = async () => {
