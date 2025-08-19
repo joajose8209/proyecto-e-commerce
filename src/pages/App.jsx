@@ -5,7 +5,14 @@ import ProductCard from '../components/ProductCard';
 
 function App() {
   const [productos, setProductos] = useState([]);
+ //Estado carrito
   const [carrito, setCarrito] = useState([]);
+  //Agregar productos a esa lista
+  const agregarAlCarrito = (producto) => {
+  setCarrito(prevCarrito => [...prevCarrito, producto]); 
+  }
+
+
 
   useEffect(() => {
     const cargarProductos = async () => {
