@@ -27,7 +27,11 @@ function App() {
       <h1>Catálogo de Vinilos</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {productos.map(producto => (
-          <ProductCard key={producto.id} producto={producto} />
+          <ProductCard key={producto.id} 
+          producto={producto}
+        // pasar la funcion como un prop
+       agregarAlCarrito={agregarAlCarrito} 
+           />
         ))}
       </div>
     </div>
