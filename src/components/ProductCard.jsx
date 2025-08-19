@@ -7,7 +7,7 @@ const ProductCard = ({ producto, agregarAlCarrito }) => {
       <p>Artista: {producto.artista}</p>
       <p>Precio: ${producto.precio}</p>
       <button onClick={()=>agregarAlCarrito(producto)}>
-
+      Agregar al Carrito
       </button>
       {/* Aquí agregare el botón de agregar al carrito más adelante */}
     </div>
