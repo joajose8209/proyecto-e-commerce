@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { obtenerProductos } from '../services/productosService';
 import ProductCard from '../components/ProductCard';
+import Cart from '../components/Cart';
 
 function App() {
   const [productos, setProductos] = useState([]);
@@ -12,14 +13,12 @@ function App() {
   setCarrito(prevCarrito => [...prevCarrito, producto]); 
   }
 
-
-
   useEffect(() => {
     const cargarProductos = async () => {
       const listaDeProductos = await obtenerProductos();
       setProductos(listaDeProductos);
     };
-    cargarProductos();
+  cargarProductos();
   }, []);
 
   return (
@@ -34,6 +33,7 @@ function App() {
            />
         ))}
       </div>
+     <Cart carrito={carrito} />
     </div>
   );
 }
