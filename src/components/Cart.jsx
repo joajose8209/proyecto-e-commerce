@@ -11,6 +11,7 @@ return (
       <p>{producto.album}</p>
       <p>Artista: {producto.artista}</p>
       <p>Precio: ${producto.precio}</p>
+      <p>Genero: ${producto.genero}</p>
     </div>
   ))
   )}   

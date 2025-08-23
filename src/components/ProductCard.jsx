@@ -6,6 +6,7 @@ const ProductCard = ({ producto, agregarAlCarrito }) => {
       <h3>{producto.album}</h3>
       <p>Artista: {producto.artista}</p>
       <p>Precio: ${producto.precio}</p>
+      <p>Genero: {producto.genero}</p>
        {/* Aqui se agrega un comentario para el boton de agregar al carrito */}   
       <button onClick={()=>agregarAlCarrito(producto)}>
       Agregar al Carrito
