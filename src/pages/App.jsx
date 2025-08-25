@@ -1,3 +1,4 @@
+//Importaciones necesarias
 import { useState, useEffect } from 'react';
 import { obtenerProductos } from '../services/productosService';
 import ProductCard from '../components/ProductCard';
@@ -31,7 +32,7 @@ function App() {
     }
   };
 
-  // 2. Este useEffect ya no es necesario, lo eliminamos
+  // 2. Ya no es necesario UseEffect para cargar el carrito desde localStorage
   /*
   useEffect(() => {
     const carritoGuardado = JSON.parse(localStorage.getItem('carrito'));
