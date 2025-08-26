@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { obtenerProductos } from '../services/productosService';
 import ProductCard from '../components/ProductCard';
 import Cart from '../components/Cart';
-
 import "../styles/filter.css";
 
 // Función para obtener el carrito del localStorage al inicio
