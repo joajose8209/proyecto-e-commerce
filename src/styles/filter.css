@@ -1,0 +1,13 @@
+.boton-filtro {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.boton-filtro-activo {
+  font-weight: bold;
+  border-color: #000;
+  background-color: #ddd;
+}
