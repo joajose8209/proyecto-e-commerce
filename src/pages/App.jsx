@@ -16,12 +16,14 @@ const obtenerCarritoInicial = () => {
   }
 };
 
-function App() {
+  function App() {
   const [productos, setProductos] = useState([]);
   //  Inicializa el estado 'carrito' con los datos del localStorage
   const [carrito, setCarrito] = useState(obtenerCarritoInicial());
   //Estado para el filtro de género
   const [generoSeleccionado, setGeneroSeleccionado] = useState ('Todos');
+  //Estado para el termino de búsqueda
+  const [terminoBusqueda, setTerminoBusqueda] = useState('');
 
   const agregarAlCarrito = (producto) => {
     const productoExistente = carrito.find(item => item.id === producto.id);
@@ -58,19 +60,35 @@ function App() {
     cargarProductos();
   }, []);
 
-//agrego variable para filtrar por género
-const productosFiltrados = productos.filter(producto =>{
+//agrego variable para filtrar por género y para el termino de búsqueda
+const productosMostrados = productos.filter(producto =>{
 if (generoSeleccionado === 'Todos') {
 return true;
 }
 return producto.genero === generoSeleccionado;
+})
+.filter(producto =>{
+  const busquedaLower = terminoBusqueda.toLowerCase();
+  const artistaLower = producto.artista.toLowerCase();
+  const albumLower = producto.album.toLowerCase();
+  return artistaLower.includes(busquedaLower) || albumLower.includes(busquedaLower);
 });
 
 return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <h1>Catálogo de Vinilos</h1>
-      {/* Agrego botones para filtrar por genero */}
-      <div>
+    <h1>Catálogo de Vinilos</h1>
+    {/* Agrego barra de busqueda */}
+    <div className= "search-container">
+    <input className='search-input' 
+    type="text"
+    placeholder='Buscar por artista o album...'
+    value={terminoBusqueda} 
+    onChange={(e) => setTerminoBusqueda(e.target.value)}  
+    style={{ width: '300px', padding: '10px', fontSize: '16px' }}
+    />
+    </div>
+  {/* Agrego botones para filtrar por genero */}
+  <div>
   <button 
     onClick={() => setGeneroSeleccionado('Todos')}
     className={`boton-filtro ${generoSeleccionado === 'Todos' ? 'boton-filtro-activo' : ''}`}
@@ -175,7 +193,7 @@ return (
   </button>
 </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-        {productosFiltrados.map(producto => (
+        {productosMostrados.map(producto => (
           <ProductCard 
             key={producto.id} 
             producto={producto}

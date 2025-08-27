@@ -11,3 +11,16 @@
   border-color: #000;
   background-color: #ddd;
 }
+.search-container {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search-input {
+  width: 300px; /* Ancho del campo */
+  padding: 10px; /* Relleno interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  border: 1px solid #ccc; /* Borde sutil */
+  border-radius: 5px; /* Bordes redondeados */
+}
