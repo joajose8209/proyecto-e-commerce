@@ -11,16 +11,72 @@
   border-color: #000;
   background-color: #ddd;
 }
+/* Contenedor principal de la barra de búsqueda */
 .search-container {
-  margin: 20px 0;
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centra la barra horizontalmente */
+  margin-bottom: 25px; /* Espacio debajo de la barra */
 }
+
+/* El campo de texto (input) donde el usuario escribira */
 .search-input {
-  width: 300px; /* Ancho del campo */
-  padding: 10px; /* Relleno interno */
-  font-size: 16px; /* Tamaño de la fuente */
-  border: 1px solid #ccc; /* Borde sutil */
-  border-radius: 5px; /* Bordes redondeados */
+  width: 50%; /* Ancho de la barra, puedes ajustarlo */
+  max-width: 400px; /* Ancho máximo para pantallas grandes */
+  padding: 12px 15px; /* Espacio interno para que el texto no se pegue a los bordes */
+  font-size: 16px; /* Tamaño de letra legible */
+  color: #333; /* Color del texto que escribes */
+  
+  /* Bordes y apariencia */
+  border: 2px solid #ddd; /* Borde sutil y gris claro */
+  border-radius: 50px; /* Bordes completamente redondeados para un look moderno */
+  outline: none; /* Quita el borde por defecto que ponen los navegadores al hacer clic */
+  
+  /* Transición suave para los efectos */
+  transition: all 0.3s ease-in-out;
+}
+
+/* (placeholder) */
+.search-input::placeholder {
+  color: #aaa; /* color más suave para el texto de ayuda */
+}
+
+/* Efecto visual cuando hago clic o selecciono la barra */
+.search-input:focus {
+  border-color: #7b1fa2; /* Cambia el color del borde a un morado distintivo */
+  box-shadow: 0 0 10px rgba(123, 31, 162, 0.2); /* Agrega un "resplandor" sutil */
+}
+/* Contenedor de los botones de filtro */
+.filter-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los botones pasen a la siguiente línea si no caben */
+  justify-content: center;
+  gap: 10px; /* Espacio uniforme entre los botones */
+}
+
+/* Estilo base para cada botón de género */
+.boton-filtro {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7b1fa2; /* Texto color morado */
+  background-color: #f3e5f5; /* Fondo morado muy claro */
+  border: 1px solid #7b1fa2; /* Borde morado */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+/* Efecto al pasar el mouse sobre un botón (que no esté activo) */
+.boton-filtro:not(.boton-filtro-activo):hover {
+  background-color: #e1bee7; /* Un poco más oscuro al pasar el mouse */
+  transform: translateY(-2px); /* Eleva un poco el botón */
+}
+
+/* Estilo para el botón que está seleccionado */
+.boton-filtro-activo {
+  color: #ffffff; /* Texto blanco */
+  background-color: #7b1fa2; /* Fondo morado sólido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }

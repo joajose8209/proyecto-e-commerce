@@ -398,5 +398,85 @@
     "precio": 33000,
     "imagen": "shes_so_unusual.jpg",
     "genero": "Pop"
+  },
+  {
+    "id": 51,
+    "artista": "James Brown",
+    "album": "Live at the Apollo",
+    "precio": 45000,
+    "imagen": "live_at_the_apollo.jpg",
+    "genero": "Funk"
+  },
+  {
+    "id": 52,
+    "artista": "Aretha Franklin",
+    "album": "I Never Loved a Man the Way I Love You",
+    "precio": 42000,
+    "imagen": "i_never_loved_a_man.jpg",
+    "genero": "Soul"
+  },
+  {
+    "id": 53,
+    "artista": "Miles Davis",
+    "album": "Kind of Blue",
+    "precio": 48000,
+    "imagen": "kind_of_blue.jpg",
+    "genero": "Jazz"
+  },
+  {
+    "id": 54,
+    "artista": "Daft Punk",
+    "album": "Random Access Memories",
+    "precio": 52000,
+    "imagen": "random_access_memories.jpg",
+    "genero": "Electronic"
+  },
+  {
+    "id": 55,
+    "artista": "Beastie Boys",
+    "album": "Paul's Boutique",
+    "precio": 41000,
+    "imagen": "pauls_boutique.jpg",
+    "genero": "Hip-Hop"
+  },
+  {
+    "id": 56,
+    "artista": "Stevie Wonder",
+    "album": "Innervisions",
+    "precio": 43000,
+    "imagen": "innervisions.jpg",
+    "genero": "Soul"
+  },
+  {
+    "id": 57,
+    "artista": "The Ramones",
+    "album": "Ramones",
+    "precio": 39000,
+    "imagen": "ramones.jpg",
+    "genero": "Punk Rock"
+  },
+  {
+    "id": 58,
+    "artista": "Kraftwerk",
+    "album": "The Man-Machine",
+    "precio": 44000,
+    "imagen": "the_man_machine.jpg",
+    "genero": "Electronic"
+  },
+  {
+    "id": 59,
+    "artista": "John Coltrane",
+    "album": "A Love Supreme",
+    "precio": 49000,
+    "imagen": "a_love_supreme.jpg",
+    "genero": "Jazz"
+  },
+  {
+    "id": 60,
+    "artista": "Bee Gees",
+    "album": "Saturday Night Fever",
+    "precio": 38000,
+    "imagen": "saturday_night_fever.jpg",
+    "genero": "Disco"
   }
 ]
