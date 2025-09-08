@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage'; 
 import ProductDetailPage from './pages/ProductDetailPage';
+import Navbar from './components/Navbar';// importo en el sprint 5 la Navbar.
 
 // 1. Importamos nuestro componente Cart. Asegúrate de que la ruta sea correcta.
 import Cart from './components/Cart';
@@ -54,10 +55,10 @@ function App() {
   
   return (
     <div>
-      {/* 2. Renderizamos el componente Cart aquí y le pasamos el estado del carrito. */}
-      {/* Lo ponemos fuera de <Routes> para que sea visible en todas las páginas. */}
+      {/* 2. Renderizo el componente Cart aquí y paso el estado del carrito. */}
+      {/* Poniendo fuera de <Routes> para que sea visible en todas las páginas. */}
       <Cart carrito={carrito} />
-
+ <main style={{ paddingBottom: '80px' }}> {/* Agrego un padding para que el contenido no quede oculto detrás de la navbar */}
       <Routes>
         <Route 
           path="/" 
@@ -83,6 +84,8 @@ function App() {
           } 
         />
       </Routes>
+      </main>
+       <Navbar /> {/* 2. hare la renderizacion del Navbar aquí */}
     </div>
   );
 }
