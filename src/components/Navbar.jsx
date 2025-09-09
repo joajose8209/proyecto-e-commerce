@@ -37,8 +37,8 @@ return (
     <span className="nav-text">Novedades</span>
     </NavLink>
     
-    <NavLink to="/mas" className={`${getNavLinkClass({ isActive: false })} settings-item`}>
-    <span className="nav-icon">⚙️</span>
+    <NavLink to="/mas" className={getNavLinkClass}>
+    <span className="nav-icon">➕</span>
     <span className="nav-text">Más</span>
     </NavLink>
     

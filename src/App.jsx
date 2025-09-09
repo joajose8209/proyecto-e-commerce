@@ -1,16 +1,23 @@
 // src/App.jsx
-
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage'; 
-import ProductDetailPage from './pages/ProductDetailPage';
-import Navbar from './components/Navbar';// importo en el sprint 5 la Navbar.
 
-// 1. Importamos nuestro componente Cart. Asegúrate de que la ruta sea correcta.
+// Importación de páginas existentes de Sprint 4.
+import HomePage from './pages/HomePage';
+import ProductDetailPage from './pages/ProductDetailPage';
+
+// 1. Importo las nuevas páginas que acabo de crear en el Sprint 5.
+import FavoritesPage from './pages/Favoritespage';
+import CartPage from './pages/CartPage';
+import NovedadesPage from './pages/NovedadesPage';
+import MorePage from './pages/MorePage';
+
+// Importación de componentes
 import Cart from './components/Cart';
+import Navbar from './components/Navbar';
 
 function App() {
-  // --- ESTADO CENTRALIZADO ---
+  // --- ESTADO CENTRALIZADO (sin cambios luego de mi Sprint 5) ---
   const [todosLosProductos, setTodosLosProductos] = useState([]);
   const [productosFiltrados, setProductosFiltrados] = useState([]);
   const [carrito, setCarrito] = useState(() => {
@@ -20,7 +27,7 @@ function App() {
   const [busqueda, setBusqueda] = useState('');
   const [filtroGenero, setFiltroGenero] = useState('Todos');
 
-  // --- EFECTOS (LÓGICA) ---
+  // --- EFECTOS (sin cambios en el sprint 5.) ---
   useEffect(() => {
     fetch('/data/productos.json')
       .then(response => response.json())
@@ -41,7 +48,7 @@ function App() {
       productosTemp = productosTemp.filter(p => p.genero === filtroGenero);
     }
     if (busqueda) {
-      productosTemp = productosTemp.filter(p => 
+      productosTemp = productosTemp.filter(p =>
         p.album.toLowerCase().includes(busqueda.toLowerCase()) ||
         p.artista.toLowerCase().includes(busqueda.toLowerCase())
       );
@@ -52,40 +59,46 @@ function App() {
   const agregarAlCarrito = (producto) => {
     setCarrito(prevCarrito => [...prevCarrito, producto]);
   };
-  
+
   return (
     <div>
-      {/* 2. Renderizo el componente Cart aquí y paso el estado del carrito. */}
-      {/* Poniendo fuera de <Routes> para que sea visible en todas las páginas. */}
       <Cart carrito={carrito} />
- <main style={{ paddingBottom: '80px' }}> {/* Agrego un padding para que el contenido no quede oculto detrás de la navbar */}
-      <Routes>
-        <Route 
-          path="/" 
-          element={
-            <HomePage 
-              productos={productosFiltrados}
-              busqueda={busqueda}
-              setBusqueda={setBusqueda}
-              filtroGenero={filtroGenero}
-              setFiltroGenero={setFiltroGenero}
-              agregarAlCarrito={agregarAlCarrito}
-              generosUnicos={[...new Set(todosLosProductos.map(p => p.genero))]}
-            />
-          } 
-        />
-        <Route 
-          path="/vinilo/:id" 
-          element={
-            <ProductDetailPage 
-              productos={todosLosProductos}
-              agregarAlCarrito={agregarAlCarrito} 
-            />
-          } 
-        />
-      </Routes>
+      <main style={{ paddingBottom: '80px' }}>
+        <Routes>
+          {/* Rutas existentes */}
+          <Route
+            path="/"
+            element={
+              <HomePage
+                productos={productosFiltrados}
+                busqueda={busqueda}
+                setBusqueda={setBusqueda}
+                filtroGenero={filtroGenero}
+                setFiltroGenero={setFiltroGenero}
+                agregarAlCarrito={agregarAlCarrito}
+                generosUnicos={[...new Set(todosLosProductos.map(p => p.genero))]}
+              />
+            }
+          />
+          <Route
+            path="/vinilo/:id"
+            element={
+              <ProductDetailPage
+                productos={todosLosProductos}
+                agregarAlCarrito={agregarAlCarrito}
+              />
+            }
+          />
+
+          {/* 2. Añadi las nuevas rutas aquí-Sprint 5 */}
+          <Route path="/favoritos" element={<FavoritesPage />} />
+          <Route path="/carrito" element={<CartPage />} />
+          <Route path="/novedades" element={<NovedadesPage />} />
+          <Route path="/mas" element={<MorePage />} />
+
+        </Routes>
       </main>
-       <Navbar /> {/* 2. hare la renderizacion del Navbar aquí */}
+      <Navbar />
     </div>
   );
 }
