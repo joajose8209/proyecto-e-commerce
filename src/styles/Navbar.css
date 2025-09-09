@@ -42,3 +42,10 @@ box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 .cart-item.active {
   color: white;
 }
+.settings-item:hover .nav-text {
+  display: none;
+}
+.settings-item:hover::after {
+  content: 'Ajustes'; /* Nuevo texto que tiene que aparecer */
+  font-size: 12px;
+}
