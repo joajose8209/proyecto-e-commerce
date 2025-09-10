@@ -1,23 +1,20 @@
 // src/App.jsx
+
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-// Importación de páginas existentes de Sprint 4.
+// Páginas
 import HomePage from './pages/HomePage';
 import ProductDetailPage from './pages/ProductDetailPage';
-
-// 1. Importo las nuevas páginas que acabo de crear en el Sprint 5.
-import FavoritesPage from './pages/Favoritespage';
+import FavoritesPage from './pages/FavoritesPage';
 import CartPage from './pages/CartPage';
 import NovedadesPage from './pages/NovedadesPage';
 import MorePage from './pages/MorePage';
 
-// Importación de componentes
-import Cart from './components/Cart';
+// Componentes
 import Navbar from './components/Navbar';
 
 function App() {
-  // --- ESTADO CENTRALIZADO (sin cambios luego de mi Sprint 5) ---
   const [todosLosProductos, setTodosLosProductos] = useState([]);
   const [productosFiltrados, setProductosFiltrados] = useState([]);
   const [carrito, setCarrito] = useState(() => {
@@ -27,7 +24,6 @@ function App() {
   const [busqueda, setBusqueda] = useState('');
   const [filtroGenero, setFiltroGenero] = useState('Todos');
 
-  // --- EFECTOS (sin cambios en el sprint 5.) ---
   useEffect(() => {
     fetch('/data/productos.json')
       .then(response => response.json())
@@ -59,13 +55,18 @@ function App() {
   const agregarAlCarrito = (producto) => {
     setCarrito(prevCarrito => [...prevCarrito, producto]);
   };
+  
+  const eliminarDelCarrito = (indiceAEliminar) => {
+    setCarrito(prevCarrito => prevCarrito.filter((_, index) => index !== indiceAEliminar));
+  };
+  
+  // Extraemos los géneros únicos de la lista completa de productos
+  const generosUnicos = [...new Set(todosLosProductos.map(p => p.genero))];
 
   return (
     <div>
-      <Cart carrito={carrito} />
       <main style={{ paddingBottom: '80px' }}>
         <Routes>
-          {/* Rutas existentes */}
           <Route
             path="/"
             element={
@@ -76,7 +77,7 @@ function App() {
                 filtroGenero={filtroGenero}
                 setFiltroGenero={setFiltroGenero}
                 agregarAlCarrito={agregarAlCarrito}
-                generosUnicos={[...new Set(todosLosProductos.map(p => p.genero))]}
+                generosUnicos={generosUnicos} // Nos aseguramos de pasar la prop
               />
             }
           />
@@ -89,13 +90,13 @@ function App() {
               />
             }
           />
-
-          {/* 2. Añadi las nuevas rutas aquí-Sprint 5 */}
           <Route path="/favoritos" element={<FavoritesPage />} />
-          <Route path="/carrito" element={<CartPage />} />
+          <Route 
+            path="/carrito" 
+            element={<CartPage carrito={carrito} eliminarDelCarrito={eliminarDelCarrito} />} 
+          />
           <Route path="/novedades" element={<NovedadesPage />} />
           <Route path="/mas" element={<MorePage />} />
-
         </Routes>
       </main>
       <Navbar />

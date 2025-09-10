@@ -12,7 +12,7 @@ const Cart = ({ carrito }) => {
       padding: '16px',
       position: 'fixed',
       right: '20px',
-      // 👇 ÚNICO CAMBIO: 'top' por 'bottom'
+      //  ÚNICO CAMBIO: 'top' por 'bottom'
       bottom: '20px',
       width: '300px',
       backgroundColor: 'white',
