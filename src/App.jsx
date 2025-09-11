@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
@@ -21,9 +19,17 @@ function App() {
     const carritoGuardado = localStorage.getItem('carrito');
     return carritoGuardado ? JSON.parse(carritoGuardado) : [];
   });
+  
+  // 1. Favoritos cargada desde localStorage.
+  const [favoritos, setFavoritos] = useState(() => {
+    const favoritosGuardados = localStorage.getItem('favoritos');
+    return favoritosGuardados ? JSON.parse(favoritosGuardados) : [];
+  });
+
   const [busqueda, setBusqueda] = useState('');
   const [filtroGenero, setFiltroGenero] = useState('Todos');
 
+  // --- EFECTOS ---
   useEffect(() => {
     fetch('/data/productos.json')
       .then(response => response.json())
@@ -37,8 +43,15 @@ function App() {
   useEffect(() => {
     localStorage.setItem('carrito', JSON.stringify(carrito));
   }, [carrito]);
+  
+  // 2. Guardo la libreta de favoritos en Storage cada vez que cambia.
+  useEffect(() => {
+    localStorage.setItem('favoritos', JSON.stringify(favoritos));
+  }, [favoritos]);
+
 
   useEffect(() => {
+    // Lógica de filtrado (sin cambios)
     let productosTemp = todosLosProductos;
     if (filtroGenero !== 'Todos') {
       productosTemp = productosTemp.filter(p => p.genero === filtroGenero);
@@ -59,8 +72,21 @@ function App() {
   const eliminarDelCarrito = (indiceAEliminar) => {
     setCarrito(prevCarrito => prevCarrito.filter((_, index) => index !== indiceAEliminar));
   };
+
+  // 3. El nuevo "procedimiento" para añadir o quitar favoritos.
+  const toggleFavorito = (producto) => {
+    // Verificar si el producto ya está en la libreta de favoritos
+    const esFavorito = favoritos.some(fav => fav.id === producto.id);
+
+    if (esFavorito) {
+      // Si ya está, creo una nueva lista sin él
+      setFavoritos(prevFavoritos => prevFavoritos.filter(fav => fav.id !== producto.id));
+    } else {
+      // Si no está, creo una nueva lista añadiéndolo
+      setFavoritos(prevFavoritos => [...prevFavoritos, producto]);
+    }
+  };
   
-  // Extraemos los géneros únicos de la lista completa de productos
   const generosUnicos = [...new Set(todosLosProductos.map(p => p.genero))];
 
   return (
@@ -72,12 +98,16 @@ function App() {
             element={
               <HomePage
                 productos={productosFiltrados}
+                agregarAlCarrito={agregarAlCarrito}
+                // 4. Pasar nuevas herramientas a HomePage
+                toggleFavorito={toggleFavorito}
+                favoritos={favoritos}
+                // Props de filtros
                 busqueda={busqueda}
                 setBusqueda={setBusqueda}
                 filtroGenero={filtroGenero}
                 setFiltroGenero={setFiltroGenero}
-                agregarAlCarrito={agregarAlCarrito}
-                generosUnicos={generosUnicos} // Nos aseguramos de pasar la prop
+                generosUnicos={generosUnicos}
               />
             }
           />
@@ -90,7 +120,9 @@ function App() {
               />
             }
           />
-          <Route path="/favoritos" element={<FavoritesPage />} />
+          {/* 5. Pasar la lista de favoritos a su página */}
+          <Route path="/favoritos" element={<FavoritesPage favoritos={favoritos} agregarAlCarrito={agregarAlCarrito} 
+      toggleFavorito={toggleFavorito} />} />
           <Route 
             path="/carrito" 
             element={<CartPage carrito={carrito} eliminarDelCarrito={eliminarDelCarrito} />} 

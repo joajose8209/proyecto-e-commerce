@@ -1,10 +1,7 @@
-// src/pages/HomePage.jsx
-
 import React from 'react';
 import ProductList from '../components/ProductList';
 import Filters from '../components/Filters';
 
-// HomePage ahora solo se preocupa de recibir y pasar las props correctas.
 function HomePage({ 
   productos, 
   busqueda, 
@@ -12,7 +9,10 @@ function HomePage({
   filtroGenero, 
   setFiltroGenero, 
   agregarAlCarrito, 
-  generosUnicos 
+  generosUnicos,
+  // Recibo las props de favoritos
+  toggleFavorito,
+  favoritos
 }) {
 
   return (
@@ -24,11 +24,16 @@ function HomePage({
         setTerminoBusqueda={setBusqueda}
         generoSeleccionado={filtroGenero}
         setGeneroSeleccionado={setFiltroGenero}
-        // Le pasamos los géneros únicos, asegurándonos de que sea un array
         generos={['Todos', ...(generosUnicos || [])]}
       />
 
-      <ProductList productos={productos} agregarAlCarrito={agregarAlCarrito} />
+      {/* Pasaje ProductList */}
+      <ProductList 
+        productos={productos} 
+        agregarAlCarrito={agregarAlCarrito} 
+        toggleFavorito={toggleFavorito}
+        favoritos={favoritos}
+      />
     </div>
   );
 }

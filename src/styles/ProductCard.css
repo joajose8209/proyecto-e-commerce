@@ -1,0 +1,105 @@
+.product-card {
+  width: 220px; /* Ancho fijo para cada tarjeta */
+  margin: 15px; /* Espacio alrededor de cada tarjeta */
+  border: 1px solid #eee; /* Un borde muy sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave para darle profundidad */
+  background-color: white;
+  position: relative; /* Para que los botones de acción se posicionen encima */
+  overflow: hidden; /* Oculta cualquier cosa que se salga de los bordes redondeados */
+  display: flex;
+  flex-direction: column; /* Organiza el contenido en una columna (imagen arriba, info abajo) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+}
+
+/* --- Efecto al Pasar el Mouse Sobre la Tarjeta --- */
+.product-card:hover {
+  transform: translateY(-5px); /* "Levanta" la tarjeta ligeramente */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Hace la sombra más pronunciada */
+}
+
+/* --- Estilos para la Imagen del Vinilo --- */
+.product-image {
+  width: 100%;
+  height: 220px; /* Altura fija para la imagen, para que todas las tarjetas sean iguales */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+}
+
+/* --- Contenedor para la Información del Producto --- */
+.product-info {
+  padding: 15px;
+  flex-grow: 1; /* Permite que este contenedor crezca para llenar el espacio vertical */
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info h3 {
+  font-size: 1rem;
+  margin: 0 0 5px 0;
+}
+
+.product-info p {
+  font-size: 0.9rem;
+  margin: 2px 0;
+  color: #666;
+}
+
+/* --- Contenedor de Acciones (Aparece al hacer Hover) --- */
+.product-card-actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px; /* Cubre exactamente el área de la imagen */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  
+  /* Centra los botones vertical y horizontalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre los botones */
+
+  /* Ocultarlo por defecto */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Al pasar el mouse sobre la tarjeta, el contenedor de acciones se hace visible */
+.product-card:hover .product-card-actions {
+  opacity: 1;
+}
+
+/* --- Estilos para los Botones de Acción --- */
+.product-card-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilos para el botón de favoritos */
+.btn-favorite {
+  background: none;
+  border: none;
+  font-size: 32px; /* Un poco más grande para que destaque */
+  cursor: pointer;
+  color: white; /* Corazón "vacío" de color blanco para que se vea en el fondo oscuro */
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.btn-favorite:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Estilo para cuando el producto SÍ es un favorito */
+.btn-favorite.favorited {
+  color: #e91e63; /* Corazón "lleno" de color rosa/rojo */
+  opacity: 1;
+}

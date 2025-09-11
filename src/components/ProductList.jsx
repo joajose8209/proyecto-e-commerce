@@ -1,18 +1,13 @@
-// src/components/ProductList.jsx
-
 import React from 'react';
-// 1. Esta es la línea que faltaba. Le decimos al archivo qué es y dónde encontrar "ProductCard".
 import ProductCard from './ProductCard'; 
 
-// El componente recibe "productos" desde HomePage
-const ProductList = ({ productos, agregarAlCarrito }) => {
+// 1. Aqui  recibo las nuevas props: toggleFavorito y favoritos
+const ProductList = ({ productos, agregarAlCarrito, toggleFavorito, favoritos }) => {
   
-  // Verificación: Si no hay productos o la lista está vacía, muestra un mensaje.
   if (!productos || productos.length === 0) {
-    return <p>No se encontraron vinilos que coincidan con tu búsqueda.</p>;
+    return <p>No se encontraron vinilos.</p>;
   }
 
-  // Si hay productos, los mapea y muestra
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap' }}>
       {productos.map(producto => (
@@ -20,6 +15,9 @@ const ProductList = ({ productos, agregarAlCarrito }) => {
           key={producto.id} 
           producto={producto} 
           agregarAlCarrito={agregarAlCarrito}
+          // 2. pasaje a cada ProductCard
+          toggleFavorito={toggleFavorito}
+          favoritos={favoritos}
         />
       ))}
     </div>
