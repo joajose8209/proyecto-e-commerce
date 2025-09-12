@@ -37,7 +37,7 @@ function App() {
         setTodosLosProductos(data);
         setProductosFiltrados(data);
       })
-      .catch(error => console.error("Error al cargar los productos:", error));
+    .catch(error => console.error("Error al cargar los productos:", error));
   }, []);
 
   useEffect(() => {
@@ -131,7 +131,7 @@ function App() {
           <Route path="/mas" element={<MorePage />} />
         </Routes>
       </main>
-      <Navbar />
+      <Navbar cantidadCarrito={carrito.length} />
     </div>
   );
 }

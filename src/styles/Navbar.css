@@ -32,6 +32,7 @@ box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
   font-size: 12px;
 }
 .cart-item {
+ position: relative;
   transform: scale(1.2) translateY(-10px);
   background-color: #7b1fa2;
   color: white;
@@ -41,4 +42,16 @@ box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 .cart-item.active {
   color: white;
+}
+.cart-badge {
+  position: absolute;
+  top: -5px; /* Ajusta para posicionarlo bien */
+  right: -5px; /* Ajusta para posicionarlo bien */
+  background-color: #e91e63; /* Color llamativo */
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 10px;
+  font-weight: bold;
+  border: 2px solid white;
 }
