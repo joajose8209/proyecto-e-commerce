@@ -1,10 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/ProductCard.css';
+// 1.  Sprint 6 Martes Importo el Hook personalizado que creé en el contexto de Favoritos
+import { useFavorites } from '../context/FavoritesContext';
 
 // 1. Aqui reciblo las nuevas "herramientas": toggleFavorito y la lista de favoritos
-const ProductCard = ({ producto, agregarAlCarrito, toggleFavorito, favoritos }) => {
+//Sprint 6 Martes limpie props.
+const ProductCard = ({ producto, agregarAlCarrito}) => {
+  //Sprint 6 Martes Uso el contexto y uso herramientas directamente.
+  const {favoritos, toggleFavorito} = useFavorites();
   const detailUrl = `/vinilo/${producto.id}`;
+  
 
   // 2. Verificacion si el  producto  ya está en la lista de favoritos
   const esFavorito = favoritos.some(fav => fav.id === producto.id);

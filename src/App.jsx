@@ -78,8 +78,9 @@ function App() {
                 productos={productosFiltrados}
                 agregarAlCarrito={agregarAlCarrito}
                 // 4. Pasar nuevas herramientas a HomePage
-                toggleFavorito={toggleFavorito}
-                favoritos={favoritos}
+                //Sprint 6 Martes elimine props.             
+                // toggleFavorito={toggleFavorito}
+                //favoritos={favoritos}
                 // Props de filtros
                 busqueda={busqueda}
                 setBusqueda={setBusqueda}
@@ -99,8 +100,9 @@ function App() {
             }
           />
           {/* 5. Pasar la lista de favoritos a su página */}
-          <Route path="/favoritos" element={<FavoritesPage favoritos={favoritos} agregarAlCarrito={agregarAlCarrito} 
-      toggleFavorito={toggleFavorito} />} />
+           {/* Sprint 6 Martes borrare de aqui losas props. */}
+          <Route path="/favoritos" element={<FavoritesPage  agregarAlCarrito={agregarAlCarrito} 
+       />} />
           <Route 
             path="/carrito" 
             element={<CartPage carrito={carrito} eliminarDelCarrito={eliminarDelCarrito} />} 

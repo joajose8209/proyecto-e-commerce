@@ -5,15 +5,17 @@ function Filters({ terminoBusqueda, setTerminoBusqueda, generoSeleccionado, setG
     <>
         
       <div className="search-container">
-        <input
-          className='search-input'
-          type="text"
-          placeholder='Buscar por artista o album...'
-          value={terminoBusqueda}
-          onChange={(e) => setTerminoBusqueda(e.target.value)}
-        />
-      </div>
-
+  <label htmlFor="search-input">Buscar por artista o album</label>
+  <input
+    id="search-input"      
+    name="busqueda"          
+    className='search-input'
+    type="text"
+    placeholder='Buscar por artista o album...'
+    value={terminoBusqueda}
+    onChange={(e) => setTerminoBusqueda(e.target.value)}
+  />
+</div>
       {/* Agrego botones para filtrar por genero 
       <div>
         <button

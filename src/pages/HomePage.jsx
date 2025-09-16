@@ -10,9 +10,10 @@ function HomePage({
   setFiltroGenero, 
   agregarAlCarrito, 
   generosUnicos,
-  // Recibo las props de favoritos
-  toggleFavorito,
-  favoritos
+// Recibo las props de favoritos
+//Sprint 6 Martes elimine props.
+//toggleFavorito,
+//favoritos
 }) {
 
   return (
@@ -27,12 +28,10 @@ function HomePage({
         generos={['Todos', ...(generosUnicos || [])]}
       />
 
-      {/* Pasaje ProductList */}
+      {/* Pasaje ProductList.Srint 6 Martes borro props.  */}
       <ProductList 
         productos={productos} 
         agregarAlCarrito={agregarAlCarrito} 
-        toggleFavorito={toggleFavorito}
-        favoritos={favoritos}
       />
     </div>
   );
