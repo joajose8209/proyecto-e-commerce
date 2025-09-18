@@ -6,34 +6,35 @@ import '../styles/ProductDetailPage.css';
 //Sprint 6 comento la lista completa vendra por props.
 //import { obtenerProductos } from '../services/productosService'; 
 
-function ProductDetailPage({productos, agregarAlCarrito}) {
- //devuelve un objeto con los parametros de la URL.
+function ProductDetailPage({ productos, agregarAlCarrito }) {
+  //devuelve un objeto con los parametros de la URL.
   const { id } = useParams();
   const [producto, setProducto] = useState(null);
   const [loading, setLoading] = useState(true);
   const [relacionados, setRelacionados] = useState([]);
 
   //Sprint 6 UseEffect, se encarga de encontrar el producto principal.
-  useEffect(() =>{
-  //Si la lista principal de productos ya esta disponible.
-  if(productos.length > 0) {
-  setLoading(true);//Se inicia la  carga
-  const productoEncontrado = productos.find((p) => p.id == id);
-  setProducto(productoEncontrado);
-  setLoading(false); //Aqui termina la  carga.
-}
-},[id, productos]);// se ejecuta si cambia el ID en la URL o bien si llega la lista de productos.
+  useEffect(() => {
+    //Si la lista principal de productos ya esta disponible.
+    if (productos.length > 0) {
+      setLoading(true);//Se inicia la  carga
+      const productoEncontrado = productos.find((p) => p.id == id);
+      setProducto(productoEncontrado);
+      setLoading(false); //Aqui termina la  carga.
+    }
+  }, [id, productos]);// se ejecuta si cambia el ID en la URL o bien si llega la lista de productos.
 
-//Sprint 6 segundo UseEffect que se va a encargar de encontrar los productos relacionados.
-useEffect(()=>{
-// Sprint 6 si ya he encontrado el producto y esta la lista completa....
-if(producto && productos.length > 0){
-const productosFiltrados = productos.filter(p => p.genero === producto.genero && p.id !== producto.id);
-setRelacionados(productosFiltrados.slice(0, 4,));
-};
-}, [producto, productos]);//se va a ejecutar si el prod. principal cambia.
+  //Sprint 6 segundo UseEffect que se va a encargar de encontrar los productos relacionados.
+  useEffect(() => {
+    // Sprint 6 si ya he encontrado el producto y esta la lista completa....
+    if (producto && productos.length > 0) {
+      const productosFiltrados = productos.filter(p => p.genero === producto.genero && p.id !== producto.id);
+      setRelacionados(productosFiltrados.slice(0, 4,));
+    };
+  }, [producto, productos]);//se va a ejecutar si el prod. principal cambia.
 
-  /* Sprint 6 comento,  ya no utilizo funcion asincronica, es mas eficiente la mejora solo va a recibir los datos por props del componente padre App.jsx.
+  /* Sprint 6 comento,  ya no utilizo funcion asincronica, es mas eficiente la mejora solo va a recibir los datos por props
+  del componente padre App.jsx.
   useEffect(() => {
    // Funcion asincrona para cargar el producto 
     const cargarProducto = async () => {
@@ -65,36 +66,40 @@ setRelacionados(productosFiltrados.slice(0, 4,));
   // Renderizado cuando el producto ya se cargó
   return (
     <div className="detalle-container">
-      <div className="detalle-img">
-        <img src={`/img/${producto.imagen}`} alt={producto.album} />
+      <div className="detalle-principal">
+        <div className="detalle-img">
+          <img src={`/img/${producto.imagen}`} alt={producto.album} />
+        </div>
+        <div className="detalle-info">
+          <h2>{producto.album}</h2>
+          <h3>{producto.artista}</h3>
+          <p className="detalle-precio">${producto.precio}</p>
+          <p><strong>Género:</strong> {producto.genero}</p>
+          <button className="detalle-boton-comprar">
+            Agregar al Carrito
+          </button>
+        </div>
       </div>
-      <div className="detalle-info">
-        <h2>{producto.album}</h2>
-        <h3>{producto.artista}</h3>
-        <p className="detalle-precio">${producto.precio}</p>
-        <p><strong>Género:</strong> {producto.genero}</p>
-        <button className="detalle-boton-comprar">
-          Agregar al Carrito
-        </button>
-      </div>
+      
       {/* Sprint 6 nueva seccion productos relacionados*/}
       {/* S. 6 solo muestro relacionados si hay algo */}
       {relacionados.length > 0 && (
-      <div className= "relaionados-container">
-      <h2>Tambien te podria gustar</h2>  
-      <div className="relacionados-grid">
-      {/* utilizo metodo map */}
-      {relacionados.map(prodRelacionado => (
-      <ProductCard 
-      key={prodRelacionado.id}
-      producto={prodRelacionado}
-      agregarAlCarrito={agregarAlCarrito}
-      />  
-     ))}  
+        <div className="relacionados-container">
+          <h2>También te podría gustar</h2>
+          <div className="relacionados-grid">
+            {/* utilizo metodo map */}
+            {relacionados.map(prodRelacionado => (
+              <ProductCard
+                key={prodRelacionado.id}
+                producto={prodRelacionado}
+                agregarAlCarrito={agregarAlCarrito}
+              />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
-    </div> 
-    )}
-    </div>
-    );
-    }
-  export default ProductDetailPage;
+  );
+}
+
+export default ProductDetailPage;

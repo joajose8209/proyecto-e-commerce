@@ -15,3 +15,14 @@
   flex-wrap: wrap;
   gap: 15px;
 }
+.main-title {
+  /* 1. Centra el texto horizontalmente */
+  text-align: center;
+  
+  /* 2. Le damos un estilo acorde a tu paleta de colores */
+  color: #333; /* Un color de texto oscuro pero no negro puro */
+  font-size: 2.5rem; /* Un tamaño de letra más grande e impactante */
+  margin-top: 20px; /* Un poco de espacio arriba */
+  margin-bottom: 30px; /* Espacio entre el título y los filtros */
+  font-weight: 700; /* Un grosor de letra más notable */
+}
