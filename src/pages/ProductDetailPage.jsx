@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 //importacion para Sprint 4 dia Miercoles useParams
 import { useParams } from 'react-router-dom';
+import ProductCard from '../components/ProductCard';
+import '../styles/ProductDetailPage.css';
 //Sprint 6 comento la lista completa vendra por props.
 //import { obtenerProductos } from '../services/productosService'; 
 
-function ProductDetailPage({productos}) {
+function ProductDetailPage({productos, agregarAlCarrito}) {
  //devuelve un objeto con los parametros de la URL.
   const { id } = useParams();
   const [producto, setProducto] = useState(null);
@@ -31,8 +33,7 @@ setRelacionados(productosFiltrados.slice(0, 4,));
 };
 }, [producto, productos]);//se va a ejecutar si el prod. principal cambia.
 
-  /* Sprint 6 comento,  ya no utilizo funcion asincronica, es mas eficiente la mejora solo va a recibir los datos por props
-  del componente padre App.jsx.
+  /* Sprint 6 comento,  ya no utilizo funcion asincronica, es mas eficiente la mejora solo va a recibir los datos por props del componente padre App.jsx.
   useEffect(() => {
    // Funcion asincrona para cargar el producto 
     const cargarProducto = async () => {
@@ -76,8 +77,24 @@ setRelacionados(productosFiltrados.slice(0, 4,));
           Agregar al Carrito
         </button>
       </div>
+      {/* Sprint 6 nueva seccion productos relacionados*/}
+      {/* S. 6 solo muestro relacionados si hay algo */}
+      {relacionados.length > 0 && (
+      <div className= "relaionados-container">
+      <h2>Tambien te podria gustar</h2>  
+      <div className="relacionados-grid">
+      {/* utilizo metodo map */}
+      {relacionados.map(prodRelacionado => (
+      <ProductCard 
+      key={prodRelacionado.id}
+      producto={prodRelacionado}
+      agregarAlCarrito={agregarAlCarrito}
+      />  
+     ))}  
     </div>
-  );
-}
-
-export default ProductDetailPage;
+    </div> 
+    )}
+    </div>
+    );
+    }
+  export default ProductDetailPage;

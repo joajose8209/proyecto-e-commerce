@@ -18,7 +18,7 @@ function HomePage({
 
   return (
     <div>
-      <h1>Catálogo de Vinilos</h1>
+      <h1 className='main-title'>Catálogo de Vinilos</h1>
       
       <Filters 
         terminoBusqueda={busqueda}

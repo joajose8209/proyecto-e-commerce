@@ -90,19 +90,19 @@ function App() {
               />
             }
           />
-          <Route
-            path="/vinilo/:id"
-            element={
-              <ProductDetailPage
-                productos={todosLosProductos}
-                agregarAlCarrito={agregarAlCarrito}
-              />
-            }
+      <Route
+        path="/vinilo/:id"
+        element={
+          <ProductDetailPage
+            productos={todosLosProductos}
+            agregarAlCarrito={agregarAlCarrito}
           />
-          {/* 5. Pasar la lista de favoritos a su página */}
-           {/* Sprint 6 Martes borrare de aqui losas props. */}
-          <Route path="/favoritos" element={<FavoritesPage  agregarAlCarrito={agregarAlCarrito} 
-       />} />
+        }
+      />
+      
+      {/* 5. Pasar la lista de favoritos a su página */}
+       {/* Sprint 6 Martes borrare de aqui losas props. */}
+      <Route path="/favoritos" element={<FavoritesPage  agregarAlCarrito={agregarAlCarrito} />} />
           <Route 
             path="/carrito" 
             element={<CartPage carrito={carrito} eliminarDelCarrito={eliminarDelCarrito} />} 
