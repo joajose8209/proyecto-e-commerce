@@ -11,10 +11,20 @@ function Filters({ terminoBusqueda, setTerminoBusqueda, generoSeleccionado, setG
     name="busqueda"          
     className='search-input'
     type="text"
-    placeholder='Buscar por artista o album...'
+    placeholder='Buscar por artista o album....'
     value={terminoBusqueda}
     onChange={(e) => setTerminoBusqueda(e.target.value)}
   />
+</div>
+{/* Sprint 7 etiqueta select */}  
+<div className="sort-container">
+<label htmlFor='sort-select'>Ordenar por:</label>
+<select id='sort-select' name='sort'>
+<option value="predeterminado">Predeterminado</option>
+<option value="precio-asc">Precio: Menor a Mayor</option> 
+<option value="precio-desc">Precio: Mayor a Menor</option> 
+<option value="alfa-asc">Alfabeticamente (A-Z)</option>   
+</select>
 </div>
       {/* Agrego botones para filtrar por genero 
       <div>

@@ -20,11 +20,11 @@
 
 /* El campo de texto (input) donde el usuario escribira */
 .search-input {
-  width: 50%; /* Ancho de la barra, puedes ajustarlo */
+  width: 50%; /* Ancho de la barra */
   max-width: 400px; /* Ancho máximo para pantallas grandes */
   padding: 12px 15px; /* Espacio interno para que el texto no se pegue a los bordes */
-  font-size: 16px; /* Tamaño de letra legible */
-  color: #333; /* Color del texto que escribes */
+  font-size: 20px; /* Tamaño de letra legible */
+  color: #333; /* Color del texto que se escriba */
   
   /* Bordes y apariencia */
   border: 2px solid #ddd; /* Borde sutil y gris claro */
@@ -79,4 +79,26 @@
   background-color: #7b1fa2; /* Fondo morado sólido */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
+}
+.sort-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre la etiqueta y el menú */
+  margin-bottom: 20px;
+}
+
+.sort-container label {
+  font-weight: 500;
+  color: #555;
+}
+
+.sort-container select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  outline-color: #7b1fa2; /* El color principal para el foco */
 }
