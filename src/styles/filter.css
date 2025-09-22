@@ -17,13 +17,21 @@
   justify-content: center; /* Centra la barra horizontalmente */
   margin-bottom: 25px; /* Espacio debajo de la barra */
 }
+.search-container label {
+  font-size: 20px; 
+  
+  /* Opcional: otros estilos para que se vea bien */
+  font-weight: 500;
+  color: #555;
+  margin-right: 10px; /* Añade un espacio entre el texto y la barra de búsqueda */
+}
 
 /* El campo de texto (input) donde el usuario escribira */
 .search-input {
   width: 50%; /* Ancho de la barra */
   max-width: 400px; /* Ancho máximo para pantallas grandes */
-  padding: 12px 15px; /* Espacio interno para que el texto no se pegue a los bordes */
-  font-size: 20px; /* Tamaño de letra legible */
+  padding: 8px 15px; /* Espacio interno para que el texto no se pegue a los bordes */
+  font-size: 16px; /* Tamaño de letra legible */
   color: #333; /* Color del texto que se escriba */
   
   /* Bordes y apariencia */
