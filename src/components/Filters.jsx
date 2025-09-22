@@ -1,11 +1,12 @@
 import React from 'react'; 
+import '../styles/filter.css';
 function Filters({ terminoBusqueda, setTerminoBusqueda, generoSeleccionado, setGeneroSeleccionado, generos = [] }) {
   return (
     // CORRECCIÓN: Tuve un problema porque no añadi un Fragmento <> para envolver todo en un solo elemento raíz
     <>
         
-      <div className="search-container">
-  <label htmlFor="search-input">Buscar por artista o album</label>
+  <div className="search-container">
+  <label htmlFor="search-input">Buscar por artista o album </label>
   <input
     id="search-input"      
     name="busqueda"          
