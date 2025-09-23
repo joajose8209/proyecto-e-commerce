@@ -1,11 +1,10 @@
 import React from 'react'; 
 import '../styles/filter.css';
-function Filters({ terminoBusqueda, setTerminoBusqueda, generoSeleccionado, setGeneroSeleccionado, generos = [] }) {
+function Filters({ terminoBusqueda, setTerminoBusqueda, generoSeleccionado, setGeneroSeleccionado, generos = [], criterioOrden, setCriterioOrden }) {
   return (
-    // CORRECCIÓN: Tuve un problema porque no añadi un Fragmento <> para envolver todo en un solo elemento raíz
-    <>
-        
-  <div className="search-container">
+  
+ <>      
+ <div className="search-container">
   <label htmlFor="search-input">Buscar por artista o album </label>
   <input
     id="search-input"      
@@ -20,7 +19,10 @@ function Filters({ terminoBusqueda, setTerminoBusqueda, generoSeleccionado, setG
 {/* Sprint 7 etiqueta select */}  
 <div className="sort-container">
 <label htmlFor='sort-select'>Ordenar por:</label>
-<select id='sort-select' name='sort'>
+<select id='sort-select' name='sort' 
+value={criterioOrden} 
+onChange={(e) => setCriterioOrden(e.target.value)}
+>
 <option value="predeterminado">Predeterminado</option>
 <option value="precio-asc">Precio: Menor a Mayor</option> 
 <option value="precio-desc">Precio: Mayor a Menor</option> 

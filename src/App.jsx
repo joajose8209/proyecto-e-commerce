@@ -16,14 +16,16 @@ function App() {
   const [todosLosProductos, setTodosLosProductos] = useState([]);
   const [productosFiltrados, setProductosFiltrados] = useState([]);
   const [carrito, setCarrito] = useState(() => {
-    const carritoGuardado = localStorage.getItem('carrito');
-    return carritoGuardado ? JSON.parse(carritoGuardado) : [];
+  const carritoGuardado = localStorage.getItem('carrito');
+  return carritoGuardado ? JSON.parse(carritoGuardado) : [];
   });
   
   // 1. Aqui tenia antes de Contex Api Favoritos cargada desde localStorage.
 
   const [busqueda, setBusqueda] = useState('');
   const [filtroGenero, setFiltroGenero] = useState('Todos');
+  //Sprint 7 dando memoria al ordenamiento
+  const [criterioOrden, setCriterioOrden] = useState('predeterminado');
 
   // --- EFECTOS ---
   useEffect(() => {
@@ -87,6 +89,8 @@ function App() {
                 filtroGenero={filtroGenero}
                 setFiltroGenero={setFiltroGenero}
                 generosUnicos={generosUnicos}
+                criterioOrden={criterioOrden}
+                setCriterioOrden={setCriterioOrden}
               />
             }
           />

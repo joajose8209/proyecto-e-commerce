@@ -10,10 +10,8 @@ function HomePage({
   setFiltroGenero, 
   agregarAlCarrito, 
   generosUnicos,
-// Recibo las props de favoritos
-//Sprint 6 Martes elimine props.
-//toggleFavorito,
-//favoritos
+  criterioOrden,
+  setCriterioOrden,
 }) {
 
   return (
@@ -26,6 +24,8 @@ function HomePage({
         generoSeleccionado={filtroGenero}
         setGeneroSeleccionado={setFiltroGenero}
         generos={['Todos', ...(generosUnicos || [])]}
+        criterioOrden={criterioOrden}
+        setCriterioOrden={setCriterioOrden}
       />
 
       {/* Pasaje ProductList.Srint 6 Martes borro props.  */}

@@ -92,6 +92,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
   gap: 10px; /* Espacio entre la etiqueta y el menú */
   margin-bottom: 20px;
 }
