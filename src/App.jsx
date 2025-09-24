@@ -56,8 +56,18 @@ function App() {
         p.artista.toLowerCase().includes(busqueda.toLowerCase())
       );
     }
-    setProductosFiltrados(productosTemp);
-  }, [busqueda, filtroGenero, todosLosProductos]);
+    // Lógica de ordenamiento (Sprint 7)
+    const productosOrdenados = [...productosTemp];
+    if (criterioOrden === 'precio-asc') {
+    productosOrdenados.sort((a, b) => a.precio - b.precio);  
+    } else if (criterioOrden === 'precio-desc') {
+    productosOrdenados.sort((a, b) => b.precio - a.precio);  
+    } else if (criterioOrden === 'alfa-asc') {
+    productosOrdenados.sort((a, b) => a.album.localeCompare(b.album));  
+    }
+    setProductosFiltrados(productosOrdenados);
+
+  }, [busqueda, filtroGenero, criterioOrden, todosLosProductos]);
 
   const agregarAlCarrito = (producto) => {
     setCarrito(prevCarrito => [...prevCarrito, producto]);

@@ -16,16 +16,25 @@ const ProductCard = ({ producto, agregarAlCarrito}) => {
   const esFavorito = favoritos.some(fav => fav.id === producto.id);
 
   return (
-    <div className="product-card">
-      <Link to={detailUrl} style={{ textDecoration: 'none', color: 'inherit' }}>
-        <img src={`/img/${producto.imagen}`} alt={producto.album} className="product-image" />
-        <div className="product-info">
-          <h3>{producto.album}</h3>
-          <p>Artista: {producto.artista}</p>
-          <p>Precio: ${producto.precio}</p>
-          <p>Genero: {producto.genero}</p>
-        </div>
-      </Link>
+  <div className="product-card">
+  <Link to={detailUrl} style={{ textDecoration: 'none', color: 'inherit' }}>
+  <img 
+  src={
+    // Aquí empieza la lógica "inteligente"
+    producto.imagen.startsWith('http') 
+      ? producto.imagen 
+      : `/img/${producto.imagen}`
+  } 
+  alt={producto.album} 
+  className="product-image" 
+/>
+<div className="product-info">
+<h3>{producto.album}</h3>
+<p>Artista: {producto.artista}</p>
+<p>Precio: ${producto.precio}</p>
+<p>Genero: {producto.genero}</p>
+</div>
+</Link>
 
       <div className="product-card-actions">
         {/* 3. Crecion  nuevo botón de favoritos */}
