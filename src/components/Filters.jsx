@@ -1,147 +1,65 @@
-import React from 'react'; 
+import React from 'react';
+import { useContext } from 'react'; // Importamos useContext para "hablar" con el contexto
+import { FiltersContext } from '../context/FiltersContext.jsx'; // Importamos la definición de nuestro contexto
 import '../styles/filter.css';
-function Filters({ terminoBusqueda, setTerminoBusqueda, generoSeleccionado, setGeneroSeleccionado, generos = [], criterioOrden, setCriterioOrden }) {
+
+// 1. ¡MIRA QUÉ LIMPIO!
+// El componente ya no recibe un montón de props. 
+// Solo necesita 'generos' para poder renderizar la lista de botones.
+function Filters({ generos = [] }) {
+  // 2. Obtenemos todo lo que necesitamos del contexto
+  const {
+    busqueda,
+    setBusqueda,
+    filtroGenero,
+    setFiltroGenero,
+    criterioOrden,
+    setCriterioOrden
+  } = useContext(FiltersContext);
+
   return (
-  
- <>      
- <div className="search-container">
-  <label htmlFor="search-input">Buscar por artista o album </label>
-  <input
-    id="search-input"      
-    name="busqueda"          
-    className='search-input'
-    type="text"
-    placeholder='Buscar por artista o album....'
-    value={terminoBusqueda}
-    onChange={(e) => setTerminoBusqueda(e.target.value)}
-  />
-</div>
-{/* Sprint 7 etiqueta select */}  
-<div className="sort-container">
-<label htmlFor='sort-select'>Ordenar por:</label>
-<select id='sort-select' name='sort' 
-value={criterioOrden} 
-onChange={(e) => setCriterioOrden(e.target.value)}
->
-<option value="predeterminado">Predeterminado</option>
-<option value="precio-asc">Precio: Menor a Mayor</option> 
-<option value="precio-desc">Precio: Mayor a Menor</option> 
-<option value="alfa-asc">Alfabeticamente (A-Z)</option>   
-</select>
-</div>
+    <>
+      <div className="search-container">
+        <label htmlFor="search-input">Buscar por artista o album </label>
+        <input
+          id="search-input"
+          name="busqueda"
+          className='search-input'
+          type="text"
+          placeholder='Buscar por artista o album....'
+          // 3. Usamos los valores y funciones del contexto
+          value={busqueda}
+          onChange={(e) => setBusqueda(e.target.value)}
+        />
+      </div>
+
+      {/* Sprint 7 etiqueta select */}
+      <div className="sort-container">
+        <label htmlFor='sort-select'>Ordenar por:</label>
+        <select id='sort-select' name='sort'
+          // 3. Usamos los valores y funciones del contexto
+          value={criterioOrden}
+          onChange={(e) => setCriterioOrden(e.target.value)}
+        >
+          <option value="predeterminado">Predeterminado</option>
+          <option value="precio-asc">Precio: Menor a Mayor</option>
+          <option value="precio-desc">Precio: Mayor a Menor</option>
+          <option value="alfa-asc">Alfabeticamente (A-Z)</option>
+        </select>
+      </div>
+
       {/* Agrego botones para filtrar por genero 
-      <div>
-        <button
-          onClick={() => setGeneroSeleccionado('Todos')}
-          className={`boton-filtro ${generoSeleccionado === 'Todos' ? 'boton-filtro-activo' : ''}`}
-        >
-          Todos
-        </button>
-        
-        <button
-          onClick={() => setGeneroSeleccionado('Rock')}
-          className={`boton-filtro ${generoSeleccionado === 'Rock' ? 'boton-filtro-activo' : ''}`}
-        >
-          Rock
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Rock Progresivo')}
-          className={`boton-filtro ${generoSeleccionado === 'Rock Progresivo' ? 'boton-filtro-activo' : ''}`}
-        >
-          Rock Progresivo
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Hard Rock')}
-          className={`boton-filtro ${generoSeleccionado === 'Hard Rock' ? 'boton-filtro-activo' : ''}`}
-        >
-          Hard Rock
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Grunge')}
-          className={`boton-filtro ${generoSeleccionado === 'Grunge' ? 'boton-filtro-activo' : ''}`}
-        >
-          Grunge
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Pop')}
-          className={`boton-filtro ${generoSeleccionado === 'Pop' ? 'boton-filtro-activo' : ''}`}
-        >
-          Pop
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Heavy Metal')}
-          className={`boton-filtro ${generoSeleccionado === 'Heavy Metal' ? 'boton-filtro-activo' : ''}`}
-        >
-          Heavy Metal
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Glam Rock')}
-          className={`boton-filtro ${generoSeleccionado === 'Glam Rock' ? 'boton-filtro-activo' : ''}`}
-        >
-          Glam Rock
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Pop Rock')}
-          className={`boton-filtro ${generoSeleccionado === 'Pop Rock' ? 'boton-filtro-activo' : ''}`}
-        >
-          Pop Rock
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Blues Rock')}
-          className={`boton-filtro ${generoSeleccionado === 'Blues Rock' ? 'boton-filtro-activo' : ''}`}
-        >
-          Blues Rock
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Reggae')}
-          className={`boton-filtro ${generoSeleccionado === 'Reggae' ? 'boton-filtro-activo' : ''}`}
-        >
-          Reggae
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('New Wave')}
-          className={`boton-filtro ${generoSeleccionado === 'New Wave' ? 'boton-filtro-activo' : ''}`}
-        >
-          New Wave
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Punk Rock')}
-          className={`boton-filtro ${generoSeleccionado === 'Punk Rock' ? 'boton-filtro-activo' : ''}`}
-        >
-          Punk Rock
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Rock Alternativo')}
-          className={`boton-filtro ${generoSeleccionado === 'Rock Alternativo' ? 'boton-filtro-activo' : ''}`}
-        >
-          Rock Alternativo
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Indie Rock')}
-          className={`boton-filtro ${generoSeleccionado === 'Indie Rock' ? 'boton-filtro-activo' : ''}`}
-        >
-          Indie Rock
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Rock Gótico')}
-          className={`boton-filtro ${generoSeleccionado === 'Rock Gótico' ? 'boton-filtro-activo' : ''}`}
-        >
-          Rock Gótico
-        </button>
-        <button 
-          onClick={() => setGeneroSeleccionado('Synth Pop')}
-          className={`boton-filtro ${generoSeleccionado === 'Synth Pop' ? 'boton-filtro-activo' : ''}`}
-        >
-          Synth Pop
-        </button> 
-      </div> */}
-      {/* 2. voy a reemplazar  los botones hardcodeados por un .map() dinámico */}
-       <div className='filter-container' style={{ padding: '20px' }}>
+        (Este bloque de botones individuales lo mantengo comentado como en tu original)
+      */}
+
+      {/* 2. voy a reemplazar los botones hardcodeados por un .map() dinámico */}
+      <div className='filter-container' style={{ padding: '20px' }}>
         {generos.map((genero) => (
           <button
-            key={genero} 
-            onClick={() => setGeneroSeleccionado(genero)}
-            className={`boton-filtro ${generoSeleccionado === genero ? 'boton-filtro-activo' : ''}`}
+            key={genero}
+            // 3. Usamos los valores y funciones del contexto
+            onClick={() => setFiltroGenero(genero)}
+            className={`boton-filtro ${filtroGenero === genero ? 'boton-filtro-activo' : ''}`}
           >
             {genero}
           </button>

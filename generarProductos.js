@@ -1,21 +1,27 @@
+// generarProductos.js
+
 import fetch from 'node-fetch';
 import fs from 'fs';
 
-console.log("🤖 Iniciando el script de actualización de productos...");
+console.log("🤖 Iniciando el script de actualización de productos (Versión con Límite)...");
 
 // --- CONFIGURACIÓN ---
 const MI_API_KEY = "a10e9aa16bf81c9c2d6b34b6bb19c765";
-const RUTA_ARCHIVO = './public/data/productos.json'; // La ruta a mi archivo actual
+const RUTA_ARCHIVO = './public/data/productos.json';
 
-// Lista de artistas de los que quiero buscar y añadir más álbumes.
+// ===== NUEVA CONFIGURACIÓN: LÍMITE DE ÁLBUMES POR ARTISTA =====
+const LIMITE_POR_ARTISTA = 10; // ¡Puedes cambiar este número a 5, 15, o lo que quieras!
+
 const artistasParaBuscar = [
   "The Cure", "The Smiths", "David Bowie", "Radiohead",
-  "Joy Division", "Pixies", "Blur", "My Bloody Valentine", "Ac Dc" 
+  "Joy Division", "Pixies", "Blur", "My Bloody Valentine", "AC/DC"
 ];
 
-// --- FUNCIÓN PRINCIPAL ---
+// ... (El resto del código es casi idéntico) ...
+
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
 async function actualizarProductos() {
-  // 1. Lectura del ARCHIVO EXISTENTE
   let productosActuales = [];
   try {
     const data = fs.readFileSync(RUTA_ARCHIVO, 'utf8');
@@ -25,7 +31,6 @@ async function actualizarProductos() {
     console.log("📝 No se encontró un archivo existente. Se creará uno nuevo.");
   }
 
-  // Creacion de  un "mapa" para buscar duplicados fácilmente y eficientemente
   const mapaDeAlbumesExistentes = new Set(
     productosActuales.map(p => `${p.artista.toLowerCase()} - ${p.album.toLowerCase()}`)
   );
@@ -33,34 +38,54 @@ async function actualizarProductos() {
   let idContador = productosActuales.length > 0 ? Math.max(...productosActuales.map(p => p.id)) + 1 : 1;
   let nuevosAlbumesAñadidos = 0;
 
-  // 2. BUSQUEDA DE NUEVOS ÁLBUMES EN LA API
   for (const artista of artistasParaBuscar) {
     const artistaParaUrl = artista.replace(/ /g, "+");
-    const url = `http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${artistaParaUrl}&api_key=${MI_API_KEY}&format=json`;
+    
+    // ===== CAMBIO EN LA URL: AÑADIMOS EL PARÁMETRO 'limit' =====
+    const urlTopAlbums = `http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${artistaParaUrl}&api_key=${MI_API_KEY}&limit=${LIMITE_POR_ARTISTA}&format=json`;
     
     try {
-      console.log(` -> Buscando álbumes para: ${artista}...`);
-      const respuestaAPI = await fetch(url);
-      const datos = await respuestaAPI.json();
+      console.log(` -> Buscando (hasta ${LIMITE_POR_ARTISTA}) álbumes para: ${artista}...`); // Mensaje actualizado
+      const respuestaTopAlbums = await fetch(urlTopAlbums);
+      const datosTopAlbums = await respuestaTopAlbums.json();
       
-      if (datos.topalbums && datos.topalbums.album) {
-        for (const album of datos.topalbums.album) {
+      if (datosTopAlbums.topalbums && datosTopAlbums.topalbums.album) {
+        for (const album of datosTopAlbums.topalbums.album) {
           const claveAlbum = `${album.artist.name.toLowerCase()} - ${album.name.toLowerCase()}`;
           const tieneImagen = album.image[3] && album.image[3]['#text'];
 
-          // 3. AGREGA SOLO SI NO ES DUPLICADO Y TIENE IMAGEN
           if (!mapaDeAlbumesExistentes.has(claveAlbum) && tieneImagen) {
+            
+            await delay(50); 
+            
+            let generoPrincipal = "Rock";
+            try {
+              const albumParaUrl = encodeURIComponent(album.name);
+              const artistaInfoParaUrl = encodeURIComponent(album.artist.name);
+              const urlAlbumInfo = `http://ws.audioscrobbler.com/2.0/?method=album.getInfo&api_key=${MI_API_KEY}&artist=${artistaInfoParaUrl}&album=${albumParaUrl}&format=json`;
+              
+              const respuestaAlbumInfo = await fetch(urlAlbumInfo);
+              const datosAlbumInfo = await respuestaAlbumInfo.json();
+
+              if (datosAlbumInfo.album && datosAlbumInfo.album.tags && datosAlbumInfo.album.tags.tag.length > 0) {
+                let generoApi = datosAlbumInfo.album.tags.tag[0].name;
+                generoPrincipal = generoApi.charAt(0).toUpperCase() + generoApi.slice(1);
+              }
+            } catch (error) {
+              console.log(`    (No se pudo obtener el género para ${album.name}, se usará el predeterminado)`);
+            }
+            
             const nuevoProducto = {
               id: idContador++,
               artista: album.artist.name,
               album: album.name,
               precio: Math.floor(Math.random() * (50000 - 30000 + 1) + 30000),
-              imagen: album.image[3]['#text'], // <-- URL de la imagen automática
-              genero: "Por definir"
+              imagen: album.image[3]['#text'],
+              genero: generoPrincipal
             };
             
-            productosActuales.push(nuevoProducto); // Añadir a la lista
-            mapaDeAlbumesExistentes.add(claveAlbum); // Añade al mapa para no repetirlo en esta misma ejecución
+            productosActuales.push(nuevoProducto);
+            mapaDeAlbumesExistentes.add(claveAlbum);
             nuevosAlbumesAñadidos++;
           }
         }
@@ -70,7 +95,6 @@ async function actualizarProductos() {
     }
   }
 
-  // 4. GUARDAR EL ARCHIVO ACTUALIZADO
   if (nuevosAlbumesAñadidos > 0) {
     fs.writeFileSync(RUTA_ARCHIVO, JSON.stringify(productosActuales, null, 2));
     console.log(`\n🎉 ¡Éxito! Se añadieron ${nuevosAlbumesAñadidos} nuevos álbumes. Total: ${productosActuales.length} productos.`);
