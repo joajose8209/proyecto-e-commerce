@@ -1,13 +1,12 @@
 import React from 'react';
-import { useContext } from 'react'; // Importamos useContext para "hablar" con el contexto
-import { FiltersContext } from '../context/FiltersContext.jsx'; // Importamos la definición de nuestro contexto
+import { useContext } from 'react'; // Importacion de useContext para "hablar" con el contexto
+import { FiltersContext } from '../context/FiltersContext.jsx'; // Importamos la definición de contexto
 import '../styles/filter.css';
 
-// 1. ¡MIRA QUÉ LIMPIO!
 // El componente ya no recibe un montón de props. 
 // Solo necesita 'generos' para poder renderizar la lista de botones.
 function Filters({ generos = [] }) {
-  // 2. Obtenemos todo lo que necesitamos del contexto
+  // Obtenemos todo lo del contexto
   const {
     busqueda,
     setBusqueda,

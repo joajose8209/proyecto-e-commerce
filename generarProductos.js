@@ -1,5 +1,3 @@
-// generarProductos.js
-
 import fetch from 'node-fetch';
 import fs from 'fs';
 
@@ -10,14 +8,12 @@ const MI_API_KEY = "a10e9aa16bf81c9c2d6b34b6bb19c765";
 const RUTA_ARCHIVO = './public/data/productos.json';
 
 // ===== NUEVA CONFIGURACIÓN: LÍMITE DE ÁLBUMES POR ARTISTA =====
-const LIMITE_POR_ARTISTA = 10; // ¡Puedes cambiar este número a 5, 15, o lo que quieras!
+const LIMITE_POR_ARTISTA = 10; 
 
 const artistasParaBuscar = [
   "The Cure", "The Smiths", "David Bowie", "Radiohead",
   "Joy Division", "Pixies", "Blur", "My Bloody Valentine", "AC/DC"
 ];
-
-// ... (El resto del código es casi idéntico) ...
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -41,8 +37,7 @@ async function actualizarProductos() {
   for (const artista of artistasParaBuscar) {
     const artistaParaUrl = artista.replace(/ /g, "+");
     
-    // ===== CAMBIO EN LA URL: AÑADIMOS EL PARÁMETRO 'limit' =====
-    const urlTopAlbums = `http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${artistaParaUrl}&api_key=${MI_API_KEY}&limit=${LIMITE_POR_ARTISTA}&format=json`;
+  const urlTopAlbums = `http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${artistaParaUrl}&api_key=${MI_API_KEY}&limit=${LIMITE_POR_ARTISTA}&format=json`;
     
     try {
       console.log(` -> Buscando (hasta ${LIMITE_POR_ARTISTA}) álbumes para: ${artista}...`); // Mensaje actualizado

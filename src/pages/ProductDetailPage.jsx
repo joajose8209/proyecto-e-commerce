@@ -62,13 +62,17 @@ function ProductDetailPage({ productos, agregarAlCarrito }) {
   if (!producto) {
     return <p>Producto no encontrado.</p>;
   }
+  const imageUrl = producto.imagen.startsWith('http') 
+  ? producto.imagen          // Si empieza con 'http', usa la URL tal cual.
+  : `/img/${producto.imagen}`; // Si no, construye la ruta local.
+
 
   // Renderizado cuando el producto ya se cargó
   return (
     <div className="detalle-container">
       <div className="detalle-principal">
         <div className="detalle-img">
-          <img src={`/img/${producto.imagen}`} alt={producto.album} />
+        <img src={imageUrl} alt={producto.album} />
         </div>
         <div className="detalle-info">
           <h2>{producto.album}</h2>

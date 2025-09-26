@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'; // 1. Agregamos 'useContext'
 import { Routes, Route } from 'react-router-dom';
-import { FiltersContext } from './context/FiltersContext'; // 2. Importamos nuestro contexto de filtros
+import { FiltersContext } from './context/FiltersContext'; 
 
 // Páginas
 import HomePage from './pages/HomePage';
@@ -17,15 +17,14 @@ function App() {
   const [todosLosProductos, setTodosLosProductos] = useState([]);
   const [productosFiltrados, setProductosFiltrados] = useState([]);
   const [carrito, setCarrito] = useState(() => {
-    const carritoGuardado = localStorage.getItem('carrito');
-    return carritoGuardado ? JSON.parse(carritoGuardado) : [];
+  const carritoGuardado = localStorage.getItem('carrito');
+  return carritoGuardado ? JSON.parse(carritoGuardado) : [];
   });
 
-  // 1. Aqui tenia antes de Contex Api Favoritos cargada desde localStorage.
+  //Aqui tenia antes de Contex Api Favoritos cargada desde localStorage.
 
-  // 3. ¡AQUÍ ESTÁ EL CAMBIO!
-  // Ya no necesitamos los 'useState' para los filtros.
-  // Ahora consumimos los valores directamente desde el Context.
+  // Ya no se necesita los 'useState' para los filtros.
+  // Ahora se consumen los valores directamente desde el Context.
   const { busqueda, filtroGenero, criterioOrden } = useContext(FiltersContext);
 
   // --- EFECTOS ---
@@ -34,7 +33,7 @@ function App() {
       .then(response => response.json())
       .then(data => {
         setTodosLosProductos(data);
-        // setProductosFiltrados(data); // Ya no es necesario, el siguiente useEffect se encarga
+  // setProductosFiltrados(data); // Ya no es necesario, el siguiente useEffect se encarga
       })
       .catch(error => console.error("Error al cargar los productos:", error));
   }, []);
@@ -43,7 +42,7 @@ function App() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
   }, [carrito]);
 
-  // 2. Aqui estaba antes de Contex Api guardar la libreta de favoritos en Storage cada vez que cambia.
+  //Aqui estaba antes de Contex Api guardar la libreta de favoritos en Storage cada vez que cambia.
 
   useEffect(() => {
     // La lógica de filtrado y ordenamiento se mantiene igual,
@@ -92,8 +91,8 @@ function App() {
               <HomePage
                 productos={productosFiltrados}
                 agregarAlCarrito={agregarAlCarrito}
-                // 4. ¡PROPS LIMPIAS!
-                // Ya no pasamos los estados de los filtros.
+                // PROPS LIMPIAS!
+                // Ya no hay pasaje de  los estados de los filtros.
                 // El componente de filtros los tomará del contexto.
                 generosUnicos={generosUnicos}
                 // Sprint 6 Martes elimine props. 

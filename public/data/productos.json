@@ -85,7 +85,7 @@
     "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
     "precio": 39000,
     "imagen": "ziggy_stardust.jpg",
-    "genero": "Glam Rock"
+    "genero": "Rock"
   },
   {
     "id": 12,
@@ -237,7 +237,7 @@
     "album": "Synchronicity",
     "precio": 39000,
     "imagen": "synchronicity.jpg",
-    "genero": "New Wave"
+    "genero": "Post-Punk"
   },
   {
     "id": 31,
@@ -253,7 +253,7 @@
     "album": "Remain in Light",
     "precio": 35000,
     "imagen": "remain_in_light.jpg",
-    "genero": "New Wave"
+    "genero": "Post-Punk"
   },
   {
     "id": 33,
@@ -325,7 +325,7 @@
     "album": "The Queen Is Dead",
     "precio": 37000,
     "imagen": "the_queen_is_dead.jpg",
-    "genero": "Indie Rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 42,
@@ -373,7 +373,7 @@
     "album": "Violator",
     "precio": 40000,
     "imagen": "violator.jpg",
-    "genero": "Synth Pop"
+    "genero": "Pop"
   },
   {
     "id": 48,
@@ -437,7 +437,7 @@
     "album": "Paul's Boutique",
     "precio": 41000,
     "imagen": "pauls_boutique.jpg",
-    "genero": "Hip-Hop"
+    "genero": "Hip-hop"
   },
   {
     "id": 56,
@@ -485,7 +485,7 @@
     "album": "Greatest Hits",
     "precio": 33025,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/bdbc60c4bab8cf280166d31716bc0fc8.png",
-    "genero": "New wave"
+    "genero": "Post-Punk"
   },
   {
     "id": 62,
@@ -493,7 +493,7 @@
     "album": "Wish",
     "precio": 46315,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7e1f7cafa97e32a9fc549f5cf13061ae.png",
-    "genero": "New wave"
+    "genero": "Post-Punk"
   },
   {
     "id": 63,
@@ -501,7 +501,7 @@
     "album": "Kiss Me, Kiss Me, Kiss Me",
     "precio": 49819,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0a5401fd4ef19dfc6f8583f108d7023b.png",
-    "genero": "New wave"
+    "genero": "Post-Punk"
   },
   {
     "id": 64,
@@ -509,7 +509,7 @@
     "album": "Three Imaginary Boys",
     "precio": 37976,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8a3c4f3610c1ed38d4b5fabddc37ed7b.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 65,
@@ -517,7 +517,7 @@
     "album": "Disintegration (Deluxe Edition)",
     "precio": 41875,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/429fd312f3d5cb652a9c9ec262495742.png",
-    "genero": "New wave"
+    "genero": "Post-Punk"
   },
   {
     "id": 66,
@@ -525,7 +525,7 @@
     "album": "The Head on the Door",
     "precio": 48180,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c10b05cef98f4fbd9ca34f388fd359af.png",
-    "genero": "New wave"
+    "genero": "Post-Punk"
   },
   {
     "id": 67,
@@ -533,7 +533,7 @@
     "album": "Seventeen Seconds",
     "precio": 34563,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/96392ff6a08a47a7c7ffd1b6906bc9cd.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 68,
@@ -541,7 +541,7 @@
     "album": "Three Imaginary Boys (Deluxe Edition)",
     "precio": 48007,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/69a7385ce40c1c651caaebc8c346b3cc.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 69,
@@ -549,7 +549,7 @@
     "album": "Pornography",
     "precio": 43317,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/dcf7ccf93e1c445583ff952f49eb7a5d.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 70,
@@ -557,7 +557,7 @@
     "album": "Hatful of Hollow",
     "precio": 44125,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1795412592fe11f22c78aefb2e60beb9.png",
-    "genero": "80s"
+    "genero": "Rock"
   },
   {
     "id": 71,
@@ -565,7 +565,7 @@
     "album": "Louder Than Bombs",
     "precio": 30099,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/03509f65bdb4d9bb6f741d04a912d4f3.png",
-    "genero": "1987"
+    "genero": "Rock"
   },
   {
     "id": 72,
@@ -573,7 +573,7 @@
     "album": "The Smiths",
     "precio": 38571,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/2e25a301cf23c2b28b0ff1b77a852e1b.png",
-    "genero": "80s"
+    "genero": "Rock"
   },
   {
     "id": 73,
@@ -581,7 +581,7 @@
     "album": "Meat Is Murder",
     "precio": 30796,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/18ee6e1759ebe88a58be9f3c6921eb66.png",
-    "genero": "80s"
+    "genero": "Rock"
   },
   {
     "id": 74,
@@ -589,7 +589,7 @@
     "album": "Strangeways, Here We Come",
     "precio": 41909,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/286f7c3701a74f19b4ef41c380bad119.png",
-    "genero": "80s"
+    "genero": "Rock"
   },
   {
     "id": 75,
@@ -597,7 +597,7 @@
     "album": "The Queen Is Dead (Deluxe Edition)",
     "precio": 44702,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f2578afda8f751637c4de003cbb69a56.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 76,
@@ -605,7 +605,7 @@
     "album": "The Sound of the Smiths (Deluxe; 2008 Remaster)",
     "precio": 49109,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/79cdf4e475cb04086f9f7c4a2afbfd56.png",
-    "genero": "80s"
+    "genero": "Rock"
   },
   {
     "id": 77,
@@ -613,7 +613,7 @@
     "album": "The Sound of The Smiths",
     "precio": 31042,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0852bfca456b4607bb2d437b6b771210.png",
-    "genero": "2008"
+    "genero": "Rock"
   },
   {
     "id": 78,
@@ -621,7 +621,7 @@
     "album": "The World Won't Listen",
     "precio": 43254,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5f620c46b68444f8c4d1def136eeef77.png",
-    "genero": "1987"
+    "genero": "Rock"
   },
   {
     "id": 79,
@@ -629,7 +629,7 @@
     "album": "Best of Bowie",
     "precio": 35648,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ddbef24ddf79302be4c79d6cdc9f77e1.png",
-    "genero": "Classic rock"
+    "genero": "Rock"
   },
   {
     "id": 80,
@@ -637,7 +637,7 @@
     "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
     "precio": 31130,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/781be87e74355cc5cb8db5a5442f7de9.png",
-    "genero": "Glam rock"
+    "genero": "Rock"
   },
   {
     "id": 81,
@@ -645,7 +645,7 @@
     "album": "\"Heroes\" (2017 remaster)",
     "precio": 47307,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c8b1798abf4f517c0bb53e198df3a7b4.png",
-    "genero": "Art rock"
+    "genero": "Rock"
   },
   {
     "id": 82,
@@ -653,7 +653,7 @@
     "album": "Hunky Dory (2015 Remaster)",
     "precio": 40105,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7d0d755a67cfa8d7653a1ea0b52178a1.png",
-    "genero": "Glam rock"
+    "genero": "Rock"
   },
   {
     "id": 83,
@@ -661,7 +661,7 @@
     "album": "Let's Dance",
     "precio": 47223,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/12cd5ebef24922cd8110c609045c2cd0.png",
-    "genero": "80s"
+    "genero": "Rock"
   },
   {
     "id": 84,
@@ -669,7 +669,7 @@
     "album": "David Bowie (aka Space Oddity) [2015 Remaster]",
     "precio": 49785,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/06077338206904418e0aa0b343705935.png",
-    "genero": "Folk rock"
+    "genero": "Rock"
   },
   {
     "id": 85,
@@ -685,7 +685,7 @@
     "album": "Hunky Dory",
     "precio": 34509,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/16c9b96bf0f1edf31c210deca6d57430.png",
-    "genero": "Glam rock"
+    "genero": "Rock"
   },
   {
     "id": 87,
@@ -693,7 +693,7 @@
     "album": "Diamond Dogs (2016 Remaster)",
     "precio": 37308,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/e487b5b68855bcacb25533a1fb37310f.png",
-    "genero": "1974"
+    "genero": "Rock"
   },
   {
     "id": 88,
@@ -701,7 +701,7 @@
     "album": "Blackstar",
     "precio": 36155,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/a63919a5f152e8242b735b022ded451d.png",
-    "genero": "2016"
+    "genero": "Rock"
   },
   {
     "id": 89,
@@ -709,7 +709,7 @@
     "album": "Pablo Honey",
     "precio": 49094,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3820170a0a6cb7d7d429e2945cd067c9.png",
-    "genero": "Alternative rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 90,
@@ -717,7 +717,7 @@
     "album": "In Rainbows",
     "precio": 48441,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/9dbcd9399ac3e622b4f508323155b644.png",
-    "genero": "Alternative"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 91,
@@ -725,7 +725,7 @@
     "album": "The Bends",
     "precio": 41148,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/9ea9931e129bb5efd3606866901855b5.png",
-    "genero": "Alternative rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 92,
@@ -733,7 +733,7 @@
     "album": "Kid A",
     "precio": 30170,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/2ed343318c844d19cd897ec67fad11c4.png",
-    "genero": "Alternative"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 93,
@@ -741,7 +741,7 @@
     "album": "Amnesiac",
     "precio": 40566,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/d59fb77b86ba4dd5d7f99c34564a56ce.png",
-    "genero": "Alternative"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 94,
@@ -749,7 +749,7 @@
     "album": "Hail to the Thief",
     "precio": 37006,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/55ac8f97bde6cbe5e9a8857b435457e9.png",
-    "genero": "Alternative"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 95,
@@ -757,7 +757,7 @@
     "album": "The King of Limbs",
     "precio": 32273,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f47f0408a925403cbea2564add58000f.png",
-    "genero": "Alternative"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 96,
@@ -765,7 +765,7 @@
     "album": "A Moon Shaped Pool",
     "precio": 43908,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/28db3fdca036fb53c62754694a89d3fd.png",
-    "genero": "Art pop"
+    "genero": "Pop"
   },
   {
     "id": 97,
@@ -773,7 +773,7 @@
     "album": "OK Computer OKNOTOK 1997 2017",
     "precio": 40657,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/51214507c81379cd2ae8a0d77f1e0f29.png",
-    "genero": "Alternative rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 98,
@@ -781,7 +781,7 @@
     "album": "Unknown Pleasures",
     "precio": 39149,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0c6c868b77a4417f937cf09506099081.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 99,
@@ -789,7 +789,7 @@
     "album": "Substance",
     "precio": 30620,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/76554e0d8f4843f0c3c05e7ccc68b45c.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 100,
@@ -797,7 +797,7 @@
     "album": "Unknown Pleasures (Collector's Edition)",
     "precio": 34389,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/151603555d964e83b26e62d91ece6e6e.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 101,
@@ -805,7 +805,7 @@
     "album": "The Best Of",
     "precio": 31507,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/043311d565be4296bb13f299ba1f08de.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 102,
@@ -813,7 +813,7 @@
     "album": "Love Will Tear Us Apart",
     "precio": 42894,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f2aca38cd25e4f3e3327d643f9b9c0ad.png",
-    "genero": "1980"
+    "genero": "Rock"
   },
   {
     "id": 103,
@@ -821,7 +821,7 @@
     "album": "Closer",
     "precio": 47062,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/51709580b4f14898c8896b5049b168d1.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 104,
@@ -829,7 +829,7 @@
     "album": "Transmission",
     "precio": 40696,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/69dfd2e34799291e08c4b69050bedb11.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 105,
@@ -837,7 +837,7 @@
     "album": "Still",
     "precio": 34990,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/83a57cb3e4c95138830396443809663a.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 106,
@@ -845,7 +845,7 @@
     "album": "Closer (Collector's Edition)",
     "precio": 42018,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fb50937a9215f4e968de82bf2f517626.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 107,
@@ -853,7 +853,7 @@
     "album": "The Best of Joy Division",
     "precio": 33234,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f43fa4d344254763a9a6ecbf7e32f0be.png",
-    "genero": "Post-punk"
+    "genero": "Post-Punk"
   },
   {
     "id": 108,
@@ -861,7 +861,7 @@
     "album": "Doolittle",
     "precio": 30572,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/995f97abbadd1a5e69a2967c72074867.png",
-    "genero": "Alternative rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 109,
@@ -869,7 +869,7 @@
     "album": "Surfer Rosa",
     "precio": 45914,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7a0af4bf09044557ac7bbb916eee1fc0.png",
-    "genero": "Alternative rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 110,
@@ -877,7 +877,7 @@
     "album": "Death to the Pixies",
     "precio": 39769,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/b5aec74977ff48cd9e92259504a85fbc.png",
-    "genero": "Alternative rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 111,
@@ -885,7 +885,7 @@
     "album": "Bossanova",
     "precio": 36819,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1bf90967af1652891af13afb16300ab5.png",
-    "genero": "Alternative rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 112,
@@ -893,7 +893,7 @@
     "album": "Surfer Rosa (2007 Remaster)",
     "precio": 43488,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8df716968c85be9843186f16f89dc748.png",
-    "genero": "Rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 113,
@@ -901,7 +901,7 @@
     "album": "Head Carrier",
     "precio": 30726,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7fbc41bdafaf4bf834fc4d74856b5b1e.png",
-    "genero": "Bagel"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 114,
@@ -909,7 +909,7 @@
     "album": "Surfer Rosa (Remastered)",
     "precio": 46590,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3adcd59863e0444aaac04395c0f1534f.png",
-    "genero": "Alternative rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 115,
@@ -917,7 +917,7 @@
     "album": "Velouria",
     "precio": 40717,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c6160eccbc8a44a4e700db2e8b7df3d1.png",
-    "genero": "Alternative rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 116,
@@ -925,7 +925,7 @@
     "album": "Trompe le Monde",
     "precio": 35854,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8f47eee322757b7f0ab8ddb04ee29349.png",
-    "genero": "Alternative rock"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 117,
@@ -933,7 +933,7 @@
     "album": "Wave Of Mutilation: Best Of Pixies",
     "precio": 37074,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/87824907d84d46beba83d8acf170d2a0.png",
-    "genero": "Alternative"
+    "genero": "Rock Alternativo"
   },
   {
     "id": 118,
@@ -989,7 +989,7 @@
     "album": "Think Tank",
     "precio": 46970,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/e460b96d75fc4ea5ba5abafc376c4348.png",
-    "genero": "2003"
+    "genero": "Rock"
   },
   {
     "id": 125,
@@ -997,7 +997,7 @@
     "album": "Leisure",
     "precio": 41438,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/55cbfe8cfee64d2c9354d06c1426c3f4.png",
-    "genero": "1991"
+    "genero": "Rock"
   },
   {
     "id": 126,
@@ -1005,7 +1005,7 @@
     "album": "The Magic Whip",
     "precio": 36770,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fd6f102f2d5fd922c9c86819bf22b770.png",
-    "genero": "2015"
+    "genero": "Rock"
   },
   {
     "id": 127,
@@ -1101,7 +1101,7 @@
     "album": "Highway to Hell",
     "precio": 30635,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7af8e0ab43294405c42eb95480f25c9a.png",
-    "genero": "Hard rock"
+    "genero": "Hard Rock"
   },
   {
     "id": 139,
@@ -1109,7 +1109,7 @@
     "album": "The Razors Edge",
     "precio": 39692,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/98390dad3bf6d7a28294106da6941e19.png",
-    "genero": "Hard rock"
+    "genero": "Hard Rock"
   },
   {
     "id": 140,
@@ -1117,7 +1117,7 @@
     "album": "High Voltage",
     "precio": 44555,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/591095f2549b4d9bbde16f471fa76e83.png",
-    "genero": "Hard rock"
+    "genero": "Hard Rock"
   },
   {
     "id": 141,
@@ -1125,7 +1125,7 @@
     "album": "Dirty Deeds Done Dirt Cheap",
     "precio": 43417,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5429eee7b4c447e09c844bd5003386c6.png",
-    "genero": "Hard rock"
+    "genero": "Hard Rock"
   },
   {
     "id": 142,
@@ -1133,7 +1133,7 @@
     "album": "Who Made Who",
     "precio": 30510,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/bef4ab0424dc4457c4e2062d6e7a6a4d.png",
-    "genero": "Hard rock"
+    "genero": "Hard Rock"
   },
   {
     "id": 143,
@@ -1141,7 +1141,7 @@
     "album": "Let There Be Rock",
     "precio": 35099,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c542b6837d884641b975201bb516a576.png",
-    "genero": "Hard rock"
+    "genero": "Hard Rock"
   },
   {
     "id": 144,
@@ -1149,7 +1149,7 @@
     "album": "Black Ice",
     "precio": 32915,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c5025d7531f049d9823224f9c3965f8e.png",
-    "genero": "Hard rock"
+    "genero": "Hard Rock"
   },
   {
     "id": 145,
@@ -1157,7 +1157,7 @@
     "album": "Ballbreaker",
     "precio": 40727,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/47d649e4358d43b391ef5f46bebac516.png",
-    "genero": "Hard rock"
+    "genero": "Hard Rock"
   },
   {
     "id": 146,
@@ -1165,6 +1165,6 @@
     "album": "Stiff Upper Lip",
     "precio": 42825,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/cba38950aa26456b848af3f809f5107e.png",
-    "genero": "Hard rock"
+    "genero": "Hard Rock"
   }
 ]
