@@ -5,7 +5,8 @@
     "album": "Abbey Road",
     "precio": 35000,
     "imagen": "abbey_road.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-24T09:27:11.957Z"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "album": "The Dark Side of the Moon",
     "precio": 42000,
     "imagen": "dark_side_of_the_moon.jpg",
-    "genero": "Rock Progresivo"
+    "genero": "Rock Progresivo",
+    "fechaAgregado": "2025-08-13T09:27:12.005Z"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "album": "A Night at the Opera",
     "precio": 38000,
     "imagen": "a_night_at_the_opera.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-03T09:27:12.005Z"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "album": "Led Zeppelin IV",
     "precio": 45000,
     "imagen": "led_zeppelin_iv.jpg",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-08-16T09:27:12.005Z"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "album": "Back in Black",
     "precio": 39000,
     "imagen": "back_in_black.jpg",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-28T09:27:12.005Z"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "album": "Nevermind",
     "precio": 36000,
     "imagen": "nevermind.jpg",
-    "genero": "Grunge"
+    "genero": "Grunge",
+    "fechaAgregado": "2025-07-10T09:27:12.005Z"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "album": "Thriller",
     "precio": 41000,
     "imagen": "thriller.jpg",
-    "genero": "Pop"
+    "genero": "Pop",
+    "fechaAgregado": "2025-07-11T09:27:12.005Z"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "album": "Appetite for Destruction",
     "precio": 43000,
     "imagen": "appetite_for_destruction.jpg",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-23T09:27:12.005Z"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "album": "Master of Puppets",
     "precio": 47000,
     "imagen": "master_of_puppets.jpg",
-    "genero": "Heavy Metal"
+    "genero": "Heavy Metal",
+    "fechaAgregado": "2025-07-18T09:27:12.005Z"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "album": "Exile on Main St.",
     "precio": 40000,
     "imagen": "exile_on_main_st.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-31T09:27:12.005Z"
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
     "precio": 39000,
     "imagen": "ziggy_stardust.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-13T09:27:12.005Z"
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "album": "Rumours",
     "precio": 37000,
     "imagen": "rumours.jpg",
-    "genero": "Pop Rock"
+    "genero": "Pop Rock",
+    "fechaAgregado": "2025-08-08T09:27:12.005Z"
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "album": "The Joshua Tree",
     "precio": 40000,
     "imagen": "the_joshua_tree.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-12T09:27:12.005Z"
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "album": "Highway 61 Revisited",
     "precio": 35000,
     "imagen": "highway_61_revisited.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-19T09:27:12.005Z"
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "album": "Who's Next",
     "precio": 38000,
     "imagen": "whos_next.jpg",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-14T09:27:12.005Z"
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "album": "Hotel California",
     "precio": 42000,
     "imagen": "hotel_california.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-02T09:27:12.005Z"
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "album": "Born to Run",
     "precio": 36000,
     "imagen": "born_to_run.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-20T09:27:12.005Z"
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "album": "L.A. Woman",
     "precio": 37000,
     "imagen": "la_woman.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-12T09:27:12.005Z"
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "album": "Are You Experienced",
     "precio": 40000,
     "imagen": "are_you_experienced.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-13T09:27:12.005Z"
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "album": "Abraxas",
     "precio": 35000,
     "imagen": "abraxas.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-30T09:27:12.005Z"
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@
     "album": "Machine Head",
     "precio": 43000,
     "imagen": "machine_head.jpg",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-11T09:27:12.005Z"
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@
     "album": "Toys in the Attic",
     "precio": 37000,
     "imagen": "toys_in_the_attic.jpg",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-09-23T09:27:12.005Z"
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@
     "album": "Unplugged",
     "precio": 34000,
     "imagen": "unplugged.jpg",
-    "genero": "Blues Rock"
+    "genero": "Blues Rock",
+    "fechaAgregado": "2025-09-02T09:27:12.005Z"
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@
     "album": "Brothers in Arms",
     "precio": 38000,
     "imagen": "brothers_in_arms.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-10T09:27:12.005Z"
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@
     "album": "No Jacket Required",
     "precio": 33000,
     "imagen": "no_jacket_required.jpg",
-    "genero": "Pop Rock"
+    "genero": "Pop Rock",
+    "fechaAgregado": "2025-08-26T09:27:12.005Z"
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@
     "album": "Goodbye Yellow Brick Road",
     "precio": 39000,
     "imagen": "goodbye_yellow_brick_road.jpg",
-    "genero": "Pop Rock"
+    "genero": "Pop Rock",
+    "fechaAgregado": "2025-09-08T09:27:12.005Z"
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@
     "album": "Purple Rain",
     "precio": 41000,
     "imagen": "purple_rain.jpg",
-    "genero": "Pop"
+    "genero": "Pop",
+    "fechaAgregado": "2025-09-21T09:27:12.005Z"
   },
   {
     "id": 28,
@@ -221,7 +248,8 @@
     "album": "Private Dancer",
     "precio": 35000,
     "imagen": "private_dancer.jpg",
-    "genero": "Pop Rock"
+    "genero": "Pop Rock",
+    "fechaAgregado": "2025-08-25T09:27:12.005Z"
   },
   {
     "id": 29,
@@ -229,7 +257,8 @@
     "album": "Legend",
     "precio": 37000,
     "imagen": "legend.jpg",
-    "genero": "Reggae"
+    "genero": "Reggae",
+    "fechaAgregado": "2025-09-03T09:27:12.005Z"
   },
   {
     "id": 30,
@@ -237,7 +266,8 @@
     "album": "Synchronicity",
     "precio": 39000,
     "imagen": "synchronicity.jpg",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-14T09:27:12.005Z"
   },
   {
     "id": 31,
@@ -245,7 +275,8 @@
     "album": "London Calling",
     "precio": 40000,
     "imagen": "london_calling.jpg",
-    "genero": "Punk Rock"
+    "genero": "Punk Rock",
+    "fechaAgregado": "2025-07-05T09:27:12.005Z"
   },
   {
     "id": 32,
@@ -253,7 +284,8 @@
     "album": "Remain in Light",
     "precio": 35000,
     "imagen": "remain_in_light.jpg",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-30T09:27:12.005Z"
   },
   {
     "id": 33,
@@ -261,7 +293,8 @@
     "album": "Invisible Touch",
     "precio": 34000,
     "imagen": "invisible_touch.jpg",
-    "genero": "Pop Rock"
+    "genero": "Pop Rock",
+    "fechaAgregado": "2025-08-09T09:27:12.005Z"
   },
   {
     "id": 34,
@@ -269,7 +302,8 @@
     "album": "Breakfast in America",
     "precio": 36000,
     "imagen": "breakfast_in_america.jpg",
-    "genero": "Rock Progresivo"
+    "genero": "Rock Progresivo",
+    "fechaAgregado": "2025-09-04T09:27:12.005Z"
   },
   {
     "id": 35,
@@ -277,7 +311,8 @@
     "album": "Escape",
     "precio": 37000,
     "imagen": "escape.jpg",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-06T09:27:12.005Z"
   },
   {
     "id": 36,
@@ -285,7 +320,8 @@
     "album": "Slippery When Wet",
     "precio": 35000,
     "imagen": "slippery_when_wet.jpg",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-08-22T09:27:12.005Z"
   },
   {
     "id": 37,
@@ -293,7 +329,8 @@
     "album": "Automatic for the People",
     "precio": 38000,
     "imagen": "automatic_for_the_people.jpg",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-08-01T09:27:12.005Z"
   },
   {
     "id": 38,
@@ -301,7 +338,8 @@
     "album": "(What's the Story) Morning Glory?",
     "precio": 39000,
     "imagen": "morning_glory.jpg",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-09-16T09:27:12.005Z"
   },
   {
     "id": 39,
@@ -309,7 +347,8 @@
     "album": "A Rush of Blood to the Head",
     "precio": 35000,
     "imagen": "a_rush_of_blood_to_the_head.jpg",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-09-03T09:27:12.005Z"
   },
   {
     "id": 40,
@@ -317,7 +356,8 @@
     "album": "OK Computer",
     "precio": 41000,
     "imagen": "ok_computer.jpg",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-07-24T09:27:12.005Z"
   },
   {
     "id": 41,
@@ -325,7 +365,8 @@
     "album": "The Queen Is Dead",
     "precio": 37000,
     "imagen": "the_queen_is_dead.jpg",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-07-19T09:27:12.005Z"
   },
   {
     "id": 42,
@@ -333,7 +374,8 @@
     "album": "Californication",
     "precio": 39000,
     "imagen": "californication.jpg",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-07-26T09:27:12.005Z"
   },
   {
     "id": 43,
@@ -341,7 +383,8 @@
     "album": "Ten",
     "precio": 38000,
     "imagen": "ten.jpg",
-    "genero": "Grunge"
+    "genero": "Grunge",
+    "fechaAgregado": "2025-08-01T09:27:12.005Z"
   },
   {
     "id": 44,
@@ -349,7 +392,8 @@
     "album": "Dirt",
     "precio": 35000,
     "imagen": "dirt.jpg",
-    "genero": "Grunge"
+    "genero": "Grunge",
+    "fechaAgregado": "2025-08-29T09:27:12.005Z"
   },
   {
     "id": 45,
@@ -357,7 +401,8 @@
     "album": "Superunknown",
     "precio": 37000,
     "imagen": "superunknown.jpg",
-    "genero": "Grunge"
+    "genero": "Grunge",
+    "fechaAgregado": "2025-09-06T09:27:12.005Z"
   },
   {
     "id": 46,
@@ -365,7 +410,8 @@
     "album": "Disintegration",
     "precio": 39000,
     "imagen": "disintegration.jpg",
-    "genero": "Rock Gótico"
+    "genero": "Rock Gótico",
+    "fechaAgregado": "2025-09-08T09:27:12.005Z"
   },
   {
     "id": 47,
@@ -373,7 +419,8 @@
     "album": "Violator",
     "precio": 40000,
     "imagen": "violator.jpg",
-    "genero": "Pop"
+    "genero": "Pop",
+    "fechaAgregado": "2025-09-04T09:27:12.005Z"
   },
   {
     "id": 48,
@@ -381,7 +428,8 @@
     "album": "Like a Prayer",
     "precio": 35000,
     "imagen": "like_a_prayer.jpg",
-    "genero": "Pop"
+    "genero": "Pop",
+    "fechaAgregado": "2025-08-19T09:27:12.005Z"
   },
   {
     "id": 49,
@@ -389,7 +437,8 @@
     "album": "Whitney",
     "precio": 34000,
     "imagen": "whitney.jpg",
-    "genero": "Pop"
+    "genero": "Pop",
+    "fechaAgregado": "2025-09-26T09:27:12.005Z"
   },
   {
     "id": 50,
@@ -397,7 +446,8 @@
     "album": "She's So Unusual",
     "precio": 33000,
     "imagen": "shes_so_unusual.jpg",
-    "genero": "Pop"
+    "genero": "Pop",
+    "fechaAgregado": "2025-08-19T09:27:12.005Z"
   },
   {
     "id": 51,
@@ -405,7 +455,8 @@
     "album": "Live at the Apollo",
     "precio": 45000,
     "imagen": "live_at_the_apollo.jpg",
-    "genero": "Funk"
+    "genero": "Funk",
+    "fechaAgregado": "2025-07-13T09:27:12.005Z"
   },
   {
     "id": 52,
@@ -413,7 +464,8 @@
     "album": "I Never Loved a Man the Way I Love You",
     "precio": 42000,
     "imagen": "i_never_loved_a_man.jpg",
-    "genero": "Soul"
+    "genero": "Soul",
+    "fechaAgregado": "2025-08-24T09:27:12.005Z"
   },
   {
     "id": 53,
@@ -421,7 +473,8 @@
     "album": "Kind of Blue",
     "precio": 48000,
     "imagen": "kind_of_blue.jpg",
-    "genero": "Jazz"
+    "genero": "Jazz",
+    "fechaAgregado": "2025-08-24T09:27:12.005Z"
   },
   {
     "id": 54,
@@ -429,7 +482,8 @@
     "album": "Random Access Memories",
     "precio": 52000,
     "imagen": "random_access_memories.jpg",
-    "genero": "Electronic"
+    "genero": "Electronic",
+    "fechaAgregado": "2025-07-22T09:27:12.005Z"
   },
   {
     "id": 55,
@@ -437,7 +491,8 @@
     "album": "Paul's Boutique",
     "precio": 41000,
     "imagen": "pauls_boutique.jpg",
-    "genero": "Hip-hop"
+    "genero": "Hip-hop",
+    "fechaAgregado": "2025-08-12T09:27:12.005Z"
   },
   {
     "id": 56,
@@ -445,7 +500,8 @@
     "album": "Innervisions",
     "precio": 43000,
     "imagen": "innervisions.jpg",
-    "genero": "Soul"
+    "genero": "Soul",
+    "fechaAgregado": "2025-08-17T09:27:12.005Z"
   },
   {
     "id": 57,
@@ -453,7 +509,8 @@
     "album": "Ramones",
     "precio": 39000,
     "imagen": "ramones.jpg",
-    "genero": "Punk Rock"
+    "genero": "Punk Rock",
+    "fechaAgregado": "2025-08-23T09:27:12.005Z"
   },
   {
     "id": 58,
@@ -461,7 +518,8 @@
     "album": "The Man-Machine",
     "precio": 44000,
     "imagen": "the_man_machine.jpg",
-    "genero": "Electronic"
+    "genero": "Electronic",
+    "fechaAgregado": "2025-07-26T09:27:12.005Z"
   },
   {
     "id": 59,
@@ -469,7 +527,8 @@
     "album": "A Love Supreme",
     "precio": 49000,
     "imagen": "a_love_supreme.jpg",
-    "genero": "Jazz"
+    "genero": "Jazz",
+    "fechaAgregado": "2025-08-02T09:27:12.005Z"
   },
   {
     "id": 60,
@@ -477,7 +536,8 @@
     "album": "Saturday Night Fever",
     "precio": 38000,
     "imagen": "saturday_night_fever.jpg",
-    "genero": "Disco"
+    "genero": "Disco",
+    "fechaAgregado": "2025-08-06T09:27:12.005Z"
   },
   {
     "id": 61,
@@ -485,7 +545,8 @@
     "album": "Greatest Hits",
     "precio": 33025,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/bdbc60c4bab8cf280166d31716bc0fc8.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-14T09:27:12.005Z"
   },
   {
     "id": 62,
@@ -493,7 +554,8 @@
     "album": "Wish",
     "precio": 46315,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7e1f7cafa97e32a9fc549f5cf13061ae.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-08-28T09:27:12.005Z"
   },
   {
     "id": 63,
@@ -501,7 +563,8 @@
     "album": "Kiss Me, Kiss Me, Kiss Me",
     "precio": 49819,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0a5401fd4ef19dfc6f8583f108d7023b.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-05T09:27:12.005Z"
   },
   {
     "id": 64,
@@ -509,7 +572,8 @@
     "album": "Three Imaginary Boys",
     "precio": 37976,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8a3c4f3610c1ed38d4b5fabddc37ed7b.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-24T09:27:12.005Z"
   },
   {
     "id": 65,
@@ -517,7 +581,8 @@
     "album": "Disintegration (Deluxe Edition)",
     "precio": 41875,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/429fd312f3d5cb652a9c9ec262495742.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-02T09:27:12.005Z"
   },
   {
     "id": 66,
@@ -525,7 +590,8 @@
     "album": "The Head on the Door",
     "precio": 48180,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c10b05cef98f4fbd9ca34f388fd359af.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-09-28T09:27:12.005Z"
   },
   {
     "id": 67,
@@ -533,7 +599,8 @@
     "album": "Seventeen Seconds",
     "precio": 34563,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/96392ff6a08a47a7c7ffd1b6906bc9cd.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-08-13T09:27:12.005Z"
   },
   {
     "id": 68,
@@ -541,7 +608,8 @@
     "album": "Three Imaginary Boys (Deluxe Edition)",
     "precio": 48007,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/69a7385ce40c1c651caaebc8c346b3cc.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-09-24T09:27:12.005Z"
   },
   {
     "id": 69,
@@ -549,7 +617,8 @@
     "album": "Pornography",
     "precio": 43317,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/dcf7ccf93e1c445583ff952f49eb7a5d.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-08-17T09:27:12.005Z"
   },
   {
     "id": 70,
@@ -557,7 +626,8 @@
     "album": "Hatful of Hollow",
     "precio": 44125,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1795412592fe11f22c78aefb2e60beb9.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-16T09:27:12.005Z"
   },
   {
     "id": 71,
@@ -565,7 +635,8 @@
     "album": "Louder Than Bombs",
     "precio": 30099,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/03509f65bdb4d9bb6f741d04a912d4f3.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-25T09:27:12.005Z"
   },
   {
     "id": 72,
@@ -573,7 +644,8 @@
     "album": "The Smiths",
     "precio": 38571,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/2e25a301cf23c2b28b0ff1b77a852e1b.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-16T09:27:12.005Z"
   },
   {
     "id": 73,
@@ -581,7 +653,8 @@
     "album": "Meat Is Murder",
     "precio": 30796,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/18ee6e1759ebe88a58be9f3c6921eb66.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-11T09:27:12.005Z"
   },
   {
     "id": 74,
@@ -589,7 +662,8 @@
     "album": "Strangeways, Here We Come",
     "precio": 41909,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/286f7c3701a74f19b4ef41c380bad119.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-03T09:27:12.005Z"
   },
   {
     "id": 75,
@@ -597,7 +671,8 @@
     "album": "The Queen Is Dead (Deluxe Edition)",
     "precio": 44702,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f2578afda8f751637c4de003cbb69a56.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-28T09:27:12.006Z"
   },
   {
     "id": 76,
@@ -605,7 +680,8 @@
     "album": "The Sound of the Smiths (Deluxe; 2008 Remaster)",
     "precio": 49109,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/79cdf4e475cb04086f9f7c4a2afbfd56.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-08T09:27:12.006Z"
   },
   {
     "id": 77,
@@ -613,7 +689,8 @@
     "album": "The Sound of The Smiths",
     "precio": 31042,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0852bfca456b4607bb2d437b6b771210.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-07T09:27:12.006Z"
   },
   {
     "id": 78,
@@ -621,7 +698,8 @@
     "album": "The World Won't Listen",
     "precio": 43254,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5f620c46b68444f8c4d1def136eeef77.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-10T09:27:12.006Z"
   },
   {
     "id": 79,
@@ -629,7 +707,8 @@
     "album": "Best of Bowie",
     "precio": 35648,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ddbef24ddf79302be4c79d6cdc9f77e1.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-23T09:27:12.006Z"
   },
   {
     "id": 80,
@@ -637,7 +716,8 @@
     "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
     "precio": 31130,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/781be87e74355cc5cb8db5a5442f7de9.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-27T09:27:12.006Z"
   },
   {
     "id": 81,
@@ -645,7 +725,8 @@
     "album": "\"Heroes\" (2017 remaster)",
     "precio": 47307,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c8b1798abf4f517c0bb53e198df3a7b4.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-27T09:27:12.006Z"
   },
   {
     "id": 82,
@@ -653,7 +734,8 @@
     "album": "Hunky Dory (2015 Remaster)",
     "precio": 40105,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7d0d755a67cfa8d7653a1ea0b52178a1.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-10T09:27:12.006Z"
   },
   {
     "id": 83,
@@ -661,7 +743,8 @@
     "album": "Let's Dance",
     "precio": 47223,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/12cd5ebef24922cd8110c609045c2cd0.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-27T09:27:12.006Z"
   },
   {
     "id": 84,
@@ -669,7 +752,8 @@
     "album": "David Bowie (aka Space Oddity) [2015 Remaster]",
     "precio": 49785,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/06077338206904418e0aa0b343705935.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-14T09:27:12.006Z"
   },
   {
     "id": 85,
@@ -677,7 +761,8 @@
     "album": "Let's Dance (2018 remaster)",
     "precio": 31406,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8e659d51c3695fa082b543fc4facfb50.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-16T09:27:12.006Z"
   },
   {
     "id": 86,
@@ -685,7 +770,8 @@
     "album": "Hunky Dory",
     "precio": 34509,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/16c9b96bf0f1edf31c210deca6d57430.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-21T09:27:12.006Z"
   },
   {
     "id": 87,
@@ -693,7 +779,8 @@
     "album": "Diamond Dogs (2016 Remaster)",
     "precio": 37308,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/e487b5b68855bcacb25533a1fb37310f.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-15T09:27:12.006Z"
   },
   {
     "id": 88,
@@ -701,7 +788,8 @@
     "album": "Blackstar",
     "precio": 36155,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/a63919a5f152e8242b735b022ded451d.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-07T09:27:12.006Z"
   },
   {
     "id": 89,
@@ -709,7 +797,8 @@
     "album": "Pablo Honey",
     "precio": 49094,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3820170a0a6cb7d7d429e2945cd067c9.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-08-22T09:27:12.006Z"
   },
   {
     "id": 90,
@@ -717,7 +806,8 @@
     "album": "In Rainbows",
     "precio": 48441,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/9dbcd9399ac3e622b4f508323155b644.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-09-17T09:27:12.006Z"
   },
   {
     "id": 91,
@@ -725,7 +815,8 @@
     "album": "The Bends",
     "precio": 41148,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/9ea9931e129bb5efd3606866901855b5.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-07-22T09:27:12.006Z"
   },
   {
     "id": 92,
@@ -733,7 +824,8 @@
     "album": "Kid A",
     "precio": 30170,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/2ed343318c844d19cd897ec67fad11c4.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-07-05T09:27:12.006Z"
   },
   {
     "id": 93,
@@ -741,7 +833,8 @@
     "album": "Amnesiac",
     "precio": 40566,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/d59fb77b86ba4dd5d7f99c34564a56ce.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-08-13T09:27:12.006Z"
   },
   {
     "id": 94,
@@ -749,7 +842,8 @@
     "album": "Hail to the Thief",
     "precio": 37006,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/55ac8f97bde6cbe5e9a8857b435457e9.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-08-30T09:27:12.006Z"
   },
   {
     "id": 95,
@@ -757,7 +851,8 @@
     "album": "The King of Limbs",
     "precio": 32273,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f47f0408a925403cbea2564add58000f.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-09-15T09:27:12.006Z"
   },
   {
     "id": 96,
@@ -765,7 +860,8 @@
     "album": "A Moon Shaped Pool",
     "precio": 43908,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/28db3fdca036fb53c62754694a89d3fd.png",
-    "genero": "Pop"
+    "genero": "Pop",
+    "fechaAgregado": "2025-08-12T09:27:12.006Z"
   },
   {
     "id": 97,
@@ -773,7 +869,8 @@
     "album": "OK Computer OKNOTOK 1997 2017",
     "precio": 40657,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/51214507c81379cd2ae8a0d77f1e0f29.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-08-28T09:27:12.006Z"
   },
   {
     "id": 98,
@@ -781,7 +878,8 @@
     "album": "Unknown Pleasures",
     "precio": 39149,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0c6c868b77a4417f937cf09506099081.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-08-16T09:27:12.006Z"
   },
   {
     "id": 99,
@@ -789,7 +887,8 @@
     "album": "Substance",
     "precio": 30620,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/76554e0d8f4843f0c3c05e7ccc68b45c.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-08-01T09:27:12.006Z"
   },
   {
     "id": 100,
@@ -797,7 +896,8 @@
     "album": "Unknown Pleasures (Collector's Edition)",
     "precio": 34389,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/151603555d964e83b26e62d91ece6e6e.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-17T09:27:12.006Z"
   },
   {
     "id": 101,
@@ -805,7 +905,8 @@
     "album": "The Best Of",
     "precio": 31507,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/043311d565be4296bb13f299ba1f08de.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-09-01T09:27:12.006Z"
   },
   {
     "id": 102,
@@ -813,7 +914,8 @@
     "album": "Love Will Tear Us Apart",
     "precio": 42894,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f2aca38cd25e4f3e3327d643f9b9c0ad.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-01T09:27:12.006Z"
   },
   {
     "id": 103,
@@ -821,7 +923,8 @@
     "album": "Closer",
     "precio": 47062,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/51709580b4f14898c8896b5049b168d1.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-09-18T09:27:12.006Z"
   },
   {
     "id": 104,
@@ -829,7 +932,8 @@
     "album": "Transmission",
     "precio": 40696,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/69dfd2e34799291e08c4b69050bedb11.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-09-11T09:27:12.006Z"
   },
   {
     "id": 105,
@@ -837,7 +941,8 @@
     "album": "Still",
     "precio": 34990,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/83a57cb3e4c95138830396443809663a.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-15T09:27:12.006Z"
   },
   {
     "id": 106,
@@ -845,7 +950,8 @@
     "album": "Closer (Collector's Edition)",
     "precio": 42018,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fb50937a9215f4e968de82bf2f517626.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-09-07T09:27:12.006Z"
   },
   {
     "id": 107,
@@ -853,7 +959,8 @@
     "album": "The Best of Joy Division",
     "precio": 33234,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f43fa4d344254763a9a6ecbf7e32f0be.png",
-    "genero": "Post-Punk"
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-30T09:27:12.006Z"
   },
   {
     "id": 108,
@@ -861,7 +968,8 @@
     "album": "Doolittle",
     "precio": 30572,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/995f97abbadd1a5e69a2967c72074867.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-07-16T09:27:12.006Z"
   },
   {
     "id": 109,
@@ -869,7 +977,8 @@
     "album": "Surfer Rosa",
     "precio": 45914,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7a0af4bf09044557ac7bbb916eee1fc0.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-08-28T09:27:12.006Z"
   },
   {
     "id": 110,
@@ -877,7 +986,8 @@
     "album": "Death to the Pixies",
     "precio": 39769,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/b5aec74977ff48cd9e92259504a85fbc.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-09-07T09:27:12.006Z"
   },
   {
     "id": 111,
@@ -885,7 +995,8 @@
     "album": "Bossanova",
     "precio": 36819,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1bf90967af1652891af13afb16300ab5.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-09-16T09:27:12.006Z"
   },
   {
     "id": 112,
@@ -893,7 +1004,8 @@
     "album": "Surfer Rosa (2007 Remaster)",
     "precio": 43488,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8df716968c85be9843186f16f89dc748.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-08-20T09:27:12.006Z"
   },
   {
     "id": 113,
@@ -901,7 +1013,8 @@
     "album": "Head Carrier",
     "precio": 30726,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7fbc41bdafaf4bf834fc4d74856b5b1e.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-09-08T09:27:12.006Z"
   },
   {
     "id": 114,
@@ -909,7 +1022,8 @@
     "album": "Surfer Rosa (Remastered)",
     "precio": 46590,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3adcd59863e0444aaac04395c0f1534f.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-09-08T09:27:12.006Z"
   },
   {
     "id": 115,
@@ -917,7 +1031,8 @@
     "album": "Velouria",
     "precio": 40717,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c6160eccbc8a44a4e700db2e8b7df3d1.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-09-03T09:27:12.006Z"
   },
   {
     "id": 116,
@@ -925,7 +1040,8 @@
     "album": "Trompe le Monde",
     "precio": 35854,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8f47eee322757b7f0ab8ddb04ee29349.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-08-08T09:27:12.006Z"
   },
   {
     "id": 117,
@@ -933,7 +1049,8 @@
     "album": "Wave Of Mutilation: Best Of Pixies",
     "precio": 37074,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/87824907d84d46beba83d8acf170d2a0.png",
-    "genero": "Rock Alternativo"
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-07-22T09:27:12.006Z"
   },
   {
     "id": 118,
@@ -941,7 +1058,8 @@
     "album": "Blur",
     "precio": 30973,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5cc94288ee91f2bf085204ea693f8607.png",
-    "genero": "Britpop"
+    "genero": "Britpop",
+    "fechaAgregado": "2025-08-11T09:27:12.006Z"
   },
   {
     "id": 119,
@@ -949,7 +1067,8 @@
     "album": "Blur (Special Edition)",
     "precio": 42337,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/67a17666f26552025569f7f53687694e.png",
-    "genero": "Britpop"
+    "genero": "Britpop",
+    "fechaAgregado": "2025-08-28T09:27:12.006Z"
   },
   {
     "id": 120,
@@ -957,7 +1076,8 @@
     "album": "Blur: The Best Of",
     "precio": 38575,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f003d2e7c704fa146eca3a04e0db51a9.png",
-    "genero": "Britpop"
+    "genero": "Britpop",
+    "fechaAgregado": "2025-07-04T09:27:12.006Z"
   },
   {
     "id": 121,
@@ -965,7 +1085,8 @@
     "album": "13",
     "precio": 43436,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/66c7fd2d2b6b4fb085b319eac325f73d.png",
-    "genero": "Britpop"
+    "genero": "Britpop",
+    "fechaAgregado": "2025-09-09T09:27:12.006Z"
   },
   {
     "id": 122,
@@ -973,7 +1094,8 @@
     "album": "Parklife",
     "precio": 37410,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/19e7df241eead2786c81e5f50c4f3364.png",
-    "genero": "Britpop"
+    "genero": "Britpop",
+    "fechaAgregado": "2025-07-30T09:27:12.006Z"
   },
   {
     "id": 123,
@@ -981,7 +1103,8 @@
     "album": "The Great Escape",
     "precio": 41814,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1a1de088d31f4bd9bb0e06655cac2022.png",
-    "genero": "Britpop"
+    "genero": "Britpop",
+    "fechaAgregado": "2025-07-31T09:27:12.006Z"
   },
   {
     "id": 124,
@@ -989,7 +1112,8 @@
     "album": "Think Tank",
     "precio": 46970,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/e460b96d75fc4ea5ba5abafc376c4348.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-07T09:27:12.006Z"
   },
   {
     "id": 125,
@@ -997,7 +1121,8 @@
     "album": "Leisure",
     "precio": 41438,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/55cbfe8cfee64d2c9354d06c1426c3f4.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-16T09:27:12.006Z"
   },
   {
     "id": 126,
@@ -1005,7 +1130,8 @@
     "album": "The Magic Whip",
     "precio": 36770,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fd6f102f2d5fd922c9c86819bf22b770.png",
-    "genero": "Rock"
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-01T09:27:12.006Z"
   },
   {
     "id": 127,
@@ -1013,7 +1139,8 @@
     "album": "Parklife (Special Edition)",
     "precio": 43522,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/936bad1699011ad9a73911fb9f60e855.png",
-    "genero": "Britpop"
+    "genero": "Britpop",
+    "fechaAgregado": "2025-09-10T09:27:12.006Z"
   },
   {
     "id": 128,
@@ -1021,7 +1148,8 @@
     "album": "Loveless",
     "precio": 31966,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/510546e3b6df7504392274c528c77780.png",
-    "genero": "Shoegaze"
+    "genero": "Shoegaze",
+    "fechaAgregado": "2025-09-25T09:27:12.006Z"
   },
   {
     "id": 129,
@@ -1029,7 +1157,8 @@
     "album": "Isn't Anything",
     "precio": 35654,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f074ad9a8a8a9159e68537f38ccf31a8.png",
-    "genero": "Shoegaze"
+    "genero": "Shoegaze",
+    "fechaAgregado": "2025-07-08T09:27:12.006Z"
   },
   {
     "id": 130,
@@ -1037,7 +1166,8 @@
     "album": "m b v",
     "precio": 47590,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/35fce4402522447d9244db13cbbb292f.png",
-    "genero": "Shoegaze"
+    "genero": "Shoegaze",
+    "fechaAgregado": "2025-09-10T09:27:12.006Z"
   },
   {
     "id": 131,
@@ -1045,7 +1175,8 @@
     "album": "ep’s 1988-1991 and rare tracks",
     "precio": 32024,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/84802981a89f60690752d1ec9410b125.png",
-    "genero": "Shoegaze"
+    "genero": "Shoegaze",
+    "fechaAgregado": "2025-08-16T09:27:12.006Z"
   },
   {
     "id": 132,
@@ -1053,7 +1184,8 @@
     "album": "Glider",
     "precio": 45973,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3d21086fe5b74c17b463bbc92dfbf251.png",
-    "genero": "Shoegaze"
+    "genero": "Shoegaze",
+    "fechaAgregado": "2025-08-01T09:27:12.006Z"
   },
   {
     "id": 133,
@@ -1061,7 +1193,8 @@
     "album": "Isn’t Anything",
     "precio": 39003,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/025713e8f7942267839c708975771bd8.png",
-    "genero": "Shoegaze"
+    "genero": "Shoegaze",
+    "fechaAgregado": "2025-08-19T09:27:12.006Z"
   },
   {
     "id": 134,
@@ -1069,7 +1202,8 @@
     "album": "You Made Me Realise",
     "precio": 43616,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/36c63c07abeffd4455a3fcafcedf44f9.png",
-    "genero": "Shoegaze"
+    "genero": "Shoegaze",
+    "fechaAgregado": "2025-08-24T09:27:12.006Z"
   },
   {
     "id": 135,
@@ -1077,7 +1211,8 @@
     "album": "Tremolo",
     "precio": 32335,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3eeab4c8fbcf48bec87d1b47ce79b4da.png",
-    "genero": "Shoegaze"
+    "genero": "Shoegaze",
+    "fechaAgregado": "2025-08-26T09:27:12.006Z"
   },
   {
     "id": 136,
@@ -1085,7 +1220,8 @@
     "album": "Feed Me With Your Kiss",
     "precio": 40570,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/49a5cf4f7231c913abaa94fd4da6620e.png",
-    "genero": "Shoegaze"
+    "genero": "Shoegaze",
+    "fechaAgregado": "2025-09-27T09:27:12.006Z"
   },
   {
     "id": 137,
@@ -1093,7 +1229,8 @@
     "album": "Ecstasy and Wine",
     "precio": 31958,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/544d4020db0c9320fed873c6b61a03cf.png",
-    "genero": "Shoegaze"
+    "genero": "Shoegaze",
+    "fechaAgregado": "2025-08-16T09:27:12.006Z"
   },
   {
     "id": 138,
@@ -1101,7 +1238,8 @@
     "album": "Highway to Hell",
     "precio": 30635,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7af8e0ab43294405c42eb95480f25c9a.png",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-29T09:27:12.006Z"
   },
   {
     "id": 139,
@@ -1109,7 +1247,8 @@
     "album": "The Razors Edge",
     "precio": 39692,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/98390dad3bf6d7a28294106da6941e19.png",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-09-02T09:27:12.006Z"
   },
   {
     "id": 140,
@@ -1117,7 +1256,8 @@
     "album": "High Voltage",
     "precio": 44555,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/591095f2549b4d9bbde16f471fa76e83.png",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-21T09:27:12.006Z"
   },
   {
     "id": 141,
@@ -1125,7 +1265,8 @@
     "album": "Dirty Deeds Done Dirt Cheap",
     "precio": 43417,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5429eee7b4c447e09c844bd5003386c6.png",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-16T09:27:12.006Z"
   },
   {
     "id": 142,
@@ -1133,7 +1274,8 @@
     "album": "Who Made Who",
     "precio": 30510,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/bef4ab0424dc4457c4e2062d6e7a6a4d.png",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-08-09T09:27:12.006Z"
   },
   {
     "id": 143,
@@ -1141,7 +1283,8 @@
     "album": "Let There Be Rock",
     "precio": 35099,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c542b6837d884641b975201bb516a576.png",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-20T09:27:12.006Z"
   },
   {
     "id": 144,
@@ -1149,7 +1292,8 @@
     "album": "Black Ice",
     "precio": 32915,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c5025d7531f049d9823224f9c3965f8e.png",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-09-23T09:27:12.006Z"
   },
   {
     "id": 145,
@@ -1157,7 +1301,8 @@
     "album": "Ballbreaker",
     "precio": 40727,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/47d649e4358d43b391ef5f46bebac516.png",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-29T09:27:12.006Z"
   },
   {
     "id": 146,
@@ -1165,6 +1310,7 @@
     "album": "Stiff Upper Lip",
     "precio": 42825,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/cba38950aa26456b848af3f809f5107e.png",
-    "genero": "Hard Rock"
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-09-27T09:27:12.006Z"
   }
 ]
