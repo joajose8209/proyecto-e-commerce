@@ -32,7 +32,11 @@ function App() {
     fetch('/data/productos.json')
       .then(response => response.json())
       .then(data => {
-        setTodosLosProductos(data);
+  // Sprint 8, Martes uso metodo .sort().
+  const productosOrdenados = data.sort((a,b) => {
+  return new Date(b.fechaAgregado)  - new Date(a.fechaAgregado);
+  });    
+    setTodosLosProductos(productosOrdenados);
   // setProductosFiltrados(data); // Ya no es necesario, el siguiente useEffect se encarga
       })
       .catch(error => console.error("Error al cargar los productos:", error));
