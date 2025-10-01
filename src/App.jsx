@@ -26,17 +26,18 @@ function App() {
   // Ya no se necesita los 'useState' para los filtros.
   // Ahora se consumen los valores directamente desde el Context.
   const { busqueda, filtroGenero, criterioOrden } = useContext(FiltersContext);
+  { busqueda, filtroGenero, criterioOrden };
 
   // --- EFECTOS ---
   useEffect(() => {
     fetch('/data/productos.json')
       .then(response => response.json())
       .then(data => {
-  // Sprint 8, Martes uso metodo .sort().
-  const productosOrdenados = data.sort((a,b) => {
-  return new Date(b.fechaAgregado)  - new Date(a.fechaAgregado);
-  });    
-    setTodosLosProductos(productosOrdenados);
+    setTodosLosProductos(data);
+    const productosOrdenadosPorDefecto = [...data].sort((a, b) => {
+    return new Date(b.fechaAgregado) - new Date(a.fechaAgregado);
+        });
+     setProductosFiltrados(productosOrdenadosPorDefecto);    
   // setProductosFiltrados(data); // Ya no es necesario, el siguiente useEffect se encarga
       })
       .catch(error => console.error("Error al cargar los productos:", error));
@@ -51,7 +52,10 @@ function App() {
   useEffect(() => {
     // La lógica de filtrado y ordenamiento se mantiene igual,
     // pero ahora reacciona a los cambios del contexto.
-    let productosTemp = todosLosProductos;
+    if (todosLosProductos.length === 0) {
+      return;
+    }
+    let productosTemp = [...todosLosProductos];
     if (filtroGenero !== 'Todos') {
       productosTemp = productosTemp.filter(p => p.genero === filtroGenero);
     }
@@ -69,14 +73,17 @@ function App() {
       productosOrdenados.sort((a, b) => b.precio - a.precio);
     } else if (criterioOrden === 'alfa-asc') {
       productosOrdenados.sort((a, b) => a.album.localeCompare(b.album));
-    }
+    }else { 
+    productosOrdenados.sort((a, b) => new Date(b.fechaAgregado) - new Date(a.fechaAgregado));
+  }
     
     setProductosFiltrados(productosOrdenados);
 
   }, [busqueda, filtroGenero, criterioOrden, todosLosProductos]);
 
   const agregarAlCarrito = (producto) => {
-    setCarrito(prevCarrito => [...prevCarrito, producto]);
+  console.log('Añadiendo al carrito desde:', window.location.pathname, producto)  
+  setCarrito(prevCarrito => [...prevCarrito, producto]);
   };
 
   const eliminarDelCarrito = (indiceAEliminar) => {
@@ -122,7 +129,8 @@ function App() {
             path="/carrito"
             element={<CartPage carrito={carrito} eliminarDelCarrito={eliminarDelCarrito} />}
           />
-          <Route path="/novedades" element={<NovedadesPage />} />
+          {/* Sprint 8 Mierc. pasaje de  props. */}
+          <Route path="/novedades" element={<NovedadesPage productos={todosLosProductos} agregarAlCarrito={agregarAlCarrito} />} />
           <Route path="/mas" element={<MorePage />} />
         </Routes>
       </main>

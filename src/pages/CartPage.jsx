@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/CartPage.css'; // Importo los nuevos estilos (sprint 5)
+import { getImageUrl } from '../utils/getImageUrl';
 
 // Recibir el 'carrito' y la nueva función 'eliminarDelCarrito' desde App.jsx
 const CartPage = ({ carrito, eliminarDelCarrito }) => {
@@ -25,7 +26,12 @@ const CartPage = ({ carrito, eliminarDelCarrito }) => {
           <div className="cart-items-list">
             {carrito.map((producto, index) => (
               <div key={`${producto.id}-${index}`} className="cart-item-card">
-                <img src={`/img/${producto.imagen}`} alt={producto.album} className="cart-item-image" />
+
+                {/* --- INICIO DEL CAMBIO --- */}
+                {/* Usamos la función getImageUrl para obtener la ruta correcta */}
+                <img src={getImageUrl(producto)} alt={producto.album} className="cart-item-image" />
+                {/* --- FIN DEL CAMBIO --- */}
+
                 <div className="cart-item-details">
                   <h3>{producto.album}</h3>
                   <p>{producto.artista}</p>
