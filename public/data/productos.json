@@ -1391,7 +1391,88 @@
     "album": "Led Zeppelin III (Remaster)",
     "precio": 34078,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fda6154fc3208bf2430550a543af3eea.png",
-    "genero": "70s",
+    "genero": "Rock",
     "fechaAgregado": "2025-09-28T20:02:26.622Z"
+  },
+  {
+    "id": 156,
+    "artista": "Suede",
+    "album": "Coming Up",
+    "precio": 30955,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c69e13b9f19c4ab8988ab51736309aa9.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-09-26T20:37:13.956Z"
+  },
+  {
+    "id": 157,
+    "artista": "Suede",
+    "album": "Suede",
+    "precio": 43838,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/bdd3d12695b4f7f67619fcc5236e5b3b.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-10-02T20:37:13.975Z"
+  },
+  {
+    "id": 158,
+    "artista": "Suede",
+    "album": "Singles",
+    "precio": 41658,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f67dfef898ae43d295eb7d478364cea2.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-26T20:37:13.975Z"
+  },
+  {
+    "id": 159,
+    "artista": "Suede",
+    "album": "Dog Man Star",
+    "precio": 41320,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/18e20638faf14097a6f6d630ddcbb2b1.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-09-29T20:37:13.975Z"
+  },
+  {
+    "id": 160,
+    "artista": "Suede",
+    "album": "Coming Up (Remastered)",
+    "precio": 39754,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ed178061d9191acd345fba04b58bf062.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-09-26T20:37:13.975Z"
+  },
+  {
+    "id": 161,
+    "artista": "Oasis",
+    "album": "Definitely Maybe",
+    "precio": 38234,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8d6acedbe66b4e69ced210643799dc4c.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-09-28T20:37:13.975Z"
+  },
+  {
+    "id": 162,
+    "artista": "Oasis",
+    "album": "Heathen Chemistry",
+    "precio": 39999,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/6a54881070cc06d4d4a15f7847c4c255.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-10-01T20:37:13.975Z"
+  },
+  {
+    "id": 163,
+    "artista": "Oasis",
+    "album": "Be Here Now",
+    "precio": 43533,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ea807e74a77c4cae87af14643b6da549.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-10-01T20:37:13.975Z"
+  },
+  {
+    "id": 164,
+    "artista": "Oasis",
+    "album": "(What's the Story) Morning Glory? [Remastered]",
+    "precio": 38674,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/b80c796f4174d503280a61d14cf6872f.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-09-26T20:37:13.975Z"
   }
 ]

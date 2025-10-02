@@ -9,7 +9,7 @@ const RUTA_ARCHIVO = './public/data/productos.json';
 const LIMITE_POR_ARTISTA = 5; 
 
 const artistasParaBuscar = [
- "Queen", "Led Zeppelin"
+ "Suede", "Oasis"
 ];
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
