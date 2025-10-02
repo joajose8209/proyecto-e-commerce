@@ -1,22 +1,28 @@
 import React from 'react';
 import ProductList from '../components/ProductList';
+import { isProductNew } from '../utils/isProductNew';
+
 const NovedadesPage = ({productos, agregarAlCarrito}) => {
 if(!productos || productos === 0)  {
 return <p>Cargando novedades...</p>;  
 }
 
-const productosMasNuevos = [...productos]
+const vinilosNuevos = [...productos]
+.filter(producto => isProductNew(producto.fechaAgregado))
 .sort((a,b) => new Date(b.fechaAgregado) - new Date(a.fechaAgregado))
-.slice(0,8);
 
 return (
 <div className='container-mt-4'>
 <h1 className='mb-4 text-center'>Ultimos Ingresos</h1>
-{/*--Reutilizacion del componente ProductList.--*/}
+{vinilosNuevos.length > 0 ? ( 
 <ProductList
-productos={productosMasNuevos}
+productos={vinilosNuevos}
 agregarAlCarrito={agregarAlCarrito}
 />
+) : (
+<p style={{textAlign:'center'}}>No hay vinilos nuevos por el momento</p>    
+) 
+}
 </div>
 );
 };

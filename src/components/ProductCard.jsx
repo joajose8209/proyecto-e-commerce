@@ -1,23 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/ProductCard.css';
-// 1.  Sprint 6 Martes Importo el Hook personalizado que creé en el contexto de Favoritos
 import { useFavorites } from '../context/FavoritesContext';
 import { getImageUrl } from '../utils/getImageUrl';
+import { isProductNew } from "../utils/isProductNew";
 
-// 1. Aqui reciblo las nuevas "herramientas": toggleFavorito y la lista de favoritos
-//Sprint 6 Martes limpie props.
 const ProductCard = ({ producto, agregarAlCarrito}) => {
-//Sprint 6 Martes Uso el contexto y uso herramientas directamente.
 const {favoritos, toggleFavorito} = useFavorites();
 const detailUrl = `/vinilo/${producto.id}`;
-// 2. Verificacion si el  producto  ya está en la lista de favoritos
 const esFavorito = favoritos.some(fav => fav.id === producto.id);
-
 const imageUrl = getImageUrl(producto);
+
+const esNuevo = isProductNew(producto.fechaAgregado);
 
 return (
 <div className="product-card">
+{esNuevo ? <span className="badge-nuevo">¡NUEVO!</span> : null}    
 <Link to={detailUrl} style={{ textDecoration: 'none', color: 'inherit' }}>
 <img 
 src={imageUrl}
@@ -39,16 +37,16 @@ className="product-image"
  onClick={() => toggleFavorito(producto)}
  >
  ❤️
-  </button>
-  <button onClick={(e) => {
-  e.preventDefault();
-  agregarAlCarrito(producto);
-  }}>
-  Agregar al Carrito
-  </button>
-  </div>
-  </div>
-  );
-  };
+</button>
+<button onClick={(e) => {
+e.preventDefault();
+agregarAlCarrito(producto);
+}}>
+Agregar al Carrito
+</button>
+</div>
+</div>
+);
+};
 
-  export default ProductCard;
+export default ProductCard;

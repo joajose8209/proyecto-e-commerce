@@ -1,25 +1,25 @@
 export const getImageUrl = (producto) => {
-  const placeholder = '/images/default-placeholder.png'; // Una imagen de respaldo
+const placeholder = '/images/default-placeholder.png'; // Una imagen de respaldo
 
-  // Si no hay producto o no tiene la propiedad 'imagen', devolvemos el placeholder.
-  if (!producto || !producto.imagen) {
-    return placeholder;
-  }
+// Si no hay producto o no tiene la propiedad 'imagen', devuelve el placeholder.
+if (!producto || !producto.imagen) {
+return placeholder;
+}
 
-  const { imagen } = producto;
+const { imagen } = producto;
 
-  // Verificamos que 'imagen' sea un string. Si no, no podemos procesarlo.
-  if (typeof imagen !== 'string' || imagen.trim() === '') {
-    return placeholder;
-  }
+// Verificar que 'imagen' sea un string. Si no, no se puede procesar.
+if (typeof imagen !== 'string' || imagen.trim() === '') {
+return placeholder;
+}
 
-  // --- LÓGICA INTELIGENTE ---
+// --- LÓGICA INTELIGENTE ---
 
-  if (imagen.startsWith('http')) {
-    // CASO 1: Es una URL completa de la API. La usamos tal cual.
-    return imagen;
-  } else {
-    // CASO 2: Es un nombre de archivo local. Le construimos la ruta completa.
-    return `/images/${imagen}`;
-  }
+if (imagen.startsWith('http')) {
+// CASO 1: Es una URL completa de la API. Se la usa  tal cual.
+return imagen;
+} else {
+// CASO 2: Es un nombre de archivo local.Construccion de la ruta completa.
+return `/images/${imagen}`;
+}
 };

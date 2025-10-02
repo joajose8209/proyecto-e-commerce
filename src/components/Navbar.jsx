@@ -11,16 +11,16 @@ return <span className="cart-badge">{count}</span>;
 const Navbar = ({cantidadCarrito}) => {
  // Función para aplicar la clase 'active' cuando el enlace coincide con la URL
  const getNavLinkClass = ({ isActive }) => {
-    return isActive ? 'nav-item active' : 'nav-item';
+    return isActive ? 'custom-nav__item active' : 'custom-nav__item';
   };
  const getCartLinkClass = ({ isActive }) => {
     // Para el carrito, aplicacion de  clases especiales
-    return isActive ? 'nav-item cart-item active' : 'nav-item cart-item';
+    return isActive ? 'custom-nav__item custom-nav__cart-item active' : 'custom-nav__item custom-nav__cart-item';
   };     
 return (
-    <nav className="navbar">
+    <nav className="custom-navbar-bottom">
     
-    <div className="navbar-container">
+    <div className="custom-nav">
     
     <NavLink to="/" className={getNavLinkClass}>
     <span className="nav-icon">🏠</span>
