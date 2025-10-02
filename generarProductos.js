@@ -9,8 +9,7 @@ const RUTA_ARCHIVO = './public/data/productos.json';
 const LIMITE_POR_ARTISTA = 5; 
 
 const artistasParaBuscar = [
-"The Cure", "The Smiths", "David Bowie", "Radiohead",
-"Joy Division", "Pixies", "Blur", "My Bloody Valentine", "AC/DC"
+ "Queen", "Led Zeppelin"
 ];
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));

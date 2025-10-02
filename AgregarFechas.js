@@ -11,7 +11,7 @@ const Ruta_Archivo = path.join('public', 'data', 'productos.json');
  */
 function generarFechaAleatoria () {
 const hoy = new Date();
-const diasAtras = Math.floor(Math.random() * 90);
+const diasAtras = Math.floor(Math.random() * 7);
 const fecha = new Date();
 fecha.setDate(hoy.getDate() - diasAtras);
 return fecha.toISOString();

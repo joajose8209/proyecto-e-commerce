@@ -1312,5 +1312,86 @@
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/cba38950aa26456b848af3f809f5107e.png",
     "genero": "Hard Rock",
     "fechaAgregado": "2025-09-27T09:27:12.006Z"
+  },
+  {
+    "id": 147,
+    "artista": "Queen",
+    "album": "Greatest Hits",
+    "precio": 33986,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1aec5cac8403fbda275b8200b77c8318.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-29T20:02:26.600Z"
+  },
+  {
+    "id": 148,
+    "artista": "Queen",
+    "album": "A Night At The Opera (2011 Remaster)",
+    "precio": 40390,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5bef877b7563e13a4218da382b86fe7a.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-29T20:02:26.622Z"
+  },
+  {
+    "id": 149,
+    "artista": "Queen",
+    "album": "Jazz (2011 Remaster)",
+    "precio": 30232,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/d9645ba9592445b1c5c35e1990c6964f.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-10-01T20:02:26.622Z"
+  },
+  {
+    "id": 150,
+    "artista": "Queen",
+    "album": "The Game (2011 Remaster)",
+    "precio": 47806,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5a23956df65d9581338e0e71db00d79a.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-10-01T20:02:26.622Z"
+  },
+  {
+    "id": 151,
+    "artista": "Queen",
+    "album": "Greatest Hits II",
+    "precio": 30143,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5acf44b6b52e40d5a345f5f39c4cb715.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-27T20:02:26.622Z"
+  },
+  {
+    "id": 152,
+    "artista": "Led Zeppelin",
+    "album": "Led Zeppelin IV (Deluxe Edition)",
+    "precio": 36954,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c79fc02300b24cd3cc33009ae9194b74.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-10-02T20:02:26.622Z"
+  },
+  {
+    "id": 153,
+    "artista": "Led Zeppelin",
+    "album": "Led Zeppelin",
+    "precio": 38239,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/82b68b8267234a289714c0e20c4e288d.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-27T20:02:26.622Z"
+  },
+  {
+    "id": 154,
+    "artista": "Led Zeppelin",
+    "album": "Led Zeppelin II",
+    "precio": 43838,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/79eb7925a57079641e698093417efde7.png",
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-10-01T20:02:26.622Z"
+  },
+  {
+    "id": 155,
+    "artista": "Led Zeppelin",
+    "album": "Led Zeppelin III (Remaster)",
+    "precio": 34078,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fda6154fc3208bf2430550a543af3eea.png",
+    "genero": "70s",
+    "fechaAgregado": "2025-09-28T20:02:26.622Z"
   }
 ]
