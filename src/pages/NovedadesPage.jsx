@@ -10,6 +10,7 @@ return <p>Cargando novedades...</p>;
 const vinilosNuevos = [...productos]
 .filter(producto => isProductNew(producto.fechaAgregado))
 .sort((a,b) => new Date(b.fechaAgregado) - new Date(a.fechaAgregado))
+.slice(0,6);
 
 return (
 <div className='container-mt-4'>
