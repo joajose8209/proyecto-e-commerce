@@ -27,13 +27,85 @@
     "fechaAgregado": "2025-08-03T09:27:12.005Z"
   },
   {
+    "id": 147,
+    "artista": "Queen",
+    "album": "Greatest Hits",
+    "precio": 33986,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1aec5cac8403fbda275b8200b77c8318.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-29T20:02:26.600Z"
+  },
+  {
+    "id": 148,
+    "artista": "Queen",
+    "album": "A Night At The Opera (2011 Remaster)",
+    "precio": 40390,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5bef877b7563e13a4218da382b86fe7a.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-29T20:02:26.622Z"
+  },
+  {
+    "id": 149,
+    "artista": "Queen",
+    "album": "Jazz (2011 Remaster)",
+    "precio": 30232,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/d9645ba9592445b1c5c35e1990c6964f.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-10-01T20:02:26.622Z"
+  },
+  {
+    "id": 150,
+    "artista": "Queen",
+    "album": "The Game (2011 Remaster)",
+    "precio": 47806,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5a23956df65d9581338e0e71db00d79a.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-10-01T20:02:26.622Z"
+  },
+  {
     "id": 4,
     "artista": "Led Zeppelin",
     "album": "Led Zeppelin IV",
     "precio": 45000,
     "imagen": "led_zeppelin_iv.jpg",
-    "genero": "Hard Rock",
+    "genero": "Rock",
     "fechaAgregado": "2025-08-16T09:27:12.005Z"
+  },
+  {
+    "id": 152,
+    "artista": "Led Zeppelin",
+    "album": "Led Zeppelin IV (Deluxe Edition)",
+    "precio": 36954,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c79fc02300b24cd3cc33009ae9194b74.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-10-02T20:02:26.622Z"
+  },
+  {
+    "id": 153,
+    "artista": "Led Zeppelin",
+    "album": "Led Zeppelin",
+    "precio": 38239,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/82b68b8267234a289714c0e20c4e288d.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-27T20:02:26.622Z"
+  },
+  {
+    "id": 154,
+    "artista": "Led Zeppelin",
+    "album": "Led Zeppelin II",
+    "precio": 43838,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/79eb7925a57079641e698093417efde7.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-10-01T20:02:26.622Z"
+  },
+  {
+    "id": 155,
+    "artista": "Led Zeppelin",
+    "album": "Led Zeppelin III (Remaster)",
+    "precio": 34078,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fda6154fc3208bf2430550a543af3eea.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-28T20:02:26.622Z"
   },
   {
     "id": 5,
@@ -43,6 +115,42 @@
     "imagen": "back_in_black.jpg",
     "genero": "Hard Rock",
     "fechaAgregado": "2025-07-28T09:27:12.005Z"
+  },
+  {
+    "id": 138,
+    "artista": "AC/DC",
+    "album": "Highway to Hell",
+    "precio": 30635,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7af8e0ab43294405c42eb95480f25c9a.png",
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-29T09:27:12.006Z"
+  },
+  {
+    "id": 139,
+    "artista": "AC/DC",
+    "album": "The Razors Edge",
+    "precio": 39692,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/98390dad3bf6d7a28294106da6941e19.png",
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-09-02T09:27:12.006Z"
+  },
+  {
+    "id": 140,
+    "artista": "AC/DC",
+    "album": "High Voltage",
+    "precio": 44555,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/591095f2549b4d9bbde16f471fa76e83.png",
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-21T09:27:12.006Z"
+  },
+  {
+    "id": 141,
+    "artista": "AC/DC",
+    "album": "Dirty Deeds Done Dirt Cheap",
+    "precio": 43417,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5429eee7b4c447e09c844bd5003386c6.png",
+    "genero": "Hard Rock",
+    "fechaAgregado": "2025-07-16T09:27:12.006Z"
   },
   {
     "id": 6,
@@ -97,6 +205,42 @@
     "imagen": "ziggy_stardust.jpg",
     "genero": "Rock",
     "fechaAgregado": "2025-09-13T09:27:12.005Z"
+  },
+  {
+    "id": 79,
+    "artista": "David Bowie",
+    "album": "Best of Bowie",
+    "precio": 35648,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ddbef24ddf79302be4c79d6cdc9f77e1.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-23T09:27:12.006Z"
+  },
+  {
+    "id": 80,
+    "artista": "David Bowie",
+    "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
+    "precio": 31130,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/781be87e74355cc5cb8db5a5442f7de9.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-27T09:27:12.006Z"
+  },
+  {
+    "id": 81,
+    "artista": "David Bowie",
+    "album": "\"Heroes\" (2017 remaster)",
+    "precio": 47307,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c8b1798abf4f517c0bb53e198df3a7b4.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-27T09:27:12.006Z"
+  },
+  {
+    "id": 82,
+    "artista": "David Bowie",
+    "album": "Hunky Dory (2015 Remaster)",
+    "precio": 40105,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7d0d755a67cfa8d7653a1ea0b52178a1.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-10T09:27:12.006Z"
   },
   {
     "id": 12,
@@ -338,8 +482,44 @@
     "album": "(What's the Story) Morning Glory?",
     "precio": 39000,
     "imagen": "morning_glory.jpg",
-    "genero": "Rock Alternativo",
+    "genero": "Britpop",
     "fechaAgregado": "2025-09-16T09:27:12.005Z"
+  },
+  {
+    "id": 161,
+    "artista": "Oasis",
+    "album": "Definitely Maybe",
+    "precio": 38234,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8d6acedbe66b4e69ced210643799dc4c.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-09-28T20:37:13.975Z"
+  },
+  {
+    "id": 162,
+    "artista": "Oasis",
+    "album": "Heathen Chemistry",
+    "precio": 39999,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/6a54881070cc06d4d4a15f7847c4c255.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-10-01T20:37:13.975Z"
+  },
+  {
+    "id": 163,
+    "artista": "Oasis",
+    "album": "Be Here Now",
+    "precio": 43533,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ea807e74a77c4cae87af14643b6da549.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-10-01T20:37:13.975Z"
+  },
+  {
+    "id": 164,
+    "artista": "Oasis",
+    "album": "(What's the Story) Morning Glory? [Remastered]",
+    "precio": 38674,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/b80c796f4174d503280a61d14cf6872f.png",
+    "genero": "Britpop",
+    "fechaAgregado": "2025-09-26T20:37:13.975Z"
   },
   {
     "id": 39,
@@ -360,13 +540,85 @@
     "fechaAgregado": "2025-07-24T09:27:12.005Z"
   },
   {
+    "id": 89,
+    "artista": "Radiohead",
+    "album": "Pablo Honey",
+    "precio": 49094,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3820170a0a6cb7d7d429e2945cd067c9.png",
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-08-22T09:27:12.006Z"
+  },
+  {
+    "id": 90,
+    "artista": "Radiohead",
+    "album": "In Rainbows",
+    "precio": 48441,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/9dbcd9399ac3e622b4f508323155b644.png",
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-09-17T09:27:12.006Z"
+  },
+  {
+    "id": 91,
+    "artista": "Radiohead",
+    "album": "The Bends",
+    "precio": 41148,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/9ea9931e129bb5efd3606866901855b5.png",
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-07-22T09:27:12.006Z"
+  },
+  {
+    "id": 92,
+    "artista": "Radiohead",
+    "album": "Kid A",
+    "precio": 30170,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/2ed343318c844d19cd897ec67fad11c4.png",
+    "genero": "Rock Alternativo",
+    "fechaAgregado": "2025-07-05T09:27:12.006Z"
+  },
+  {
     "id": 41,
     "artista": "The Smiths",
     "album": "The Queen Is Dead",
     "precio": 37000,
     "imagen": "the_queen_is_dead.jpg",
-    "genero": "Rock Alternativo",
+    "genero": "Rock",
     "fechaAgregado": "2025-07-19T09:27:12.005Z"
+  },
+  {
+    "id": 70,
+    "artista": "The Smiths",
+    "album": "Hatful of Hollow",
+    "precio": 44125,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1795412592fe11f22c78aefb2e60beb9.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-07-16T09:27:12.005Z"
+  },
+  {
+    "id": 71,
+    "artista": "The Smiths",
+    "album": "Louder Than Bombs",
+    "precio": 30099,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/03509f65bdb4d9bb6f741d04a912d4f3.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-08-25T09:27:12.005Z"
+  },
+  {
+    "id": 72,
+    "artista": "The Smiths",
+    "album": "The Smiths",
+    "precio": 38571,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/2e25a301cf23c2b28b0ff1b77a852e1b.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-16T09:27:12.005Z"
+  },
+  {
+    "id": 73,
+    "artista": "The Smiths",
+    "album": "Meat Is Murder",
+    "precio": 30796,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/18ee6e1759ebe88a58be9f3c6921eb66.png",
+    "genero": "Rock",
+    "fechaAgregado": "2025-09-11T09:27:12.005Z"
   },
   {
     "id": 42,
@@ -410,8 +662,44 @@
     "album": "Disintegration",
     "precio": 39000,
     "imagen": "disintegration.jpg",
-    "genero": "Rock Gótico",
+    "genero": "Post-Punk",
     "fechaAgregado": "2025-09-08T09:27:12.005Z"
+  },
+  {
+    "id": 61,
+    "artista": "The Cure",
+    "album": "Greatest Hits",
+    "precio": 33025,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/bdbc60c4bab8cf280166d31716bc0fc8.png",
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-14T09:27:12.005Z"
+  },
+  {
+    "id": 62,
+    "artista": "The Cure",
+    "album": "Wish",
+    "precio": 46315,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7e1f7cafa97e32a9fc549f5cf13061ae.png",
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-08-28T09:27:12.005Z"
+  },
+  {
+    "id": 63,
+    "artista": "The Cure",
+    "album": "Kiss Me, Kiss Me, Kiss Me",
+    "precio": 49819,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0a5401fd4ef19dfc6f8583f108d7023b.png",
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-05T09:27:12.005Z"
+  },
+  {
+    "id": 64,
+    "artista": "The Cure",
+    "album": "Three Imaginary Boys",
+    "precio": 37976,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8a3c4f3610c1ed38d4b5fabddc37ed7b.png",
+    "genero": "Post-Punk",
+    "fechaAgregado": "2025-07-24T09:27:12.005Z"
   },
   {
     "id": 47,
@@ -540,339 +828,6 @@
     "fechaAgregado": "2025-08-06T09:27:12.005Z"
   },
   {
-    "id": 61,
-    "artista": "The Cure",
-    "album": "Greatest Hits",
-    "precio": 33025,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/bdbc60c4bab8cf280166d31716bc0fc8.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-07-14T09:27:12.005Z"
-  },
-  {
-    "id": 62,
-    "artista": "The Cure",
-    "album": "Wish",
-    "precio": 46315,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7e1f7cafa97e32a9fc549f5cf13061ae.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-08-28T09:27:12.005Z"
-  },
-  {
-    "id": 63,
-    "artista": "The Cure",
-    "album": "Kiss Me, Kiss Me, Kiss Me",
-    "precio": 49819,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0a5401fd4ef19dfc6f8583f108d7023b.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-07-05T09:27:12.005Z"
-  },
-  {
-    "id": 64,
-    "artista": "The Cure",
-    "album": "Three Imaginary Boys",
-    "precio": 37976,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8a3c4f3610c1ed38d4b5fabddc37ed7b.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-07-24T09:27:12.005Z"
-  },
-  {
-    "id": 65,
-    "artista": "The Cure",
-    "album": "Disintegration (Deluxe Edition)",
-    "precio": 41875,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/429fd312f3d5cb652a9c9ec262495742.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-07-02T09:27:12.005Z"
-  },
-  {
-    "id": 66,
-    "artista": "The Cure",
-    "album": "The Head on the Door",
-    "precio": 48180,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c10b05cef98f4fbd9ca34f388fd359af.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-09-28T09:27:12.005Z"
-  },
-  {
-    "id": 67,
-    "artista": "The Cure",
-    "album": "Seventeen Seconds",
-    "precio": 34563,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/96392ff6a08a47a7c7ffd1b6906bc9cd.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-08-13T09:27:12.005Z"
-  },
-  {
-    "id": 68,
-    "artista": "The Cure",
-    "album": "Three Imaginary Boys (Deluxe Edition)",
-    "precio": 48007,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/69a7385ce40c1c651caaebc8c346b3cc.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-09-24T09:27:12.005Z"
-  },
-  {
-    "id": 69,
-    "artista": "The Cure",
-    "album": "Pornography",
-    "precio": 43317,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/dcf7ccf93e1c445583ff952f49eb7a5d.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-08-17T09:27:12.005Z"
-  },
-  {
-    "id": 70,
-    "artista": "The Smiths",
-    "album": "Hatful of Hollow",
-    "precio": 44125,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1795412592fe11f22c78aefb2e60beb9.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-07-16T09:27:12.005Z"
-  },
-  {
-    "id": 71,
-    "artista": "The Smiths",
-    "album": "Louder Than Bombs",
-    "precio": 30099,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/03509f65bdb4d9bb6f741d04a912d4f3.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-08-25T09:27:12.005Z"
-  },
-  {
-    "id": 72,
-    "artista": "The Smiths",
-    "album": "The Smiths",
-    "precio": 38571,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/2e25a301cf23c2b28b0ff1b77a852e1b.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-16T09:27:12.005Z"
-  },
-  {
-    "id": 73,
-    "artista": "The Smiths",
-    "album": "Meat Is Murder",
-    "precio": 30796,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/18ee6e1759ebe88a58be9f3c6921eb66.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-11T09:27:12.005Z"
-  },
-  {
-    "id": 74,
-    "artista": "The Smiths",
-    "album": "Strangeways, Here We Come",
-    "precio": 41909,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/286f7c3701a74f19b4ef41c380bad119.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-08-03T09:27:12.005Z"
-  },
-  {
-    "id": 75,
-    "artista": "The Smiths",
-    "album": "The Queen Is Dead (Deluxe Edition)",
-    "precio": 44702,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f2578afda8f751637c4de003cbb69a56.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-07-28T09:27:12.006Z"
-  },
-  {
-    "id": 76,
-    "artista": "The Smiths",
-    "album": "The Sound of the Smiths (Deluxe; 2008 Remaster)",
-    "precio": 49109,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/79cdf4e475cb04086f9f7c4a2afbfd56.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-07-08T09:27:12.006Z"
-  },
-  {
-    "id": 77,
-    "artista": "The Smiths",
-    "album": "The Sound of The Smiths",
-    "precio": 31042,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0852bfca456b4607bb2d437b6b771210.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-07-07T09:27:12.006Z"
-  },
-  {
-    "id": 78,
-    "artista": "The Smiths",
-    "album": "The World Won't Listen",
-    "precio": 43254,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5f620c46b68444f8c4d1def136eeef77.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-08-10T09:27:12.006Z"
-  },
-  {
-    "id": 79,
-    "artista": "David Bowie",
-    "album": "Best of Bowie",
-    "precio": 35648,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ddbef24ddf79302be4c79d6cdc9f77e1.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-23T09:27:12.006Z"
-  },
-  {
-    "id": 80,
-    "artista": "David Bowie",
-    "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
-    "precio": 31130,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/781be87e74355cc5cb8db5a5442f7de9.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-08-27T09:27:12.006Z"
-  },
-  {
-    "id": 81,
-    "artista": "David Bowie",
-    "album": "\"Heroes\" (2017 remaster)",
-    "precio": 47307,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c8b1798abf4f517c0bb53e198df3a7b4.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-07-27T09:27:12.006Z"
-  },
-  {
-    "id": 82,
-    "artista": "David Bowie",
-    "album": "Hunky Dory (2015 Remaster)",
-    "precio": 40105,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7d0d755a67cfa8d7653a1ea0b52178a1.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-10T09:27:12.006Z"
-  },
-  {
-    "id": 83,
-    "artista": "David Bowie",
-    "album": "Let's Dance",
-    "precio": 47223,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/12cd5ebef24922cd8110c609045c2cd0.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-07-27T09:27:12.006Z"
-  },
-  {
-    "id": 84,
-    "artista": "David Bowie",
-    "album": "David Bowie (aka Space Oddity) [2015 Remaster]",
-    "precio": 49785,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/06077338206904418e0aa0b343705935.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-14T09:27:12.006Z"
-  },
-  {
-    "id": 85,
-    "artista": "David Bowie",
-    "album": "Let's Dance (2018 remaster)",
-    "precio": 31406,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8e659d51c3695fa082b543fc4facfb50.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-08-16T09:27:12.006Z"
-  },
-  {
-    "id": 86,
-    "artista": "David Bowie",
-    "album": "Hunky Dory",
-    "precio": 34509,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/16c9b96bf0f1edf31c210deca6d57430.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-08-21T09:27:12.006Z"
-  },
-  {
-    "id": 87,
-    "artista": "David Bowie",
-    "album": "Diamond Dogs (2016 Remaster)",
-    "precio": 37308,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/e487b5b68855bcacb25533a1fb37310f.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-15T09:27:12.006Z"
-  },
-  {
-    "id": 88,
-    "artista": "David Bowie",
-    "album": "Blackstar",
-    "precio": 36155,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/a63919a5f152e8242b735b022ded451d.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-07-07T09:27:12.006Z"
-  },
-  {
-    "id": 89,
-    "artista": "Radiohead",
-    "album": "Pablo Honey",
-    "precio": 49094,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3820170a0a6cb7d7d429e2945cd067c9.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-08-22T09:27:12.006Z"
-  },
-  {
-    "id": 90,
-    "artista": "Radiohead",
-    "album": "In Rainbows",
-    "precio": 48441,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/9dbcd9399ac3e622b4f508323155b644.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-09-17T09:27:12.006Z"
-  },
-  {
-    "id": 91,
-    "artista": "Radiohead",
-    "album": "The Bends",
-    "precio": 41148,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/9ea9931e129bb5efd3606866901855b5.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-07-22T09:27:12.006Z"
-  },
-  {
-    "id": 92,
-    "artista": "Radiohead",
-    "album": "Kid A",
-    "precio": 30170,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/2ed343318c844d19cd897ec67fad11c4.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-07-05T09:27:12.006Z"
-  },
-  {
-    "id": 93,
-    "artista": "Radiohead",
-    "album": "Amnesiac",
-    "precio": 40566,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/d59fb77b86ba4dd5d7f99c34564a56ce.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-08-13T09:27:12.006Z"
-  },
-  {
-    "id": 94,
-    "artista": "Radiohead",
-    "album": "Hail to the Thief",
-    "precio": 37006,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/55ac8f97bde6cbe5e9a8857b435457e9.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-08-30T09:27:12.006Z"
-  },
-  {
-    "id": 95,
-    "artista": "Radiohead",
-    "album": "The King of Limbs",
-    "precio": 32273,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f47f0408a925403cbea2564add58000f.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-09-15T09:27:12.006Z"
-  },
-  {
-    "id": 96,
-    "artista": "Radiohead",
-    "album": "A Moon Shaped Pool",
-    "precio": 43908,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/28db3fdca036fb53c62754694a89d3fd.png",
-    "genero": "Pop",
-    "fechaAgregado": "2025-08-12T09:27:12.006Z"
-  },
-  {
-    "id": 97,
-    "artista": "Radiohead",
-    "album": "OK Computer OKNOTOK 1997 2017",
-    "precio": 40657,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/51214507c81379cd2ae8a0d77f1e0f29.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-08-28T09:27:12.006Z"
-  },
-  {
     "id": 98,
     "artista": "Joy Division",
     "album": "Unknown Pleasures",
@@ -914,53 +869,8 @@
     "album": "Love Will Tear Us Apart",
     "precio": 42894,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f2aca38cd25e4f3e3327d643f9b9c0ad.png",
-    "genero": "Rock",
+    "genero": "Post-Punk",
     "fechaAgregado": "2025-08-01T09:27:12.006Z"
-  },
-  {
-    "id": 103,
-    "artista": "Joy Division",
-    "album": "Closer",
-    "precio": 47062,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/51709580b4f14898c8896b5049b168d1.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-09-18T09:27:12.006Z"
-  },
-  {
-    "id": 104,
-    "artista": "Joy Division",
-    "album": "Transmission",
-    "precio": 40696,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/69dfd2e34799291e08c4b69050bedb11.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-09-11T09:27:12.006Z"
-  },
-  {
-    "id": 105,
-    "artista": "Joy Division",
-    "album": "Still",
-    "precio": 34990,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/83a57cb3e4c95138830396443809663a.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-07-15T09:27:12.006Z"
-  },
-  {
-    "id": 106,
-    "artista": "Joy Division",
-    "album": "Closer (Collector's Edition)",
-    "precio": 42018,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fb50937a9215f4e968de82bf2f517626.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-09-07T09:27:12.006Z"
-  },
-  {
-    "id": 107,
-    "artista": "Joy Division",
-    "album": "The Best of Joy Division",
-    "precio": 33234,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f43fa4d344254763a9a6ecbf7e32f0be.png",
-    "genero": "Post-Punk",
-    "fechaAgregado": "2025-07-30T09:27:12.006Z"
   },
   {
     "id": 108,
@@ -1008,51 +918,6 @@
     "fechaAgregado": "2025-08-20T09:27:12.006Z"
   },
   {
-    "id": 113,
-    "artista": "Pixies",
-    "album": "Head Carrier",
-    "precio": 30726,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7fbc41bdafaf4bf834fc4d74856b5b1e.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-09-08T09:27:12.006Z"
-  },
-  {
-    "id": 114,
-    "artista": "Pixies",
-    "album": "Surfer Rosa (Remastered)",
-    "precio": 46590,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3adcd59863e0444aaac04395c0f1534f.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-09-08T09:27:12.006Z"
-  },
-  {
-    "id": 115,
-    "artista": "Pixies",
-    "album": "Velouria",
-    "precio": 40717,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c6160eccbc8a44a4e700db2e8b7df3d1.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-09-03T09:27:12.006Z"
-  },
-  {
-    "id": 116,
-    "artista": "Pixies",
-    "album": "Trompe le Monde",
-    "precio": 35854,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8f47eee322757b7f0ab8ddb04ee29349.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-08-08T09:27:12.006Z"
-  },
-  {
-    "id": 117,
-    "artista": "Pixies",
-    "album": "Wave Of Mutilation: Best Of Pixies",
-    "precio": 37074,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/87824907d84d46beba83d8acf170d2a0.png",
-    "genero": "Rock Alternativo",
-    "fechaAgregado": "2025-07-22T09:27:12.006Z"
-  },
-  {
     "id": 118,
     "artista": "Blur",
     "album": "Blur",
@@ -1096,51 +961,6 @@
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/19e7df241eead2786c81e5f50c4f3364.png",
     "genero": "Britpop",
     "fechaAgregado": "2025-07-30T09:27:12.006Z"
-  },
-  {
-    "id": 123,
-    "artista": "Blur",
-    "album": "The Great Escape",
-    "precio": 41814,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1a1de088d31f4bd9bb0e06655cac2022.png",
-    "genero": "Britpop",
-    "fechaAgregado": "2025-07-31T09:27:12.006Z"
-  },
-  {
-    "id": 124,
-    "artista": "Blur",
-    "album": "Think Tank",
-    "precio": 46970,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/e460b96d75fc4ea5ba5abafc376c4348.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-07T09:27:12.006Z"
-  },
-  {
-    "id": 125,
-    "artista": "Blur",
-    "album": "Leisure",
-    "precio": 41438,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/55cbfe8cfee64d2c9354d06c1426c3f4.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-08-16T09:27:12.006Z"
-  },
-  {
-    "id": 126,
-    "artista": "Blur",
-    "album": "The Magic Whip",
-    "precio": 36770,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fd6f102f2d5fd922c9c86819bf22b770.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-08-01T09:27:12.006Z"
-  },
-  {
-    "id": 127,
-    "artista": "Blur",
-    "album": "Parklife (Special Edition)",
-    "precio": 43522,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/936bad1699011ad9a73911fb9f60e855.png",
-    "genero": "Britpop",
-    "fechaAgregado": "2025-09-10T09:27:12.006Z"
   },
   {
     "id": 128,
@@ -1188,213 +1008,6 @@
     "fechaAgregado": "2025-08-01T09:27:12.006Z"
   },
   {
-    "id": 133,
-    "artista": "my bloody valentine",
-    "album": "Isn’t Anything",
-    "precio": 39003,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/025713e8f7942267839c708975771bd8.png",
-    "genero": "Shoegaze",
-    "fechaAgregado": "2025-08-19T09:27:12.006Z"
-  },
-  {
-    "id": 134,
-    "artista": "my bloody valentine",
-    "album": "You Made Me Realise",
-    "precio": 43616,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/36c63c07abeffd4455a3fcafcedf44f9.png",
-    "genero": "Shoegaze",
-    "fechaAgregado": "2025-08-24T09:27:12.006Z"
-  },
-  {
-    "id": 135,
-    "artista": "my bloody valentine",
-    "album": "Tremolo",
-    "precio": 32335,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3eeab4c8fbcf48bec87d1b47ce79b4da.png",
-    "genero": "Shoegaze",
-    "fechaAgregado": "2025-08-26T09:27:12.006Z"
-  },
-  {
-    "id": 136,
-    "artista": "my bloody valentine",
-    "album": "Feed Me With Your Kiss",
-    "precio": 40570,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/49a5cf4f7231c913abaa94fd4da6620e.png",
-    "genero": "Shoegaze",
-    "fechaAgregado": "2025-09-27T09:27:12.006Z"
-  },
-  {
-    "id": 137,
-    "artista": "my bloody valentine",
-    "album": "Ecstasy and Wine",
-    "precio": 31958,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/544d4020db0c9320fed873c6b61a03cf.png",
-    "genero": "Shoegaze",
-    "fechaAgregado": "2025-08-16T09:27:12.006Z"
-  },
-  {
-    "id": 138,
-    "artista": "AC/DC",
-    "album": "Highway to Hell",
-    "precio": 30635,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7af8e0ab43294405c42eb95480f25c9a.png",
-    "genero": "Hard Rock",
-    "fechaAgregado": "2025-07-29T09:27:12.006Z"
-  },
-  {
-    "id": 139,
-    "artista": "AC/DC",
-    "album": "The Razors Edge",
-    "precio": 39692,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/98390dad3bf6d7a28294106da6941e19.png",
-    "genero": "Hard Rock",
-    "fechaAgregado": "2025-09-02T09:27:12.006Z"
-  },
-  {
-    "id": 140,
-    "artista": "AC/DC",
-    "album": "High Voltage",
-    "precio": 44555,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/591095f2549b4d9bbde16f471fa76e83.png",
-    "genero": "Hard Rock",
-    "fechaAgregado": "2025-07-21T09:27:12.006Z"
-  },
-  {
-    "id": 141,
-    "artista": "AC/DC",
-    "album": "Dirty Deeds Done Dirt Cheap",
-    "precio": 43417,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5429eee7b4c447e09c844bd5003386c6.png",
-    "genero": "Hard Rock",
-    "fechaAgregado": "2025-07-16T09:27:12.006Z"
-  },
-  {
-    "id": 142,
-    "artista": "AC/DC",
-    "album": "Who Made Who",
-    "precio": 30510,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/bef4ab0424dc4457c4e2062d6e7a6a4d.png",
-    "genero": "Hard Rock",
-    "fechaAgregado": "2025-08-09T09:27:12.006Z"
-  },
-  {
-    "id": 143,
-    "artista": "AC/DC",
-    "album": "Let There Be Rock",
-    "precio": 35099,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c542b6837d884641b975201bb516a576.png",
-    "genero": "Hard Rock",
-    "fechaAgregado": "2025-07-20T09:27:12.006Z"
-  },
-  {
-    "id": 144,
-    "artista": "AC/DC",
-    "album": "Black Ice",
-    "precio": 32915,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c5025d7531f049d9823224f9c3965f8e.png",
-    "genero": "Hard Rock",
-    "fechaAgregado": "2025-09-23T09:27:12.006Z"
-  },
-  {
-    "id": 145,
-    "artista": "AC/DC",
-    "album": "Ballbreaker",
-    "precio": 40727,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/47d649e4358d43b391ef5f46bebac516.png",
-    "genero": "Hard Rock",
-    "fechaAgregado": "2025-07-29T09:27:12.006Z"
-  },
-  {
-    "id": 146,
-    "artista": "AC/DC",
-    "album": "Stiff Upper Lip",
-    "precio": 42825,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/cba38950aa26456b848af3f809f5107e.png",
-    "genero": "Hard Rock",
-    "fechaAgregado": "2025-09-27T09:27:12.006Z"
-  },
-  {
-    "id": 147,
-    "artista": "Queen",
-    "album": "Greatest Hits",
-    "precio": 33986,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1aec5cac8403fbda275b8200b77c8318.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-29T20:02:26.600Z"
-  },
-  {
-    "id": 148,
-    "artista": "Queen",
-    "album": "A Night At The Opera (2011 Remaster)",
-    "precio": 40390,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5bef877b7563e13a4218da382b86fe7a.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-29T20:02:26.622Z"
-  },
-  {
-    "id": 149,
-    "artista": "Queen",
-    "album": "Jazz (2011 Remaster)",
-    "precio": 30232,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/d9645ba9592445b1c5c35e1990c6964f.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-10-01T20:02:26.622Z"
-  },
-  {
-    "id": 150,
-    "artista": "Queen",
-    "album": "The Game (2011 Remaster)",
-    "precio": 47806,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5a23956df65d9581338e0e71db00d79a.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-10-01T20:02:26.622Z"
-  },
-  {
-    "id": 151,
-    "artista": "Queen",
-    "album": "Greatest Hits II",
-    "precio": 30143,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5acf44b6b52e40d5a345f5f39c4cb715.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-27T20:02:26.622Z"
-  },
-  {
-    "id": 152,
-    "artista": "Led Zeppelin",
-    "album": "Led Zeppelin IV (Deluxe Edition)",
-    "precio": 36954,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c79fc02300b24cd3cc33009ae9194b74.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-10-02T20:02:26.622Z"
-  },
-  {
-    "id": 153,
-    "artista": "Led Zeppelin",
-    "album": "Led Zeppelin",
-    "precio": 38239,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/82b68b8267234a289714c0e20c4e288d.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-27T20:02:26.622Z"
-  },
-  {
-    "id": 154,
-    "artista": "Led Zeppelin",
-    "album": "Led Zeppelin II",
-    "precio": 43838,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/79eb7925a57079641e698093417efde7.png",
-    "genero": "Hard Rock",
-    "fechaAgregado": "2025-10-01T20:02:26.622Z"
-  },
-  {
-    "id": 155,
-    "artista": "Led Zeppelin",
-    "album": "Led Zeppelin III (Remaster)",
-    "precio": 34078,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fda6154fc3208bf2430550a543af3eea.png",
-    "genero": "Rock",
-    "fechaAgregado": "2025-09-28T20:02:26.622Z"
-  },
-  {
     "id": 156,
     "artista": "Suede",
     "album": "Coming Up",
@@ -1418,7 +1031,7 @@
     "album": "Singles",
     "precio": 41658,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f67dfef898ae43d295eb7d478364cea2.png",
-    "genero": "Rock",
+    "genero": "Britpop",
     "fechaAgregado": "2025-09-26T20:37:13.975Z"
   },
   {
@@ -1436,42 +1049,6 @@
     "album": "Coming Up (Remastered)",
     "precio": 39754,
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ed178061d9191acd345fba04b58bf062.png",
-    "genero": "Britpop",
-    "fechaAgregado": "2025-09-26T20:37:13.975Z"
-  },
-  {
-    "id": 161,
-    "artista": "Oasis",
-    "album": "Definitely Maybe",
-    "precio": 38234,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/8d6acedbe66b4e69ced210643799dc4c.png",
-    "genero": "Britpop",
-    "fechaAgregado": "2025-09-28T20:37:13.975Z"
-  },
-  {
-    "id": 162,
-    "artista": "Oasis",
-    "album": "Heathen Chemistry",
-    "precio": 39999,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/6a54881070cc06d4d4a15f7847c4c255.png",
-    "genero": "Britpop",
-    "fechaAgregado": "2025-10-01T20:37:13.975Z"
-  },
-  {
-    "id": 163,
-    "artista": "Oasis",
-    "album": "Be Here Now",
-    "precio": 43533,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ea807e74a77c4cae87af14643b6da549.png",
-    "genero": "Britpop",
-    "fechaAgregado": "2025-10-01T20:37:13.975Z"
-  },
-  {
-    "id": 164,
-    "artista": "Oasis",
-    "album": "(What's the Story) Morning Glory? [Remastered]",
-    "precio": 38674,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/b80c796f4174d503280a61d14cf6872f.png",
     "genero": "Britpop",
     "fechaAgregado": "2025-09-26T20:37:13.975Z"
   }
