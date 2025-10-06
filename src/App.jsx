@@ -14,129 +14,114 @@ import MorePage from './pages/MorePage';
 import Navbar from './components/Navbar';
 
 function App() {
-  const [todosLosProductos, setTodosLosProductos] = useState([]);
-  const [productosFiltrados, setProductosFiltrados] = useState([]);
-  const [carrito, setCarrito] = useState(() => {
-  const carritoGuardado = localStorage.getItem('carrito');
-  return carritoGuardado ? JSON.parse(carritoGuardado) : [];
-  });
+const [todosLosProductos, setTodosLosProductos] = useState([]);
+const [productosFiltrados, setProductosFiltrados] = useState([]);
+const [carrito, setCarrito] = useState(() => {
+const carritoGuardado = localStorage.getItem('carrito');
+return carritoGuardado ? JSON.parse(carritoGuardado) : [];
+});
+const [paginaActual, setPaginaActual] = useState(1);
+const [productosPorPagina] = useState(12);
+const { busqueda, filtroGenero, criterioOrden } = useContext(FiltersContext);
+{ busqueda, filtroGenero, criterioOrden };
 
-  //Aqui tenia antes de Contex Api Favoritos cargada desde localStorage.
+// --- EFECTOS ---
+useEffect(() => {
+fetch('/data/productos.json')
+.then(response => response.json())
+.then(data => {
+setTodosLosProductos(data);
+const productosOrdenadosPorDefecto = [...data].sort((a, b) => {
+return new Date(b.fechaAgregado) - new Date(a.fechaAgregado);
+});
+setProductosFiltrados(productosOrdenadosPorDefecto);    
+}).catch(error => console.error("Error al cargar los productos:", error));
+}, []);
 
-  // Ya no se necesita los 'useState' para los filtros.
-  // Ahora se consumen los valores directamente desde el Context.
-  const { busqueda, filtroGenero, criterioOrden } = useContext(FiltersContext);
-  { busqueda, filtroGenero, criterioOrden };
+useEffect(() => {
+localStorage.setItem('carrito', JSON.stringify(carrito));
+}, [carrito]);
 
-  // --- EFECTOS ---
-  useEffect(() => {
-    fetch('/data/productos.json')
-      .then(response => response.json())
-      .then(data => {
-    setTodosLosProductos(data);
-    const productosOrdenadosPorDefecto = [...data].sort((a, b) => {
-    return new Date(b.fechaAgregado) - new Date(a.fechaAgregado);
-        });
-     setProductosFiltrados(productosOrdenadosPorDefecto);    
-  // setProductosFiltrados(data); // Ya no es necesario, el siguiente useEffect se encarga
-      })
-      .catch(error => console.error("Error al cargar los productos:", error));
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('carrito', JSON.stringify(carrito));
-  }, [carrito]);
-
-  //Aqui estaba antes de Contex Api guardar la libreta de favoritos en Storage cada vez que cambia.
-
-  useEffect(() => {
-    // La lógica de filtrado y ordenamiento se mantiene igual,
-    // pero ahora reacciona a los cambios del contexto.
-    if (todosLosProductos.length === 0) {
-      return;
-    }
-    let productosTemp = [...todosLosProductos];
-    if (filtroGenero !== 'Todos') {
-      productosTemp = productosTemp.filter(p => p.genero === filtroGenero);
-    }
-    if (busqueda) {
-      productosTemp = productosTemp.filter(p =>
-        p.album.toLowerCase().includes(busqueda.toLowerCase()) ||
-        p.artista.toLowerCase().includes(busqueda.toLowerCase())
-      );
-    }
+useEffect(() => {  
+if (todosLosProductos.length === 0) {
+return;
+}
+let productosTemp = [...todosLosProductos];
+if (filtroGenero !== 'Todos') {
+productosTemp = productosTemp.filter(p => p.genero === filtroGenero);
+}
+if (busqueda) {
+productosTemp = productosTemp.filter(p =>
+p.album.toLowerCase().includes(busqueda.toLowerCase()) ||
+p.artista.toLowerCase().includes(busqueda.toLowerCase())
+);
+}
     
-    const productosOrdenados = [...productosTemp];
-    if (criterioOrden === 'precio-asc') {
-      productosOrdenados.sort((a, b) => a.precio - b.precio);
-    } else if (criterioOrden === 'precio-desc') {
-      productosOrdenados.sort((a, b) => b.precio - a.precio);
-    } else if (criterioOrden === 'alfa-asc') {
-      productosOrdenados.sort((a, b) => a.album.localeCompare(b.album));
-    }else { 
-    productosOrdenados.sort((a, b) => new Date(b.fechaAgregado) - new Date(a.fechaAgregado));
-  }
+const productosOrdenados = [...productosTemp];
+if (criterioOrden === 'precio-asc') {
+productosOrdenados.sort((a, b) => a.precio - b.precio);
+} else if (criterioOrden === 'precio-desc') {
+productosOrdenados.sort((a, b) => b.precio - a.precio);
+} else if (criterioOrden === 'alfa-asc') {
+productosOrdenados.sort((a, b) => a.album.localeCompare(b.album));
+}else { 
+productosOrdenados.sort((a, b) => new Date(b.fechaAgregado) - new Date(a.fechaAgregado));
+}
     
-    setProductosFiltrados(productosOrdenados);
+setProductosFiltrados(productosOrdenados);
 
-  }, [busqueda, filtroGenero, criterioOrden, todosLosProductos]);
+}, [busqueda, filtroGenero, criterioOrden, todosLosProductos]);
 
-  const agregarAlCarrito = (producto) => {
-  console.log('Añadiendo al carrito desde:', window.location.pathname, producto)  
-  setCarrito(prevCarrito => [...prevCarrito, producto]);
-  };
+const agregarAlCarrito = (producto) => {
+console.log('Añadiendo al carrito desde:', window.location.pathname, producto)  
+setCarrito(prevCarrito => [...prevCarrito, producto]);
+};
 
-  const eliminarDelCarrito = (indiceAEliminar) => {
-    setCarrito(prevCarrito => prevCarrito.filter((_, index) => index !== indiceAEliminar));
-  };
+const eliminarDelCarrito = (indiceAEliminar) => {
+setCarrito(prevCarrito => prevCarrito.filter((_, index) => index !== indiceAEliminar));
+};
 
-  const generosUnicos = [...new Set(todosLosProductos.map(p => p.genero))];
+const generosUnicos = [...new Set(todosLosProductos.map(p => p.genero))];
 
-  return (
-    <div>
-      <main style={{ paddingBottom: '80px' }}>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <HomePage
-                productos={productosFiltrados}
-                agregarAlCarrito={agregarAlCarrito}
-                // PROPS LIMPIAS!
-                // Ya no hay pasaje de  los estados de los filtros.
-                // El componente de filtros los tomará del contexto.
-                generosUnicos={generosUnicos}
-                // Sprint 6 Martes elimine props. 
-                // toggleFavorito={toggleFavorito}
-                // favoritos={favoritos}
-              />
-            }
-          />
-          <Route
-            path="/vinilo/:id"
-            element={
-              <ProductDetailPage
-                productos={todosLosProductos}
-                agregarAlCarrito={agregarAlCarrito}
-              />
-            }
-          />
+const indiceDelUltimoProducto = paginaActual * productosPorPagina;
+const indiceDelPrimerProducto = indiceDelUltimoProducto - productosPorPagina;
+const productosPaginados = productosFiltrados.slice(indiceDelPrimerProducto, indiceDelUltimoProducto);
 
-          {/* 5. Pasar la lista de favoritos a su página */}
-          {/* Sprint 6 Martes borrare de aqui losas props. */}
-          <Route path="/favoritos" element={<FavoritesPage agregarAlCarrito={agregarAlCarrito} />} />
-          <Route
-            path="/carrito"
-            element={<CartPage carrito={carrito} eliminarDelCarrito={eliminarDelCarrito} />}
-          />
-          {/* Sprint 8 Mierc. pasaje de  props. */}
-          <Route path="/novedades" element={<NovedadesPage productos={todosLosProductos} agregarAlCarrito={agregarAlCarrito} />} />
-          <Route path="/mas" element={<MorePage />} />
-        </Routes>
-      </main>
-      <Navbar cantidadCarrito={carrito.length} />
-    </div>
-  );
+return (
+<div>
+<main style={{ paddingBottom: '80px' }}>
+<Routes>
+<Route
+path="/"
+element={
+<HomePage
+productos={productosPaginados}
+agregarAlCarrito={agregarAlCarrito}
+generosUnicos={generosUnicos}                
+/>
+}
+/>
+<Route
+path="/vinilo/:id"
+element={
+<ProductDetailPage
+productos={todosLosProductos}
+agregarAlCarrito={agregarAlCarrito}
+/>
+}
+/>          
+<Route path="/favoritos" element={<FavoritesPage agregarAlCarrito={agregarAlCarrito} />} />
+<Route
+path="/carrito"
+element={<CartPage carrito={carrito} eliminarDelCarrito={eliminarDelCarrito} />}
+/>
+<Route path="/novedades" element={<NovedadesPage productos={todosLosProductos} agregarAlCarrito={agregarAlCarrito} />} />
+<Route path="/mas" element={<MorePage />} />
+</Routes>
+</main>
+<Navbar cantidadCarrito={carrito.length} />
+</div>
+);
 }
 
 export default App;
