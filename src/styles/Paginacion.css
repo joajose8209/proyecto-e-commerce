@@ -1,0 +1,36 @@
+.paginacion-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.paginacion-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 8px;
+}
+
+.paginacion-link {
+  display: block;
+  padding: 8px 14px;
+  min-width: 40px;
+  text-align: center;
+  color: #7b1fa2;
+  background-color: #f3e5f5;
+  border: 1px solid #7b1fa2;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.paginacion-link:hover {
+  background-color: #e1bee7;
+}
+
+.paginacion-link.active {
+  color: white;
+  background-color: #7b1fa2;
+}

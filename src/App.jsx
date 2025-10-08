@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'; // 1. Agregamos 'useContext'
+import React, { useState, useEffect, useContext } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { FiltersContext } from './context/FiltersContext'; 
 
@@ -14,31 +14,32 @@ import MorePage from './pages/MorePage';
 import Navbar from './components/Navbar';
 
 function App() {
+  // --- ESTADOS PRINCIPALES ---
   const [todosLosProductos, setTodosLosProductos] = useState([]);
   const [productosFiltrados, setProductosFiltrados] = useState([]);
   const [carrito, setCarrito] = useState(() => {
-  const carritoGuardado = localStorage.getItem('carrito');
-  return carritoGuardado ? JSON.parse(carritoGuardado) : [];
+    const carritoGuardado = localStorage.getItem('carrito');
+    return carritoGuardado ? JSON.parse(carritoGuardado) : [];
   });
+  
+  // --- ESTADOS PARA PAGINACIÓN ---
+  const [paginaActual, setPaginaActual] = useState(1);
+  const [productosPorPagina] = useState(12);
 
-  //Aqui tenia antes de Contex Api Favoritos cargada desde localStorage.
-
-  // Ya no se necesita los 'useState' para los filtros.
-  // Ahora se consumen los valores directamente desde el Context.
+  // --- CONTEXTOS ---
   const { busqueda, filtroGenero, criterioOrden } = useContext(FiltersContext);
-  { busqueda, filtroGenero, criterioOrden };
+  // La línea incorrecta ha sido eliminada de aquí.
 
-  // --- EFECTOS ---
+  // --- EFECTOS (useEffect) ---
   useEffect(() => {
     fetch('/data/productos.json')
       .then(response => response.json())
       .then(data => {
-    setTodosLosProductos(data);
-    const productosOrdenadosPorDefecto = [...data].sort((a, b) => {
-    return new Date(b.fechaAgregado) - new Date(a.fechaAgregado);
+        setTodosLosProductos(data);
+        const productosOrdenadosPorDefecto = [...data].sort((a, b) => {
+          return new Date(b.fechaAgregado) - new Date(a.fechaAgregado);
         });
-     setProductosFiltrados(productosOrdenadosPorDefecto);    
-  // setProductosFiltrados(data); // Ya no es necesario, el siguiente useEffect se encarga
+        setProductosFiltrados(productosOrdenadosPorDefecto);    
       })
       .catch(error => console.error("Error al cargar los productos:", error));
   }, []);
@@ -47,11 +48,7 @@ function App() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
   }, [carrito]);
 
-  //Aqui estaba antes de Contex Api guardar la libreta de favoritos en Storage cada vez que cambia.
-
   useEffect(() => {
-    // La lógica de filtrado y ordenamiento se mantiene igual,
-    // pero ahora reacciona a los cambios del contexto.
     if (todosLosProductos.length === 0) {
       return;
     }
@@ -73,17 +70,17 @@ function App() {
       productosOrdenados.sort((a, b) => b.precio - a.precio);
     } else if (criterioOrden === 'alfa-asc') {
       productosOrdenados.sort((a, b) => a.album.localeCompare(b.album));
-    }else { 
-    productosOrdenados.sort((a, b) => new Date(b.fechaAgregado) - new Date(a.fechaAgregado));
-  }
+    } else { 
+      productosOrdenados.sort((a, b) => new Date(b.fechaAgregado) - new Date(a.fechaAgregado));
+    }
     
     setProductosFiltrados(productosOrdenados);
-
   }, [busqueda, filtroGenero, criterioOrden, todosLosProductos]);
 
+  // --- FUNCIONES Y LÓGICA ---
   const agregarAlCarrito = (producto) => {
-  console.log('Añadiendo al carrito desde:', window.location.pathname, producto)  
-  setCarrito(prevCarrito => [...prevCarrito, producto]);
+    console.log('Añadiendo al carrito desde:', window.location.pathname, producto)  
+    setCarrito(prevCarrito => [...prevCarrito, producto]);
   };
 
   const eliminarDelCarrito = (indiceAEliminar) => {
@@ -92,6 +89,17 @@ function App() {
 
   const generosUnicos = [...new Set(todosLosProductos.map(p => p.genero))];
 
+  // Función para cambiar de página (para la paginación)
+  const paginar = (numeroDePagina) => {
+    setPaginaActual(numeroDePagina);
+  };
+
+  // Lógica de cálculo de paginación
+  const indiceDelUltimoProducto = paginaActual * productosPorPagina;
+  const indiceDelPrimerProducto = indiceDelUltimoProducto - productosPorPagina;
+  const productosPaginados = productosFiltrados.slice(indiceDelPrimerProducto, indiceDelUltimoProducto);
+
+  // --- RENDERIZADO ---
   return (
     <div>
       <main style={{ paddingBottom: '80px' }}>
@@ -100,15 +108,13 @@ function App() {
             path="/"
             element={
               <HomePage
-                productos={productosFiltrados}
+                productos={productosPaginados}
                 agregarAlCarrito={agregarAlCarrito}
-                // PROPS LIMPIAS!
-                // Ya no hay pasaje de  los estados de los filtros.
-                // El componente de filtros los tomará del contexto.
                 generosUnicos={generosUnicos}
-                // Sprint 6 Martes elimine props. 
-                // toggleFavorito={toggleFavorito}
-                // favoritos={favoritos}
+                productosPorPagina={productosPorPagina}
+                totalProductos={productosFiltrados.length}
+                paginar={paginar}
+                paginaActual={paginaActual}
               />
             }
           />
@@ -121,15 +127,11 @@ function App() {
               />
             }
           />
-
-          {/* 5. Pasar la lista de favoritos a su página */}
-          {/* Sprint 6 Martes borrare de aqui losas props. */}
           <Route path="/favoritos" element={<FavoritesPage agregarAlCarrito={agregarAlCarrito} />} />
           <Route
             path="/carrito"
             element={<CartPage carrito={carrito} eliminarDelCarrito={eliminarDelCarrito} />}
           />
-          {/* Sprint 8 Mierc. pasaje de  props. */}
           <Route path="/novedades" element={<NovedadesPage productos={todosLosProductos} agregarAlCarrito={agregarAlCarrito} />} />
           <Route path="/mas" element={<MorePage />} />
         </Routes>
