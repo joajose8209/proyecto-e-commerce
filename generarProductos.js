@@ -10,7 +10,7 @@ const RUTA_ARCHIVO = path.join('public', 'data', 'productos.json');
 const LIMITE_POR_ARTISTA = 5;
 
 const artistasParaBuscar = [
-  // Ejemplo: "The Strokes", "Florence + The Machine"
+"The Strokes", "Iron Maiden" ,"MIchael Schenker"
 ];
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));

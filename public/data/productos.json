@@ -1051,5 +1051,140 @@
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ed178061d9191acd345fba04b58bf062.png",
     "genero": "Britpop",
     "fechaAgregado": "2025-09-26T20:37:13.975Z"
+  },
+  {
+    "id": 165,
+    "artista": "The Strokes",
+    "album": "Is This It",
+    "precio": 38449,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/80f256e56b1043cdbb99da3ac4dd69a0.png",
+    "genero": "Indie rock",
+    "fechaAgregado": "2025-10-09T09:22:40.181Z"
+  },
+  {
+    "id": 166,
+    "artista": "The Strokes",
+    "album": "Room on Fire",
+    "precio": 46078,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/a9c961c8da0d4427b7d7a4018738f5df.png",
+    "genero": "Indie rock",
+    "fechaAgregado": "2025-10-09T09:22:40.215Z"
+  },
+  {
+    "id": 167,
+    "artista": "The Strokes",
+    "album": "First Impressions of Earth",
+    "precio": 43010,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f41698e47228486ac81690028794f18d.png",
+    "genero": "Indie rock",
+    "fechaAgregado": "2025-10-09T09:22:40.215Z"
+  },
+  {
+    "id": 168,
+    "artista": "The Strokes",
+    "album": "The New Abnormal",
+    "precio": 40543,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/576554c542da76c08f0e80c129afcb0e.png",
+    "genero": "Indie rock",
+    "fechaAgregado": "2025-10-09T09:22:40.215Z"
+  },
+  {
+    "id": 169,
+    "artista": "The Strokes",
+    "album": "Angles",
+    "precio": 38347,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/65d41ffa467f4d16adf8bf876c586c78.png",
+    "genero": "Indie rock",
+    "fechaAgregado": "2025-10-09T09:22:40.215Z"
+  },
+  {
+    "id": 170,
+    "artista": "Iron Maiden",
+    "album": "The Number of the Beast",
+    "precio": 30075,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/4848a0ce2f98376b71c932e409e9afb4.png",
+    "genero": "Heavy metal",
+    "fechaAgregado": "2025-10-09T09:22:42.029Z"
+  },
+  {
+    "id": 171,
+    "artista": "Iron Maiden",
+    "album": "Powerslave",
+    "precio": 41536,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/fb8a432b8a23a386b9fbaaa4756800b2.png",
+    "genero": "Heavy metal",
+    "fechaAgregado": "2025-10-09T09:22:42.030Z"
+  },
+  {
+    "id": 172,
+    "artista": "Iron Maiden",
+    "album": "Piece of Mind",
+    "precio": 40485,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7753e1296c3c49565bc1967f408d95d3.png",
+    "genero": "Heavy metal",
+    "fechaAgregado": "2025-10-09T09:22:42.030Z"
+  },
+  {
+    "id": 173,
+    "artista": "Iron Maiden",
+    "album": "Piece of Mind (2015 Remaster)",
+    "precio": 38813,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/72e721c77140568a52b3947f3f9ea70d.png",
+    "genero": "Heavy metal",
+    "fechaAgregado": "2025-10-09T09:22:42.030Z"
+  },
+  {
+    "id": 174,
+    "artista": "Iron Maiden",
+    "album": "Fear of the Dark",
+    "precio": 38359,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f5490f3a3e5677d812c35f3abc105c39.png",
+    "genero": "Heavy metal",
+    "fechaAgregado": "2025-10-09T09:22:42.030Z"
+  },
+  {
+    "id": 175,
+    "artista": "Michael Schenker",
+    "album": "The Story of Michael Schenker",
+    "precio": 46928,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/9680f4c219d0485abcb012f0ad023a71.png",
+    "genero": "Hard rock",
+    "fechaAgregado": "2025-10-09T09:22:42.847Z"
+  },
+  {
+    "id": 176,
+    "artista": "Michael Schenker",
+    "album": "Guitar Masters - The Kulick Sessions (Deluxe Digital Version)",
+    "precio": 43979,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/69be980b008845d09445303ecaa012b7.png",
+    "genero": "Hard rock",
+    "fechaAgregado": "2025-10-09T09:22:42.847Z"
+  },
+  {
+    "id": 177,
+    "artista": "Michael Schenker",
+    "album": "Masters Of Rock",
+    "precio": 35542,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/6033eee4dff545d7a878ed25c64ccf39.png",
+    "genero": "Hard rock",
+    "fechaAgregado": "2025-10-09T09:22:42.847Z"
+  },
+  {
+    "id": 178,
+    "artista": "Michael Schenker",
+    "album": "Temple Of Rock",
+    "precio": 45215,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/631eddedff1893e8a8b4820ce85d0aba.png",
+    "genero": "Hard rock",
+    "fechaAgregado": "2025-10-09T09:22:42.847Z"
+  },
+  {
+    "id": 179,
+    "artista": "Michael Schenker",
+    "album": "Doctor, Doctor - The Kulick Sessions",
+    "precio": 45520,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/64a11bca87ef2939e9afad914fbb2bfe.png",
+    "genero": "Hard rock",
+    "fechaAgregado": "2025-10-09T09:22:42.847Z"
   }
 ]
