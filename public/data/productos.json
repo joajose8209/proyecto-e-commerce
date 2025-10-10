@@ -1186,5 +1186,131 @@
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/64a11bca87ef2939e9afad914fbb2bfe.png",
     "genero": "Hard rock",
     "fechaAgregado": "2025-10-09T09:22:42.847Z"
+  },
+  {
+    "id": 180,
+    "artista": "Ramones",
+    "album": "Ramones (40th Anniversary Deluxe Edition; 2016 Remaster)",
+    "precio": 48433,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/febb0df92ec81c04960c90d9c7f0ac7d.png",
+    "genero": "Punk",
+    "fechaAgregado": "2025-10-10T02:51:02.526Z"
+  },
+  {
+    "id": 181,
+    "artista": "Ramones",
+    "album": "Ramones",
+    "precio": 48508,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/629a6ba124de4501b91afbb5de0d1078.png",
+    "genero": "Punk",
+    "fechaAgregado": "2025-10-10T02:51:02.552Z"
+  },
+  {
+    "id": 182,
+    "artista": "Ramones",
+    "album": "Road To Ruin (40th Anniversary Deluxe Edition)",
+    "precio": 38400,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/03e8fea6e667d10414f996363c249667.png",
+    "genero": "Punk",
+    "fechaAgregado": "2025-10-10T02:51:02.552Z"
+  },
+  {
+    "id": 183,
+    "artista": "Ramones",
+    "album": "Brain Drain",
+    "precio": 48695,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/642401f282fc840ad4781052fb6eb6e4.png",
+    "genero": "Punk",
+    "fechaAgregado": "2025-10-10T02:51:02.552Z"
+  },
+  {
+    "id": 184,
+    "artista": "Ramones",
+    "album": "Rocket to Russia",
+    "precio": 38206,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/aa345647341e39e3678f360abf46b915.png",
+    "genero": "Punk",
+    "fechaAgregado": "2025-10-10T02:51:02.552Z"
+  },
+  {
+    "id": 185,
+    "artista": "Rod Stewart",
+    "album": "Every Picture Tells A Story",
+    "precio": 37933,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/4112d08d5efed1d012ebece3a48e554b.png",
+    "genero": "Classic rock",
+    "fechaAgregado": "2025-10-10T02:51:06.233Z"
+  },
+  {
+    "id": 186,
+    "artista": "Rod Stewart",
+    "album": "Blondes Have More Fun",
+    "precio": 30013,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/5b5e9385bd25f48df97d62b6a500685c.png",
+    "genero": "Classic rock",
+    "fechaAgregado": "2025-10-10T02:51:06.233Z"
+  },
+  {
+    "id": 187,
+    "artista": "Rod Stewart",
+    "album": "The Definitive Rod Stewart",
+    "precio": 41553,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/4a26157f0a37443b945a73bbd6a29ba4.png",
+    "genero": "Classic rock",
+    "fechaAgregado": "2025-10-10T02:51:06.233Z"
+  },
+  {
+    "id": 188,
+    "artista": "Rod Stewart",
+    "album": "Atlantic Crossing",
+    "precio": 35408,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/eef1f1cd63a9c5a4efeb2e2960321ee2.png",
+    "genero": "Classic rock",
+    "fechaAgregado": "2025-10-10T02:51:06.233Z"
+  },
+  {
+    "id": 189,
+    "artista": "Rod Stewart",
+    "album": "Still The Same... Great Rock Classics Of Our Time",
+    "precio": 41080,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/f20dc0afdd7042f98da0fd8b5f56c7a0.png",
+    "genero": "Classic rock",
+    "fechaAgregado": "2025-10-10T02:51:06.233Z"
+  },
+  {
+    "id": 190,
+    "artista": "Pink Floyd",
+    "album": "The Wall",
+    "precio": 30101,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/546df98105a551801e0f92de7389cc0a.png",
+    "genero": "Progressive rock",
+    "fechaAgregado": "2025-10-10T02:51:06.846Z"
+  },
+  {
+    "id": 191,
+    "artista": "Pink Floyd",
+    "album": "Wish You Were Here",
+    "precio": 45168,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/e19d2760d2c0cf4de9d2a68beda56efd.png",
+    "genero": "Progressive rock",
+    "fechaAgregado": "2025-10-10T02:51:06.847Z"
+  },
+  {
+    "id": 192,
+    "artista": "Pink Floyd",
+    "album": "The Division Bell",
+    "precio": 42028,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/322025b870b64e8cced4e68728238022.png",
+    "genero": "Progressive rock",
+    "fechaAgregado": "2025-10-10T02:51:06.847Z"
+  },
+  {
+    "id": 193,
+    "artista": "Pink Floyd",
+    "album": "Dark Side of the Moon",
+    "precio": 34250,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0f05cdb52e9242bd8dd4aa9cf1ce2fb7.png",
+    "genero": "Progressive rock",
+    "fechaAgregado": "2025-10-10T02:51:06.847Z"
   }
 ]

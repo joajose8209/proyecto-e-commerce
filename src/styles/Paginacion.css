@@ -34,3 +34,9 @@
   color: white;
   background-color: #7b1fa2;
 }
+.paginacion-link:disabled {
+background-color: #e9ecef;
+color: #6c757d;
+border-color: #dee2e6;
+cursor: not-allowed;
+}

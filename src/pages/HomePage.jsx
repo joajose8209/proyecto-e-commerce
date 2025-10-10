@@ -11,7 +11,9 @@ generosUnicos,
 productosPorPagina,
 totalProductos,
 paginar,
-paginaActual 
+paginaActual,
+paginaSiguiente,
+paginaAnterior 
 }) {
 
 return (
@@ -32,6 +34,8 @@ productosPorPagina={productosPorPagina}
 totalProductos={totalProductos}
 paginar={paginar}
 paginaActual={paginaActual}
+paginaSiguiente={paginaSiguiente}
+paginaAnterior={paginaAnterior}
 />
 </div>
 );

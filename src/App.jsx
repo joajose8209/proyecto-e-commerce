@@ -105,6 +105,19 @@ const paginar = (numeroDePagina) => {
 setPaginaActual(numeroDePagina);
 };
 
+const paginaSiguiente = () => {
+const totalPaginas = Math.ceil(productosFiltrados.length / productosPorPagina);
+if(paginaActual < totalPaginas) {
+setPaginaActual(paginaActual + 1);    
+}   
+};
+
+const paginaAnterior = () => {
+if(paginaActual > 1) {
+setPaginaActual(paginaActual -1);    
+}    
+}
+
 
 const indiceDelUltimoProducto = paginaActual * productosPorPagina;
 const indiceDelPrimerProducto = indiceDelUltimoProducto - productosPorPagina;
@@ -126,6 +139,8 @@ productosPorPagina={productosPorPagina}
  totalProductos={productosFiltrados.length}
 paginar={paginar}
 paginaActual={paginaActual}
+paginaSiguiente={paginaSiguiente}
+paginaAnterior={paginaAnterior}
 />
 }
 />
