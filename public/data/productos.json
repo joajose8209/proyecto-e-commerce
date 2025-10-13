@@ -1312,5 +1312,50 @@
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/0f05cdb52e9242bd8dd4aa9cf1ce2fb7.png",
     "genero": "Progressive rock",
     "fechaAgregado": "2025-10-10T02:51:06.847Z"
+  },
+  {
+    "id": 194,
+    "artista": "Black Sabbath",
+    "album": "Paranoid",
+    "precio": 45380,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/e88b3980787c4714b79c3cab44986595.png",
+    "genero": "Heavy metal",
+    "fechaAgregado": "2025-10-13T10:13:33.920Z"
+  },
+  {
+    "id": 195,
+    "artista": "Black Sabbath",
+    "album": "Master of Reality",
+    "precio": 31248,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/78e47298d8ad41a3e05ba65afe26d6cb.png",
+    "genero": "Heavy metal",
+    "fechaAgregado": "2025-10-13T10:13:34.112Z"
+  },
+  {
+    "id": 196,
+    "artista": "Black Sabbath",
+    "album": "Paranoid (2009 Remastered Version)",
+    "precio": 44232,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/b9a0bf244aef80f2947e2c64776f3d9b.png",
+    "genero": "Heavy metal",
+    "fechaAgregado": "2025-10-13T10:13:34.112Z"
+  },
+  {
+    "id": 197,
+    "artista": "Black Sabbath",
+    "album": "Black Sabbath",
+    "precio": 49292,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1f17c2caf98fd2e7336a06956c7fd574.png",
+    "genero": "Heavy metal",
+    "fechaAgregado": "2025-10-13T10:13:34.112Z"
+  },
+  {
+    "id": 198,
+    "artista": "Black Sabbath",
+    "album": "Paranoid (Remaster)",
+    "precio": 32474,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3bc35767a38eb74297267fabf807020b.png",
+    "genero": "Heavy metal",
+    "fechaAgregado": "2025-10-13T10:13:34.112Z"
   }
 ]

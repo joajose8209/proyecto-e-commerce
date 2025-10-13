@@ -10,7 +10,7 @@ const RUTA_ARCHIVO = path.join('public', 'data', 'productos.json');
 const LIMITE_POR_ARTISTA = 5;
 
 const artistasParaBuscar = [
-"The Ramones", "Rod Stewart" ,"Pink Floyd"
+"Black Sabbath", 
 ];
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
