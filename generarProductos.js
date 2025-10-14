@@ -9,6 +9,28 @@ const MI_API_KEY = "a10e9aa16bf81c9c2d6b34b6bb19c765";
 const RUTA_ARCHIVO = path.join('public', 'data', 'productos.json');
 const LIMITE_POR_ARTISTA = 5;
 
+const GENERO_MAP = {
+"Heavy Metal": ["Heavy metal", "metal", "classic metal", "80s metal"],
+"Hard Rock": ["hard rock", "classic rock", "arena rock"],
+"Rock Progresivo": ["Progressive rock", "prog rock", "art rock"],
+"Britpop": ["britpop", "madchester"],
+"Post-Punk": ["post-punk", "new wave"],
+"Indie Rock": ["indie rock", "indie", "alternative rock"] };
+
+
+function normalizarGenero(generoApi) {
+const generoEnMinusculas = generoApi.toLowerCase();
+
+for (const generoOficial in GENERO_MAP) {
+if (GENERO_MAP[generoOficial].includes(generoEnMinusculas)) {
+return generoOficial; 
+}
+}
+
+
+return generoApi.charAt(0).toUpperCase() + generoApi.slice(1).toLowerCase();
+}
+
 const artistasParaBuscar = [
 "Black Sabbath", 
 ];
@@ -42,13 +64,13 @@ async function actualizarProductos() {
       const respuestaInfoArtista = await fetch(urlInfoArtista);
       const datosInfoArtista = await respuestaInfoArtista.json();
 
-      if (datosInfoArtista.toptags && datosInfoArtista.toptags.tag && datosInfoArtista.toptags.tag.length > 0) {
-        const generoApi = datosInfoArtista.toptags.tag[0].name;
-        generoPrincipal = generoApi.charAt(0).toUpperCase() + generoApi.slice(1).toLowerCase();
-        console.log(` -> Género principal asignado: ${generoPrincipal}`);
-      } else {
-        console.log(` -> No se encontró género. Se usará "${generoPrincipal}".`);
-      }
+if (datosInfoArtista.toptags && datosInfoArtista.toptags.tag && datosInfoArtista.toptags.tag.length > 0) {
+  const generoApi = datosInfoArtista.toptags.tag[0].name;
+  generoPrincipal = normalizarGenero(generoApi); 
+  console.log(` -> Género de API: "${generoApi}", Normalizado a: "${generoPrincipal}"`);
+} else {
+  console.log(` -> No se encontró género. Se usará "${generoPrincipal}".`);
+}
       
       await delay(50);
 

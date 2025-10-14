@@ -3,8 +3,8 @@ position: fixed;
 bottom: 0;
 left: 0;
 width: 100%;
-background-color: #ffffff;
-border-top: 1px solid #e0e0e0;
+background-color: var(--color-navbar-background);
+border-top: 1px solid var(--color-card-border);
 box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -28,7 +28,7 @@ flex-basis: 0;
 }
 
 .custom-nav__item.active {
-color: #7b1fa2; /* Morado distintivo */
+color: var(--color-primary);
 }
 
 .nav-icon {

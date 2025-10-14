@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+:root, .light {
+--color-background: #ffffff;     
+--color-text: #212529; 
+--color-text-secondary: #666;           
+--color-primary: #7b1fa2;         
+--color-card-background: #ffffff;  
+--color-card-border: #eee;        
+--color-navbar-background: #ffffff
+}
+.dark {
+--color-background: #121212;         
+--color-text: #f5f5f5;
+--color-text-secondary: #adb5bd;             
+--color-primary: #bb86fc;     
+--color-card-background: #1e1e1e;
+--color-card-border: #2c2c2c;       
+--color-navbar-background: #1e1e1e;
+}
+
+body {
+margin: 0;
+font-family: 'Lato', sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+background-color: var(--color-background);
+color: var(--color-text);
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light, .dark {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .relacionados-container {
   margin-top: 50px;
   padding-top: 30px;
@@ -10,19 +48,16 @@
 }
 
 .relacionados-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 15px;
 }
 .main-title {
-  /* 1. Centra el texto horizontalmente */
-  text-align: center;
-  
-  /* 2. Le damos un estilo acorde a tu paleta de colores */
-  color: #333; /* Un color de texto oscuro pero no negro puro */
-  font-size: 2.5rem; /* Un tamaño de letra más grande e impactante */
-  margin-top: 20px; /* Un poco de espacio arriba */
-  margin-bottom: 30px; /* Espacio entre el título y los filtros */
-  font-weight: 700; /* Un grosor de letra más notable */
+text-align: center;  
+color: var(--color-text); 
+font-size: 2.5rem;
+margin-top: 20px; 
+margin-bottom: 30px; 
+font-weight: 700; 
 }

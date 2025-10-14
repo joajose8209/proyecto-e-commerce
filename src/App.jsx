@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext, useRef } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { FiltersContext } from './context/FiltersContext'; 
+import { ThemeContext, useTheme } from './context/ThemeContext';
 
 // Páginas
 import HomePage from './pages/HomePage';
@@ -26,7 +27,7 @@ const [paginaActual, setPaginaActual] = useState(1);
 const [productosPorPagina] = useState(12);
 
 const { busqueda, filtroGenero, criterioOrden } = useContext(FiltersContext);
-
+const {theme} = useTheme();
 // --- EFECTOS (useEffect) ---
 useEffect(() => {
 fetch('/data/productos.json')
@@ -125,7 +126,7 @@ const productosPaginados = productosFiltrados.slice(indiceDelPrimerProducto, ind
 
   
 return (
-<div>
+<div className={theme}>
 <main style={{ paddingBottom: '80px' }}>
 <Routes>
 <Route
