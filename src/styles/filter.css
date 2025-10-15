@@ -1,103 +1,97 @@
-/* --- ESTILOS PARA LA BARRA DE BÚSQUEDA --- */
 .search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 25px;
 }
 
 .search-container label {
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--color-text);
-  margin-right: 10px;
+font-size: 20px;
+font-weight: 500;
+color: var(--color-text);
+margin-right: 10px;
 }
 
 .search-input {
-  width: 50%;
-  max-width: 400px;
-  padding: 8px 15px;
-  font-size: 16px;
-  color: #333;
-  border: 2px solid #ddd;
-  border-radius: 50px;
-  outline: none;
-  transition: all 0.3s ease-in-out;
+width: 50%;
+max-width: 400px;
+padding: 8px 15px;
+font-size: 16px;
+color: #333;
+border: 2px solid #ddd;
+border-radius: 50px;
+outline: none;
+transition: all 0.3s ease-in-out;
 }
-
 .search-input::placeholder {
-  color: #aaa;
+color: #aaa;
 }
 
 .search-input:focus {
-  border-color: #7b1fa2;
-  box-shadow: 0 0 10px rgba(123, 31, 162, 0.2);
+border-color: #7b1fa2;
+box-shadow: 0 0 10px rgba(123, 31, 162, 0.2);
 }
 
-
-/* --- ESTILOS PARA EL MENÚ DE ORDENAMIENTO --- */
 .sort-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  gap: 10px;
-  margin-bottom: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+gap: 10px;
+margin-bottom: 20px;
 }
 
 .sort-container label {
-  font-weight: 500;
-  color: var(--color-text);
+font-weight: 500;
+color: var(--color-text);
 }
 
 .sort-container select {
-  padding: 8px 12px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  background-color: white;
-  cursor: pointer;
-  outline-color: #7b1fa2;
+padding: 8px 12px;
+font-size: 14px;
+border: 1px solid #ccc;
+border-radius: 20px;
+background-color: white;
+cursor: pointer;
+outline-color: #7b1fa2;
 }
 
-
-/* --- ESTILOS PARA LOS BOTONES DE FILTRO DE GÉNERO (ESTILO "CHIP") --- */
 .filter-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  padding: 20px 15px;
-  margin-bottom: 25px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 12px;
+padding: 20px 15px;
+margin-bottom: 25px;
 }
 
 .boton-filtro {
-  padding: 8px 18px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #555;
-  background-color: #ffffff;
-  border: 1px solid #dcdcdc;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  outline-color: #7b1fa2;
+padding: 8px 18px;
+font-size: 14px;
+font-weight: 500;
+color: #555;
+background-color: #ffffff;
+border: 1px solid #dcdcdc;
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+outline-color: #7b1fa2;
 }
 
 .boton-filtro:hover {
-  border-color: #7b1fa2;
-  color: #7b1fa2;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+border-color: #7b1fa2;
+color: #7b1fa2;
+transform: translateY(-2px);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .boton-filtro-activo {
-  color: #ffffff;
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  box-shadow: 0 4px 12px rgba(123, 31, 162, 0.3);
+color: #ffffff;
+background-color: var(--color-primary);
+border-color: var(--color-primary);
+box-shadow: 0 4px 12px rgba(123, 31, 162, 0.3);
 }
 
 .boton-filtro-activo:hover {
-  color: #ffffff;
+color: #ffffff;
 }
