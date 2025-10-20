@@ -18,16 +18,13 @@ function App() {
 
 const [todosLosProductos, setTodosLosProductos] = useState([]);
 const [productosFiltrados, setProductosFiltrados] = useState([]);
-const [carrito, setCarrito] = useState(() => {
-const carritoGuardado = localStorage.getItem('carrito');
-return carritoGuardado ? JSON.parse(carritoGuardado) : [];
-});
   
 const [paginaActual, setPaginaActual] = useState(1);
 const [productosPorPagina] = useState(12);
 
 const { busqueda, filtroGenero, criterioOrden } = useContext(FiltersContext);
 const {theme} = useTheme();
+
 // --- EFECTOS (useEffect) ---
 useEffect(() => {
 fetch('/data/productos.json')
@@ -41,10 +38,6 @@ setProductosFiltrados(productosOrdenadosPorDefecto);
 })
 .catch(error => console.error("Error al cargar los productos:", error));
 }, []);
-
-useEffect(() => {
-localStorage.setItem('carrito', JSON.stringify(carrito));
-}, [carrito]);
 
 useEffect(() => {
 if (todosLosProductos.length === 0) {
@@ -89,16 +82,6 @@ isInitialMount.current = false;
 setPaginaActual(1);
 }
 }, [busqueda, filtroGenero, criterioOrden ]);
-
-
-const agregarAlCarrito = (producto) => {
-console.log('Añadiendo al carrito desde:', window.location.pathname, producto)  
-setCarrito(prevCarrito => [...prevCarrito, producto]);
-};
-
-const eliminarDelCarrito = (indiceAEliminar) => {
-setCarrito(prevCarrito => prevCarrito.filter((_, index) => index !== indiceAEliminar));
-};
 
 const generosUnicos = [...new Set(todosLosProductos.map(p => p.genero))];
 
