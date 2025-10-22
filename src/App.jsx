@@ -117,10 +117,9 @@ path="/"
 element={
 <HomePage
 productos={productosPaginados}
-agregarAlCarrito={agregarAlCarrito}
 generosUnicos={generosUnicos}
 productosPorPagina={productosPorPagina}
- totalProductos={productosFiltrados.length}
+totalProductos={productosFiltrados.length}
 paginar={paginar}
 paginaActual={paginaActual}
 paginaSiguiente={paginaSiguiente}
@@ -133,20 +132,19 @@ path="/vinilo/:id"
 element={
 <ProductDetailPage
 productos={todosLosProductos}
-agregarAlCarrito={agregarAlCarrito}
 />
 }
 />
-<Route path="/favoritos" element={<FavoritesPage agregarAlCarrito={agregarAlCarrito} />} />
+<Route path="/favoritos" element={<FavoritesPage />} />
 <Route
 path="/carrito"
-element={<CartPage carrito={carrito} eliminarDelCarrito={eliminarDelCarrito} />}
+element={<CartPage />}
 />
-<Route path="/novedades" element={<NovedadesPage productos={todosLosProductos} agregarAlCarrito={agregarAlCarrito} />} />
+<Route path="/novedades" element={<NovedadesPage productos={todosLosProductos} />} />
 <Route path="/mas" element={<MorePage />} />
 </Routes>
 </main>
-<Navbar cantidadCarrito={carrito.length} />
+<Navbar />
 </div>
 );
 }
