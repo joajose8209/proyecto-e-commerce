@@ -4,9 +4,11 @@ import '../styles/ProductCard.css';
 import { useFavorites } from '../context/FavoritesContext';
 import { getImageUrl } from '../utils/getImageUrl';
 import { isProductNew } from "../utils/isProductNew";
+import { useCart } from "../context/CartContext";
 
-const ProductCard = ({ producto, agregarAlCarrito}) => {
+const ProductCard = ({ producto}) => {
 const {favoritos, toggleFavorito} = useFavorites();
+const {agregarAlCarrito} = useCart();
 const detailUrl = `/vinilo/${producto.id}`;
 const esFavorito = favoritos.some(fav => fav.id === producto.id);
 const imageUrl = getImageUrl(producto);
@@ -30,9 +32,7 @@ className="product-image"
 </div>
 </Link>
 <div className="product-card-actions">
- {/* 3. Crecion  nuevo botón de favoritos */}
  <button 
- // La clase cambia si es favorito o no, para que el corazón se vea "lleno" o "vacío"
  className={`btn-favorite ${esFavorito ? 'favorited' : ''}`}
  onClick={() => toggleFavorito(producto)}
  >

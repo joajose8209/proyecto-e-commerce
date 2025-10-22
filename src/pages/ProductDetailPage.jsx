@@ -1,109 +1,76 @@
 import React, { useState, useEffect } from 'react';
-//importacion para Sprint 4 dia Miercoles useParams
 import { useParams } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import '../styles/ProductDetailPage.css';
-//Sprint 6 comento la lista completa vendra por props.
-//import { obtenerProductos } from '../services/productosService'; 
+import { useCart } from '../context/CartContext';
 
-function ProductDetailPage({ productos, agregarAlCarrito }) {
-  //devuelve un objeto con los parametros de la URL.
-  const { id } = useParams();
-  const [producto, setProducto] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [relacionados, setRelacionados] = useState([]);
+function ProductDetailPage({ productos}) {
+const { id } = useParams();
+const [producto, setProducto] = useState(null);
+const [loading, setLoading] = useState(true);
+const [relacionados, setRelacionados] = useState([]);
+const {agregarAlCarrito} = useCart();
 
-  //Sprint 6 UseEffect, se encarga de encontrar el producto principal.
-  useEffect(() => {
-    //Si la lista principal de productos ya esta disponible.
-    if (productos.length > 0) {
-      setLoading(true);//Se inicia la  carga
-      const productoEncontrado = productos.find((p) => p.id == id);
-      setProducto(productoEncontrado);
-      setLoading(false); //Aqui termina la  carga.
-    }
-  }, [id, productos]);// se ejecuta si cambia el ID en la URL o bien si llega la lista de productos.
+  
+useEffect(() => {
+if (productos.length > 0) {
+setLoading(true);
+const productoEncontrado = productos.find((p) => p.id == id);
+setProducto(productoEncontrado);
+setLoading(false);
+}
+}, [id, productos]);
 
-  //Sprint 6 segundo UseEffect que se va a encargar de encontrar los productos relacionados.
-  useEffect(() => {
-    // Sprint 6 si ya he encontrado el producto y esta la lista completa....
-    if (producto && productos.length > 0) {
-      const productosFiltrados = productos.filter(p => p.genero === producto.genero && p.id !== producto.id);
-      setRelacionados(productosFiltrados.slice(0, 4,));
-    };
-  }, [producto, productos]);//se va a ejecutar si el prod. principal cambia.
+useEffect(() => {
+if (producto && productos.length > 0) {
+const productosFiltrados = productos.filter(p => p.genero === producto.genero && p.id !== producto.id);
+setRelacionados(productosFiltrados.slice(0, 4,));
+};
+}, [producto, productos]);
 
-  /* Sprint 6 comento,  ya no utilizo funcion asincronica, es mas eficiente la mejora solo va a recibir los datos por props
-  del componente padre App.jsx.
-  useEffect(() => {
-   // Funcion asincrona para cargar el producto 
-    const cargarProducto = async () => {
-      setLoading(true);// aqui empieza la carga
-      try {
-        const productos = await obtenerProductos();
-        // uso productos.find para encontrar el producto cuyo id coincida con el parametro de la URL
-        const productoEncontrado = productos.find((p) => p.id == id);
-        setProducto(productoEncontrado);
-      } catch (error) {
-        console.error("Error al cargar el producto:", error);
-      }
-      setLoading(false);// aqui termina la carga
-    };
+if (loading) {
+return <p>Cargando producto...</p>;
+}
 
-    cargarProducto();
-  }, [id]); */
+if (!producto) {
+return <p>Producto no encontrado.</p>;
+}
+const imageUrl = producto.imagen.startsWith('http') 
+? producto.imagen          
+: `/img/${producto.imagen}`; 
 
-  // Renderizado condicional mientras carga
-  if (loading) {
-    return <p>Cargando producto...</p>;
-  }
-
-  // Renderizado si el producto no se encontró
-  if (!producto) {
-    return <p>Producto no encontrado.</p>;
-  }
-  const imageUrl = producto.imagen.startsWith('http') 
-  ? producto.imagen          // Si empieza con 'http', usa la URL tal cual.
-  : `/img/${producto.imagen}`; // Si no, construye la ruta local.
-
-
-  // Renderizado cuando el producto ya se cargó
-  return (
-    <div className="detalle-container">
-      <div className="detalle-principal">
-        <div className="detalle-img">
-        <img src={imageUrl} alt={producto.album} />
-        </div>
-        <div className="detalle-info">
-          <h2>{producto.album}</h2>
-          <h3>{producto.artista}</h3>
-          <p className="detalle-precio">${producto.precio}</p>
-          <p><strong>Género:</strong> {producto.genero}</p>
-          <button className="detalle-boton-comprar">
-            Agregar al Carrito
-          </button>
-        </div>
-      </div>
-      
-      {/* Sprint 6 nueva seccion productos relacionados*/}
-      {/* S. 6 solo muestro relacionados si hay algo */}
-      {relacionados.length > 0 && (
-        <div className="relacionados-container">
-          <h2>También te podría gustar</h2>
-          <div className="relacionados-grid">
-            {/* utilizo metodo map */}
-            {relacionados.map(prodRelacionado => (
-              <ProductCard
-                key={prodRelacionado.id}
-                producto={prodRelacionado}
-                agregarAlCarrito={agregarAlCarrito}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-    </div>
-  );
+return (
+<div className="detalle-container">
+<div className="detalle-principal">
+<div className="detalle-img">
+<img src={imageUrl} alt={producto.album} />
+</div>
+<div className="detalle-info">
+<h2>{producto.album}</h2>
+<h3>{producto.artista}</h3>
+ <p className="detalle-precio">${producto.precio}</p>
+<p><strong>Género:</strong> {producto.genero}</p>
+<button className="detalle-boton-comprar" onClick={() => agregarAlCarrito(producto)}>
+Agregar al Carrito
+</button>
+</div>
+</div>
+          
+{relacionados.length > 0 && (
+<div className="relacionados-container">
+<h2>También te podría gustar</h2>
+<div className="relacionados-grid">
+{relacionados.map(prodRelacionado => (
+<ProductCard
+key={prodRelacionado.id}
+producto={prodRelacionado}
+/>
+))}
+</div>
+</div>
+)}
+</div>
+);
 }
 
 export default ProductDetailPage;

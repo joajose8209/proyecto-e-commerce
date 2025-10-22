@@ -1,6 +1,7 @@
 import React, {createContext, useState, useEffect, useContext} from 'react';
 
 export const CartContex = createContext();
+
 export const useCart = () => {
 return useContext(CartContex);
 };

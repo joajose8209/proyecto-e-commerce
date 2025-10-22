@@ -9,14 +9,17 @@ import './styles/index.css';
 import { FavoritesProvider } from './context/FavoritesContext';
 import { FiltersProvider } from './context/FiltersContext.jsx';
 import { ThemeProvider } from './context/ThemeContext.jsx'; 
+import {CartProvider} from './context/CartContext.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <React.StrictMode>
 <BrowserRouter>
 <ThemeProvider>
 <FavoritesProvider>
-<FiltersProvider> 
+<FiltersProvider>
+<CartProvider>    
 <App />
+</CartProvider> 
 </FiltersProvider>
 </FavoritesProvider>  
 </ThemeProvider>
