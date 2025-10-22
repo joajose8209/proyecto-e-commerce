@@ -1,31 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/CartPage.css'; // Importo los nuevos estilos (sprint 5)
+import '../styles/CartPage.css';
 import { getImageUrl } from '../utils/getImageUrl';
+import { useCart } from '../context/CartContext';
 
-// Recibir el 'carrito' y la nueva función 'eliminarDelCarrito' desde App.jsx
-const CartPage = ({ carrito, eliminarDelCarrito }) => {
-  
-// La misma lógica para calcular el total que ya tengo.
+const CartPage = () => {
+const {carrito, eliminarDelCarrito} = useCart(); 
 const total = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
 
 return (
 <div className="cart-page-container">
 <h1>🛒 Tu Carrito de Compras</h1>
 
-{/* Si el carrito está vacío, muestro un mensaje amigable */}
 {carrito.length === 0 ? (
 <div className="cart-empty">
 <p>Tu carrito está vacío.</p>
 <Link to="/" className="btn-primary">Ver Catálogo</Link>
 </div>
 ) : (
-// Si hay productos, los muestro en una lista
+
 <div className="cart-content">
 <div className="cart-items-list">
 {carrito.map((producto, index) => (
 <div key={`${producto.id}-${index}`} className="cart-item-card">
-{/* Usamos la función getImageUrl para obtener la ruta correcta */}
+
 <img src={getImageUrl(producto)} alt={producto.album} className="cart-item-image" />
         
 <div className="cart-item-details">
@@ -33,7 +31,7 @@ return (
 <p>{producto.artista}</p>
 <p className="cart-item-price">${producto.precio}</p>
 </div>
-{/* Botón para eliminar el producto */}
+
 <button onClick={() => eliminarDelCarrito(index)} className="cart-item-delete">
 ✖️
 </button>
@@ -41,7 +39,6 @@ return (
 ))}
 </div>
 
-{/* Resumen de la compra */}
 <div className="cart-summary">
 <h2>Resumen del Pedido</h2>
 <div className="summary-row">
