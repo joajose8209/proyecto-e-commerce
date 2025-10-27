@@ -10,6 +10,7 @@ import FavoritesPage from './pages/FavoritesPage';
 import CartPage from './pages/CartPage';
 import NovedadesPage from './pages/NovedadesPage';
 import MorePage from './pages/MorePage';
+import CheckoutPage from './pages/CheckoutPage';
 
 
 import Navbar from './components/Navbar';
@@ -142,6 +143,7 @@ element={<CartPage />}
 />
 <Route path="/novedades" element={<NovedadesPage productos={todosLosProductos} />} />
 <Route path="/mas" element={<MorePage />} />
+<Route path='/checkout' element={<CheckoutPage />} />
 </Routes>
 </main>
 <Navbar />

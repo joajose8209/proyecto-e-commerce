@@ -54,7 +54,7 @@ return (
 <span>Total:</span>
 <span>${total}</span>
 </div>
-<button className="btn-checkout">Finalizar Compra</button>
+<Link to="/checkout" className="btn-checkout">Finalizar Compra</Link>
 </div>
 </div>
 )}
