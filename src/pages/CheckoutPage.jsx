@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 
 function CheckoutPage() {
 const [formData, setFormData] = useState({
@@ -19,11 +20,14 @@ setFormData((prevData) => ({
 return (
 <div className="checkout-container">
 <h2>Finalizar Compra</h2>
-      
+
+<Link to="/carrito" className='back-to-cart-btn' >
+&larr; Volver al Carrito
+</Link>      
 <form className="checkout-form">
 <h3>Datos de Contacto</h3>        
 <div className="form-group">
-<label htmlFor="nombre">Nombre</label>
+<label htmlFor="nombre">Nombre: </label>
 <input 
 type="text" 
 id="nombre"
@@ -34,7 +38,7 @@ onChange={handleChange}
 </div>
 
 <div className="form-group">
-<label htmlFor="email">Email</label>
+<label htmlFor="email">Email: </label>
 <input 
 type="email" 
 id="email"
@@ -45,7 +49,7 @@ onChange={handleChange}
 </div>
 
 <div className="form-group">
-<label htmlFor="telefono">Teléfono</label>
+<label htmlFor="telefono">Teléfono: </label>
 <input 
 type="tel" 
 id="telefono"
@@ -56,7 +60,7 @@ onChange={handleChange}
 </div>
 
 <div className="form-group">
-<label htmlFor="direccion">Dirección</label>
+<label htmlFor="direccion">Dirección: </label>
 <input 
 type="text" 
 id="direccion"
