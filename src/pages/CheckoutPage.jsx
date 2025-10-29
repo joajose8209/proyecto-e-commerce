@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import {useCart} from '../context/CartContext';
 
 function CheckoutPage() {
 const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ email: '',
 telefono: '',
 direccion: ''
   });
+
+const {carrito, total} = useCart();  
 
 const handleChange = (e) => {
 const { name, value } = e.target;
@@ -23,7 +26,10 @@ return (
 
 <Link to="/carrito" className='back-to-cart-btn' >
 &larr; Volver al Carrito
-</Link>      
+</Link>
+
+<div className="checkout-layout">
+
 <form className="checkout-form">
 <h3>Datos de Contacto</h3>        
 <div className="form-group">
@@ -74,6 +80,23 @@ onChange={handleChange}
 Generar Orden
 </button>
 </form>
+
+<div className="resumen-compra">
+<h3>Resumen de tu Compra</h3>
+
+{carrito.map((producto) => (
+<div key={producto.id} className="resumen-item">
+<span>{producto.album} (x{producto.cantidad})</span>
+<span>${producto.precio * producto.cantidad}</span>
+</div>
+))}
+
+<div className="resumen-total">
+<strong>Total:</strong>
+<strong>${total}</strong>
+</div>
+</div>
+</div>
 </div>
 );
 }
