@@ -23,10 +23,16 @@ setCarrito(prevCarrito => [...prevCarrito, producto]);
 const eliminarDelCarrito = (indiceAEliminar) => {
 setCarrito(prevCarrito => prevCarrito.filter((_,index) => index !== indiceAEliminar));
 };
+
+const limpiarCarrito = () => {
+setCarrito([]);
+};
+
 const value = {
 carrito,
 agregarAlCarrito,
 eliminarDelCarrito,
+limpiarCarrito
 };
 
 return (
