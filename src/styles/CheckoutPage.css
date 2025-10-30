@@ -1,0 +1,145 @@
+.checkout-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.checkout-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-to-cart-btn {
+  color: var(--color-primary); 
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.back-to-cart-btn:hover {
+  text-decoration: underline;
+}
+
+.checkout-layout {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap-reverse; 
+}
+
+.checkout-form {
+  flex: 2;
+  min-width: 300px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--color-card-border);
+  border-radius: 4px;
+  background-color: var(--color-card-background);
+  color: var(--color-text);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px rgba(123, 31, 162, 0.3);
+}
+
+.error-text {
+  color: #e91e63; 
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  opacity: 0.85;
+}
+
+.resumen-compra {
+  flex: 1; 
+  min-width: 250px;
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-card-border);
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content; 
+}
+
+.resumen-compra h3 {
+  margin-top: 0;
+}
+
+.resumen-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-card-border);
+  padding: 10px 0;
+  font-size: 0.95rem;
+}
+
+.resumen-item span {
+  color: var(--color-text-secondary);
+}
+
+.resumen-item strong {
+  color: var(--color-text);
+}
+
+
+.resumen-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.success-message {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-card-border);
+  border-radius: 8px;
+}
+
+.success-message h2 {
+  margin-bottom: 15px;
+}
+
+
+.success-message .btn-primary {
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+}
