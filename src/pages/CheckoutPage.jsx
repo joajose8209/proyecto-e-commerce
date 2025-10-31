@@ -18,10 +18,39 @@ return JSON.parse(datosGuardados);
 return estadoInicialForm;
 };
 
+const generarMensajeWhatsApp = (orden) => {
+const itemsMensaje = orden.items.map(prod=>
+`-${prod.album} (${prod.artista}) : $${prod.precio}`  
+).join('\n');  
+
+const MensajeFinal = `
+¡ Nuevo Pedido! 🛒
+
+*Cliente:* ${orden.comprador.nombre}
+*Email:* ${orden.comprador.email}
+*Telefono:* ${orden.comprador.telefono}
+*Direccion:* ${orden.comprador.direccion}
+
+*Resumen Pedido:*
+${itemsMensaje}
+
+*TOTAL: $${orden.total}*
+`;
+
+const mensajeCodificado = encodeURIComponent(MensajeFinal);
+
+const tuNumeroWhatsApp = '5493816385762'
+
+return `https://api.whatsapp.com/send?phone=${tuNumeroWhatsApp}&text=${mensajeCodificado}`;
+
+};
 function CheckoutPage() {
   
 const [formData, setFormData] = useState(leerEstadoInicial);
 const [errores, setErrores] = useState({});
+
+const [ordenCompleta, setOrdenCompleta] = useState(null);
+
 const [ordenId, setOrdenId] = useState(null); 
 const { carrito, limpiarCarrito } = useCart(); 
 
@@ -71,26 +100,37 @@ total: totalCalculado,
 fecha: new Date()
 };
       
-console.log('✅ Orden de Compra Generada (Simulación):', ordenDeCompra);
+console.log('✅ Orden de Compra Generada:', ordenDeCompra);
 
 limpiarCarrito();
-setOrdenId('simulado-12345'); 
-
 localStorage.removeItem('checkoutForm');
-setFormData(estadoInicialForm); 
+setFormData(estadoInicialForm);
+
+setOrdenCompleta(ordenDeCompra);
 }
 };
 
+
   
-if (ordenId) {
+if (ordenCompleta) {
+
+const enlaceWhatsApp = generarMensajeWhatsApp(ordenCompleta);  
 return (
     
 <div className="checkout-container">
 <div className="success-message">
-<h2>¡Gracias por tu compra!</h2>
-<p>Tu orden ha sido generada con éxito.</p>
-<p>Tu número de seguimiento (simulado) es: <strong>{ordenId}</strong></p>
-<Link to="/" className="btn-primary">
+<h2>¡Gracias por tu compra, {ordenCompleta.comprador.nombre}!!</h2>
+<p>Tu orden ha sido procesada en nuestro sistema..</p>
+<p>Para finalizar, por favor envía tu pedido a nuestro WhatsApp para que podamos coordinar el pago y el envío.</p>
+<a 
+href={enlaceWhatsApp} 
+target="_blank" 
+rel="noopener noreferrer" 
+className="btn-primary"
+>
+Enviar Pedido por WhatsApp
+</a>
+<Link to="/" className="back-to-cart-btn" style={{marginLeft: '20px'}}>
 Volver al Inicio
 </Link>
 </div>
