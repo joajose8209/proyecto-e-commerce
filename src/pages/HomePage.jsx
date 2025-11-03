@@ -1,8 +1,8 @@
 import React from 'react';
 import ProductList from '../components/ProductList';
 import Filters from '../components/Filters';
-import Paginacion from '../components/Paginacion'; // 1. IMPORTAMOS el nuevo componente
-
+import Paginacion from '../components/Paginacion'; 
+import HeroBanner from '../components/HeroBanner';
 
 function HomePage({ 
 productos, 
@@ -17,7 +17,8 @@ paginaAnterior
 }) {
 
 return (
-<div>
+<main className='homepage-container'>
+<HeroBanner />    
 <h1 className='main-title'>Catálogo de Vinilos</h1>
       
 <Filters 
@@ -37,7 +38,7 @@ paginaActual={paginaActual}
 paginaSiguiente={paginaSiguiente}
 paginaAnterior={paginaAnterior}
 />
-</div>
+</main>
 );
 }
 
