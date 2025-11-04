@@ -19,7 +19,6 @@ paginaAnterior
 return (
 <main className='homepage-container'>
 <HeroBanner />    
-<h1 className='main-title'>Catálogo de Vinilos</h1>
       
 <Filters 
 generos={['Todos', ...(generosUnicos || [])]}

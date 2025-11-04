@@ -32,7 +32,7 @@ return generoApi.charAt(0).toUpperCase() + generoApi.slice(1).toLowerCase();
 }
 
 const artistasParaBuscar = [
-"Black Sabbath", 
+"Miles Davis", "Glenn Miller", "Nat King Cole", "Billie Holiday"
 ];
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));

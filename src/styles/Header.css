@@ -1,0 +1,35 @@
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--color-navbar-background);
+  border-bottom: 1px solid var(--color-card-border);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center; 
+  gap: 10px;          
+  text-decoration: none;
+}
+
+
+.header-logo img {
+  height: 55px; 
+  width: auto;
+}
+
+
+.header-title {
+  font-size: 1.8rem;  
+  font-weight: 700;
+  color: var(--color-primary); 
+  margin: 0; 
+}
+
+.header-actions {
+  /* (Para futuros botones) */
+}

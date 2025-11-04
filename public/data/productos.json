@@ -544,7 +544,7 @@
     "artista": "Radiohead",
     "album": "Pablo Honey",
     "precio": 49094,
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3820170a0a6cb7d7d429e2945cd067c9.png",
+    "imagen": "PabloHoney.jpg",
     "genero": "Indie Rock",
     "fechaAgregado": "2025-08-22T09:27:12.006Z"
   },
@@ -1357,5 +1357,176 @@
     "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/3bc35767a38eb74297267fabf807020b.png",
     "genero": "Heavy Metal",
     "fechaAgregado": "2025-10-13T10:13:34.112Z"
+  },
+  {
+    "id": 199,
+    "artista": "Miles Davis",
+    "album": "Kind Of Blue (Legacy Edition)",
+    "precio": 48247,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/d8559da77e9d9efba47d5f952681372f.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:17.524Z"
+  },
+  {
+    "id": 200,
+    "artista": "Miles Davis",
+    "album": "Birth of the Cool",
+    "precio": 30453,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/4d0d63712d3f44c693d20031b714bc36.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:17.562Z"
+  },
+  {
+    "id": 201,
+    "artista": "Miles Davis",
+    "album": "'Round About Midnight",
+    "precio": 33596,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7cfac88e79b4a41e5bbb1c04417f173b.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:17.562Z"
+  },
+  {
+    "id": 202,
+    "artista": "Miles Davis",
+    "album": "Bitches Brew",
+    "precio": 37803,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ccff38c96cfd4ae291d8d8347bec4257.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:17.562Z"
+  },
+  {
+    "id": 203,
+    "artista": "Glenn Miller",
+    "album": "Greatest Hits",
+    "precio": 31615,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/7cafbaa1f96ef0288eeae9c52510fd0c.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:18.748Z"
+  },
+  {
+    "id": 204,
+    "artista": "Glenn Miller",
+    "album": "Ultimate Big Band Collection: Glenn Miller",
+    "precio": 44263,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/4330369b09344e02b7f8f702574f54ca.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:18.748Z"
+  },
+  {
+    "id": 205,
+    "artista": "Glenn Miller",
+    "album": "100 Success De Glenn Miller",
+    "precio": 40196,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1ca6eb8fcb8f46a2b3b6476573ed6942.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:18.748Z"
+  },
+  {
+    "id": 206,
+    "artista": "Glenn Miller",
+    "album": "The Essential Glenn Miller",
+    "precio": 48815,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ecba61f1dc030578fe8434ca7bf357d9.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:18.748Z"
+  },
+  {
+    "id": 207,
+    "artista": "Glenn Miller",
+    "album": "The Glenn Miller Carnegie Hall Concert (Live)",
+    "precio": 32422,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/73987c561534bc3b223b3e5f6eaac806.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:18.748Z"
+  },
+  {
+    "id": 208,
+    "artista": "Nat King Cole",
+    "album": "The Christmas Song (Expanded Edition)",
+    "precio": 43958,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/93b1be714083c7d8e8b369412e22e50a.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:21.914Z"
+  },
+  {
+    "id": 209,
+    "artista": "Nat King Cole",
+    "album": "The Nat King Cole Story",
+    "precio": 43819,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/c100edbeffdff05ba9e72de87f9d830c.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:21.914Z"
+  },
+  {
+    "id": 210,
+    "artista": "Nat King Cole",
+    "album": "The Christmas Song",
+    "precio": 45541,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1ae47a0ddb0230db59c8165fc8094936.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:21.914Z"
+  },
+  {
+    "id": 211,
+    "artista": "Nat King Cole",
+    "album": "L-O-V-E",
+    "precio": 34301,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/4aa090eea399979fa13014b5f09dca99.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:21.914Z"
+  },
+  {
+    "id": 212,
+    "artista": "Nat King Cole",
+    "album": "The Ultimate Collection",
+    "precio": 39017,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/6e478cbc8e2849e38d89e0c21cbf4a78.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:21.914Z"
+  },
+  {
+    "id": 213,
+    "artista": "Billie Holiday",
+    "album": "Solitude",
+    "precio": 43419,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/b1aeb9016ab5a7661e5b0bc0ba58e8b0.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:23.559Z"
+  },
+  {
+    "id": 214,
+    "artista": "Billie Holiday",
+    "album": "Billie Holiday",
+    "precio": 35875,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/ee5cd98ae7d6317bedfcc4f6517474c5.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:23.559Z"
+  },
+  {
+    "id": 215,
+    "artista": "Billie Holiday",
+    "album": "Lady Day: The Complete Billie Holiday On Columbia (1933-1944)",
+    "precio": 49636,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/1141289d9c79404ca7d70a55f20124c7.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:23.559Z"
+  },
+  {
+    "id": 216,
+    "artista": "Billie Holiday",
+    "album": "All Of Me",
+    "precio": 34896,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/908665055a9b4f059b15dda6ae0c0555.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:23.559Z"
+  },
+  {
+    "id": 217,
+    "artista": "Billie Holiday",
+    "album": "Lover Man",
+    "precio": 40484,
+    "imagen": "https://lastfm.freetls.fastly.net/i/u/300x300/e896ea812479d326f035b54dfdc43425.png",
+    "genero": "Jazz",
+    "fechaAgregado": "2025-11-04T00:07:23.559Z"
   }
 ]

@@ -95,3 +95,27 @@ box-shadow: 0 4px 12px rgba(123, 31, 162, 0.3);
 .boton-filtro-activo:hover {
 color: #ffffff;
 }
+.filter-bar-top {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;          
+  flex-wrap: wrap;              
+  gap: 20px;
+  padding: 0 20px; 
+  margin-bottom: 10px;
+}
+
+
+.filter-bar-top .search-container {
+  flex-grow: 1; 
+  margin-bottom: 0; 
+}
+
+.filter-bar-top .sort-container {
+  margin-bottom: 0; 
+}
+
+.filter-bar-top .search-container label,
+.filter-bar-top .sort-container label {
+  font-size: 1rem; 
+}

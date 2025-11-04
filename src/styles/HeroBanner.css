@@ -1,0 +1,67 @@
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(-10px);    
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@keyframes panEffect {
+0% {
+background-position: 0% 50%; 
+}
+50% {
+background-position: 100% 50%; 
+}
+100% {
+background-position: 0% 50%;
+  }
+}
+
+.hero-banner{
+padding: 60px 20px; 
+text-align: center;
+background-image: linear-gradient(-45deg, var(--color-primary), #ff4081, #4b0082, var(--color-primary));  
+color: white;
+border-radius: 8px;
+margin: 20px;
+background-size: 400% 400%;
+animation: 
+fadeIn 0.8s ease-out,
+panEffect 15s infinite linear alternate;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+.hero-titulo {
+font-size: 3.5rem;  
+font-weight: 700;
+text-transform: uppercase; 
+margin: 0;
+color: #ffffff; 
+}
+.hero-subtitulo {
+font-size: 1.25rem; 
+margin-top: 15px;
+margin-bottom: 30px;
+color: #f0f0f0; 
+font-weight: 400;
+}
+
+.hero-boton {
+display: inline-block;
+background-color: #ffffff;
+color: var(--color-primary);
+padding: 12px 28px;
+font-size: 1rem;
+font-weight: 700;
+text-decoration: none;
+border-radius: 50px;
+transition: all 0.3s ease;
+}
+
+.hero-boton:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

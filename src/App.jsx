@@ -11,6 +11,7 @@ import CartPage from './pages/CartPage';
 import NovedadesPage from './pages/NovedadesPage';
 import MorePage from './pages/MorePage';
 import CheckoutPage from './pages/CheckoutPage';
+import Header from './components/Header';
 
 
 import Navbar from './components/Navbar';
@@ -111,6 +112,7 @@ const productosPaginados = productosFiltrados.slice(indiceDelPrimerProducto, ind
   
 return (
 <div className={theme}>
+<Header />    
 <main style={{ paddingBottom: '80px' }}>
 <Routes>
 <Route
