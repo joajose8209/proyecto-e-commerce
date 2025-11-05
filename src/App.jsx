@@ -12,6 +12,7 @@ import NovedadesPage from './pages/NovedadesPage';
 import MorePage from './pages/MorePage';
 import CheckoutPage from './pages/CheckoutPage';
 import Header from './components/Header';
+import AdminOrdersPage from './pages/AdminOrdersPage';
 
 
 import Navbar from './components/Navbar';
@@ -146,6 +147,7 @@ element={<CartPage />}
 <Route path="/novedades" element={<NovedadesPage productos={todosLosProductos} />} />
 <Route path="/mas" element={<MorePage />} />
 <Route path='/checkout' element={<CheckoutPage />} />
+<Route path='/admin-ordenes' element={<AdminOrdersPage />} />
 </Routes>
 </main>
 <Navbar />
