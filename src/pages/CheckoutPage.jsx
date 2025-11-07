@@ -4,10 +4,10 @@ import { useCart } from '../context/CartContext';
 import '../styles/CheckoutPage.css';
 
 const estadoInicialForm = {
-  nombre: '',
-  email: '',
-  telefono: '',
-  direccion: ''
+nombre: '',
+email: '',
+telefono: '',
+direccion: ''
 };
 
 const leerEstadoInicial = () => {
@@ -44,6 +44,7 @@ const tuNumeroWhatsApp = '5493816385762'
 return `https://api.whatsapp.com/send?phone=${tuNumeroWhatsApp}&text=${mensajeCodificado}`;
 
 };
+
 function CheckoutPage() {
   
 const [formData, setFormData] = useState(leerEstadoInicial);
@@ -93,6 +94,7 @@ setErrores(nuevosErrores);
 } else {
 
 setErrores({});
+
 const ordenDeCompra = {
 comprador: formData,
 items: carrito,
@@ -101,6 +103,12 @@ fecha: new Date()
 };
       
 console.log('✅ Orden de Compra Generada:', ordenDeCompra);
+
+const ordenesGuardadas = JSON.parse(localStorage.getItem('ordenes')) || [];
+
+ordenesGuardadas.push(ordenDeCompra);
+
+localStorage.setItem('ordenes', JSON.stringify(ordenesGuardadas));
 
 limpiarCarrito();
 localStorage.removeItem('checkoutForm');
