@@ -33,3 +33,21 @@
 .header-actions {
 /* (Para futuros botones) */
 }
+
+@media (max-width: 768px) {
+  
+.main-header {
+flex-direction: column;
+gap: 15px;
+padding: 15px; 
+}
+
+.header-title {
+font-size: 1.5rem;        
+}
+
+.header-logo img {
+height: 40px; 
+}
+}
+

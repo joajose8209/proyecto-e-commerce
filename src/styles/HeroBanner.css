@@ -65,3 +65,24 @@ transition: all 0.3s ease;
 transform: scale(1.05);
 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 768px) {
+  
+.hero-banner {
+padding: 40px 20px;
+margin: 10px; 
+}
+
+.hero-titulo {
+font-size: 2.2rem;
+}
+
+.hero-subtitulo {
+font-size: 1rem;
+}
+
+.hero-boton {
+padding: 10px 24px;
+font-size: 0.9rem;
+}
+}

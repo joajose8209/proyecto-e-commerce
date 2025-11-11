@@ -19,20 +19,18 @@
 }
 
 .product-image {
-  width: 100%;
-  height: 220px; /* Altura fija para la imagen, para que todas las tarjetas sean iguales */
-  object-fit: cover; 
-  
+width: 100%;
+height: 220px; 
+object-fit: cover; 
+ 
 }
 
-/* --- Contenedor para la Información del Producto --- */
 .product-info {
-  padding: 15px;
-  flex-grow: 1; /* Permite que este contenedor crezca para llenar el espacio vertical */
-  display: flex;
-  flex-direction: column;
-  color: #666;
-  
+padding: 15px;
+flex-grow: 1; 
+display: flex;
+flex-direction: column;
+color: #666; 
 }
 
 .product-info h3 {
@@ -47,33 +45,32 @@ color: var(--color-text);
   color: var(--color-text);
 }
 
-/* --- Contenedor de Acciones (Aparece al hacer Hover) --- */
+
 .product-card-actions {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 220px; /* Cubre exactamente el área de la imagen */
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  height: 220px; 
+  background-color: rgba(0, 0, 0, 0.6); 
   
-  /* Centra los botones vertical y horizontalmente */
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Espacio entre los botones */
+  gap: 10px; 
 
-  /* Ocultarlo por defecto */
+  
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-/* Al pasar el mouse sobre la tarjeta, el contenedor de acciones se hace visible */
+
 .product-card:hover .product-card-actions {
   opacity: 1;
 }
 
-/* --- Estilos para los Botones de Acción --- */
 .product-card-actions button {
   padding: 10px 20px;
   border: none;
@@ -84,13 +81,12 @@ color: var(--color-text);
   font-weight: bold;
 }
 
-/* Estilos para el botón de favoritos */
 .btn-favorite {
   background: none;
   border: none;
-  font-size: 32px; /* Un poco más grande para que destaque */
+  font-size: 32px; 
   cursor: pointer;
-  color: white; /* Corazón "vacío" de color blanco para que se vea en el fondo oscuro */
+  color: white; 
   opacity: 0.8;
   transition: all 0.2s ease;
   padding: 0;
@@ -101,9 +97,8 @@ color: var(--color-text);
   opacity: 1;
 }
 
-/* Estilo para cuando el producto SÍ es un favorito */
 .btn-favorite.favorited {
-  color: #e91e63; /* Corazón "lleno" de color rosa/rojo */
+  color: #e91e63; 
   opacity: 1;
 }
 .badge-nuevo {
@@ -117,4 +112,19 @@ border-radius: 4px;
 font-size: 0.8rem;
 font-weight: bold;
 z-index : 10;
+}
+
+
+@media (max-width: 768px) {
+.product-card {
+width: 300px;
+margin: 10px; 
+}
+}
+
+@media (max-width: 480px) {
+.product-card {  
+width: 90%;
+max-width: 340px;
+}
 }
