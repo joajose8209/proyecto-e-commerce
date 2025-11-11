@@ -30,10 +30,6 @@
   margin: 0; 
 }
 
-.header-actions {
-/* (Para futuros botones) */
-}
-
 @media (max-width: 768px) {
   
 .main-header {
