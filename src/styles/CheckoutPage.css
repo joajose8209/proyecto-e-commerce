@@ -143,3 +143,9 @@
   border-radius: 5px;
   display: inline-block;
 }
+
+@media (max-width: 768px){
+.checkout-layout {
+flex-direction: column-reverse;
+}
+}
