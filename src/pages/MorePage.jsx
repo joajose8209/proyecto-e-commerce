@@ -1,4 +1,4 @@
-// En: src/pages/MorePage.jsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -15,9 +15,7 @@ const MorePage = () => {
           to="/admin-ordenes"
           style={{
             textDecoration: 'none',
-            
             padding: '10px 20px', 
-            // ------------------------
             backgroundColor: 'var(--color-primary)',
             color: 'white',
             borderRadius: '5px'

@@ -28,7 +28,6 @@ const [productosPorPagina] = useState(12);
 const { busqueda, filtroGenero, criterioOrden } = useContext(FiltersContext);
 const {theme} = useTheme();
 
-// --- EFECTOS (useEffect) ---
 useEffect(() => {
 fetch('/data/productos.json')
 .then(response => response.json())

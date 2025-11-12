@@ -16,7 +16,6 @@ localStorage.setItem('carrito', JSON.stringify(carrito));
 }, [carrito]);
 
 const agregarAlCarrito = (producto) => {
-console.log('Añadiendo al carrito (Desde Contexto)', producto);
 setCarrito(prevCarrito => [...prevCarrito, producto]);    
 };
 

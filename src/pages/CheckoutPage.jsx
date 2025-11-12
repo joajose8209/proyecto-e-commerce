@@ -102,8 +102,6 @@ total: totalCalculado,
 fecha: new Date()
 };
       
-console.log('✅ Orden de Compra Generada:', ordenDeCompra);
-
 const ordenesGuardadas = JSON.parse(localStorage.getItem('ordenes')) || [];
 
 ordenesGuardadas.push(ordenDeCompra);
